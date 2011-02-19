@@ -30,6 +30,7 @@
 		);
 		breakpoints = (
 			A55773C4131021630009D6EB /* objc_exception_throw */,
+			A55774F0131060F70009D6EB /* MainViewController.m:132 */,
 		);
 		codeSenseManager = A51F1C10130FD63900588C1F /* Code sense */;
 		executables = (
@@ -132,23 +133,37 @@
 	};
 	55C0CB0C130FD2C700D24B89 /* MainViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {876, 549}}";
-			sepNavSelRange = "{288, 0}";
-			sepNavVisRange = "{0, 299}";
+			sepNavIntBoundsRect = "{{0, 0}, {1204, 496}}";
+			sepNavSelRange = "{551, 0}";
+			sepNavVisRange = "{0, 875}";
 		};
 	};
 	55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1260, 3120}}";
-			sepNavSelRange = "{5240, 0}";
-			sepNavVisRange = "{870, 984}";
+			sepNavIntBoundsRect = "{{0, 0}, {1300, 3072}}";
+			sepNavSelRange = "{3906, 0}";
+			sepNavVisRange = "{3546, 902}";
+		};
+	};
+	55C0CBB313100D4C00D24B89 /* ReceiptView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {677, 503}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 214}";
+		};
+	};
+	55C0CBC113100E9C00D24B89 /* ProductTableViewCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {677, 503}}";
+			sepNavSelRange = "{248, 0}";
+			sepNavVisRange = "{0, 389}";
 		};
 	};
 	55C0CBC213100E9C00D24B89 /* ProductTableViewCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {716, 1136}}";
+			sepNavIntBoundsRect = "{{0, 0}, {716, 1072}}";
 			sepNavSelRange = "{207, 0}";
-			sepNavVisRange = "{0, 589}";
+			sepNavVisRange = "{650, 649}";
 		};
 	};
 	55C0CE3D13105A0D00D24B89 /* ProductCategory.m */ = {
@@ -265,7 +280,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		location = libobjc.A.dylib;
-		modificationTime = 319837814.674395;
+		modificationTime = 319840726.138942;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 		symbolName = objc_exception_throw;
@@ -362,7 +377,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 48";
 		rLen = 0;
-		rLoc = 1056;
+		rLoc = 1121;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 717;
@@ -372,37 +387,49 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 187";
 		rLen = 0;
-		rLoc = 5240;
+		rLoc = 5743;
 		rType = 0;
 		vrLen = 984;
 		vrLoc = 870;
 	};
 	A557746913105B320009D6EB /* ProductCategoryView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ProductCategoryView.h;
+		path = /Users/sergey/Projects/cashpad/ipad/Classes/ProductCategoryView.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {793, 502}}";
-			sepNavSelRange = "{226, 0}";
-			sepNavVisRange = "{0, 239}";
+			sepNavIntBoundsRect = "{{0, 0}, {841, 492}}";
+			sepNavSelRange = "{307, 0}";
+			sepNavVisRange = "{0, 307}";
 		};
 	};
 	A557746A13105B320009D6EB /* ProductCategoryView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ProductCategoryView.m;
+		path = /Users/sergey/Projects/cashpad/ipad/Classes/ProductCategoryView.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {717, 503}}";
-			sepNavSelRange = "{66, 0}";
-			sepNavVisRange = "{0, 306}";
+			sepNavIntBoundsRect = "{{0, 0}, {759, 512}}";
+			sepNavSelRange = "{342, 0}";
+			sepNavVisRange = "{54, 324}";
 		};
 	};
 	A55774C213105BAF0009D6EB /* ClickableImageView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {788, 720}}";
+			sepNavIntBoundsRect = "{{0, 0}, {788, 688}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1131}";
+			sepNavVisRange = "{207, 1251}";
 		};
 	};
 	A55774C413105BAF0009D6EB /* ClickableView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {717, 672}}";
 			sepNavSelRange = "{149, 0}";
-			sepNavVisRange = "{3, 567}";
+			sepNavVisRange = "{28, 542}";
 		};
 	};
 	A55774CB13105BD30009D6EB /* XCBuildMessageTextBookmark */ = {
@@ -411,7 +438,7 @@
 		fRef = A557746A13105B320009D6EB /* ProductCategoryView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 16;
+		rLoc = 26;
 		rType = 1;
 	};
 	A55774CC13105BD30009D6EB /* PBXTextBookmark */ = {
@@ -419,7 +446,7 @@
 		fRef = A557746A13105B320009D6EB /* ProductCategoryView.m */;
 		name = "ProductCategoryView.m: 16";
 		rLen = 0;
-		rLoc = 269;
+		rLoc = 342;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 151;
@@ -480,7 +507,7 @@
 		fRef = A557746A13105B320009D6EB /* ProductCategoryView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 16;
+		rLoc = 26;
 		rType = 1;
 	};
 	A55774DC13105BDA0009D6EB /* PBXTextBookmark */ = {
@@ -492,6 +519,24 @@
 		rType = 0;
 		vrLen = 306;
 		vrLoc = 0;
+	};
+	A55774F0131060F70009D6EB /* MainViewController.m:132 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 132;
+		location = CashRegister;
+		modificationTime = 319840731.884873;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
 	};
 	A5BB6747130FF00700C813B2 /* PaymentRequest.h */ = {
 		uiCtxt = {
@@ -533,7 +578,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 81";
 		rLen = 0;
-		rLoc = 2277;
+		rLoc = 2342;
 		rType = 0;
 		vrLen = 932;
 		vrLoc = 1953;
