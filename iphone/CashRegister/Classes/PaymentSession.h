@@ -1,6 +1,6 @@
 //
-//  NearbyMatch.h
-//  MinesweeperFlags
+//  PaymentSession.h
+//  CashRegister
 //
 //  Created by Rits Plasman on 23-01-11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.

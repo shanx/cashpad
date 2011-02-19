@@ -15,7 +15,11 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		55C0CB07130FD2B100D24B89 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0CB06130FD2B100D24B89 /* GameKit.framework */; };
 		55C0CB0F130FD2C700D24B89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */; };
-		55C0CB10130FD2C700D24B89 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C0CB0E130FD2C700D24B89 /* MainView.xib */; };
+		55C0CBB013100CC300D24B89 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C0CBAF13100CC300D24B89 /* MainView.xib */; };
+		55C0CBB513100D4C00D24B89 /* ReceiptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CBB413100D4C00D24B89 /* ReceiptView.m */; };
+		55C0CBC313100E9C00D24B89 /* ReceiptTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CBC213100E9C00D24B89 /* ReceiptTableViewCell.m */; };
+		55C0CBE213100F6000D24B89 /* CashRegister.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */; };
+		55C0CBF81310128A00D24B89 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0CBF71310128A00D24B89 /* CoreData.framework */; };
 		A5BB6740130FEFE300C813B2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */; };
 		A5BB6741130FEFE300C813B2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */; };
 		A5BB6742130FEFE300C813B2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673B130FEFE300C813B2 /* SBJsonBase.m */; };
@@ -38,7 +42,13 @@
 		55C0CB06130FD2B100D24B89 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		55C0CB0C130FD2C700D24B89 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		55C0CB0E130FD2C700D24B89 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainView.xib; path = Classes/MainView.xib; sourceTree = "<group>"; };
+		55C0CBAF13100CC300D24B89 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		55C0CBB313100D4C00D24B89 /* ReceiptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptView.h; sourceTree = "<group>"; };
+		55C0CBB413100D4C00D24B89 /* ReceiptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptView.m; sourceTree = "<group>"; };
+		55C0CBC113100E9C00D24B89 /* ReceiptTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptTableViewCell.h; sourceTree = "<group>"; };
+		55C0CBC213100E9C00D24B89 /* ReceiptTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptTableViewCell.m; sourceTree = "<group>"; };
+		55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = CashRegister.xcdatamodel; sourceTree = "<group>"; };
+		55C0CBF71310128A00D24B89 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* CashRegister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CashRegister-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A5BB6735130FEFE300C813B2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		A5BB6736130FEFE300C813B2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -67,6 +77,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				55C0CB07130FD2B100D24B89 /* GameKit.framework in Frameworks */,
+				55C0CBF81310128A00D24B89 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				55C0CBCD13100F1400D24B89 /* Models */,
+				55C0CBB813100D5100D24B89 /* Views */,
 				A5BB6745130FEFF200C813B2 /* Payment */,
 				A5BB6725130FEFB900C813B2 /* Helper Classes */,
 				1D3623240D0F684500981E51 /* CashRegisterAppDelegate.h */,
@@ -119,8 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				55C0CB0E130FD2C700D24B89 /* MainView.xib */,
 				8D1107310486CEB800E47090 /* CashRegister-Info.plist */,
+				55C0CBAF13100CC300D24B89 /* MainView.xib */,
+				55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -132,8 +146,27 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				55C0CB06130FD2B100D24B89 /* GameKit.framework */,
+				55C0CBF71310128A00D24B89 /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C0CBB813100D5100D24B89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55C0CBB313100D4C00D24B89 /* ReceiptView.h */,
+				55C0CBB413100D4C00D24B89 /* ReceiptView.m */,
+				55C0CBC113100E9C00D24B89 /* ReceiptTableViewCell.h */,
+				55C0CBC213100E9C00D24B89 /* ReceiptTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		55C0CBCD13100F1400D24B89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		A5BB6725130FEFB900C813B2 /* Helper Classes */ = {
@@ -227,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				55C0CB10130FD2C700D24B89 /* MainView.xib in Resources */,
+				55C0CBB013100CC300D24B89 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +281,9 @@
 				A5BB6744130FEFE300C813B2 /* SBJsonWriter.m in Sources */,
 				A5BB674C130FF00700C813B2 /* PaymentRequest.m in Sources */,
 				A5BB674D130FF00700C813B2 /* PaymentSession.m in Sources */,
+				55C0CBB513100D4C00D24B89 /* ReceiptView.m in Sources */,
+				55C0CBC313100E9C00D24B89 /* ReceiptTableViewCell.m in Sources */,
+				55C0CBE213100F6000D24B89 /* CashRegister.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

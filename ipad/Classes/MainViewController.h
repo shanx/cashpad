@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
-@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate> 
+@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource> 
 {
-
+	IBOutlet UITableView *receiptTableView;
+	NSMutableArray *products;
 }
 
 @end
