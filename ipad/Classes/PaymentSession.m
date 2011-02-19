@@ -151,15 +151,15 @@
 									   productDescription,
 									   kPaymentSessionRequestProductDescriptionKey,
 									   amountNumber,
-									   kPaymentSessionRequestAmountKey, nil];
+									   kPaymentSessionRequestAmountKey,
+									   identifierNumber,
+									   kPaymentSessionRequestIdentifierKey, nil];
 	
 	NSDictionary *object = [NSDictionary dictionaryWithObjectsAndKeys:
 							kPaymentSessionRequestActionRequestPaymentKey,
 							kPaymentSessionRequestActionKey,
 							requestDictionary,
-							kPaymentSessionRequestPaymentRequestKey,
-							identifierNumber,
-							kPaymentSessionRequestIdentifierKey, nil];
+							kPaymentSessionRequestPaymentRequestKey, nil];
 	
 	[self sendObject:object];			
 }
