@@ -29,7 +29,6 @@
 
 - (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker
 {
-	
 }
 
 - (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type
@@ -38,6 +37,8 @@
 	
 	paymentSession = [[PaymentSession alloc] initWithGKSession:session];
 	paymentSession.delegate = self;
+	
+	[picker dismiss];
 	
 	return session;
 }

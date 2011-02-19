@@ -37,7 +37,7 @@ class User(grok.Container, grok.Model):
         self['order'] = Orders()
 
 # XXX PUT requests in grok don't work like you would expect them to?
-class UserTraverser(grok.Traverser):
+class UsersTraverser(grok.Traverser):
     grok.context(Users)
     grok.layer(APILayer)
 
@@ -50,10 +50,11 @@ class UserTraverser(grok.Traverser):
                 response.setStatus('201')
             else:
                 response.setStatus('204')
-            return located(self.context, self.context.__parent__, 'user')
+            # FIXME: user should not be a hardcoded string like this
+            return located(self.context, self.context.__parent__, self.context.__name__)
 
     
-class UserREST(grok.REST):
+class UsersREST(grok.REST):
     grok.context(Users)
     grok.layer(APILayer)
 
@@ -75,10 +76,10 @@ class Order(grok.Model):
     total_price = FieldProperty(IOrder['total_price'])
     item_list = FieldProperty(IOrder['item_list'])
 
-class OrderREST(grok.REST):
+class OrdersREST(grok.REST):
     grok.context(Orders)
     grok.layer(APILayer)
-
+    
     def POST(self):
         order_data = simplejson.loads(self.body)
         # Change the created_on timestamp to a datetime
@@ -99,3 +100,4 @@ class OrderREST(grok.REST):
         self.response.setHeader('Location', self.url(order))
         self.response.setStatus('201')
         return ''
+    

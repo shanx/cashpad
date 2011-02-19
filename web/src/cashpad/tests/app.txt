@@ -49,5 +49,9 @@ Create an order::
     >>> print first_order
     http://localhost/++rest++api/app/user/123/order/1
 
-    # >>> response = http_call('GET', first_order)
-    # >>> response.getBody()
+    >>> app['user']['123']['order']['1'].created_on
+    datetime.datetime(2011, 2, 19, 17, 45, 44)
+
+    >>> [i.product_name for i in app['user']['123']['order']['1'].item_list]
+    ['cola', 'pizza calzone']
+    
