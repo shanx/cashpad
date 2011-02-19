@@ -9,9 +9,9 @@
 	};
 	1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2371, 2691}}";
-			sepNavSelRange = "{530, 0}";
-			sepNavVisRange = "{6353, 1780}";
+			sepNavIntBoundsRect = "{{0, 0}, {2371, 2795}}";
+			sepNavSelRange = "{4840, 0}";
+			sepNavVisRange = "{6471, 1827}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* CashRegister */ = {
@@ -27,6 +27,14 @@
 		activeTarget = 1D6058900D05DD3D006BFB54 /* CashRegister */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* CashRegister */,
+		);
+		breakpoints = (
+			55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:135 */,
+			55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:137 */,
+			55C0CC9513101F8E00D24B89 /* CashRegisterAppDelegate.m:36 */,
+			55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:120 */,
+			55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:152 */,
+			55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:156 */,
 		);
 		codeSenseManager = 55C0CAFE130FD27900D24B89 /* Code sense */;
 		executables = (
@@ -55,12 +63,43 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319818749;
-			PBXWorkspaceStateSaveDate = 319818749;
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					874,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319822037;
+			PBXWorkspaceStateSaveDate = 319822037;
 		};
 		perUserProjectItems = {
 			55C0CB94130FEB9700D24B89 = 55C0CB94130FEB9700D24B89 /* PBXBookmark */;
 			55C0CB95130FEB9700D24B89 = 55C0CB95130FEB9700D24B89 /* PBXTextBookmark */;
+			55C0CC4A131018F100D24B89 /* PBXBookmark */ = 55C0CC4A131018F100D24B89 /* PBXBookmark */;
+			55C0CC4B131018F100D24B89 /* PBXTextBookmark */ = 55C0CC4B131018F100D24B89 /* PBXTextBookmark */;
+			55C0CC9913101F9D00D24B89 /* PBXTextBookmark */ = 55C0CC9913101F9D00D24B89 /* PBXTextBookmark */;
+			55C0CC9A13101F9D00D24B89 /* XDModelBookmark */ = 55C0CC9A13101F9D00D24B89 /* XDModelBookmark */;
+			55C0CC9B13101F9D00D24B89 /* PBXTextBookmark */ = 55C0CC9B13101F9D00D24B89 /* PBXTextBookmark */;
+			55C0CC9C13101F9D00D24B89 /* PBXTextBookmark */ = 55C0CC9C13101F9D00D24B89 /* PBXTextBookmark */;
+			55C0CC9D13101F9D00D24B89 /* PBXTextBookmark */ = 55C0CC9D13101F9D00D24B89 /* PBXTextBookmark */;
+			55C0CCAB13101FF800D24B89 /* PBXTextBookmark */ = 55C0CCAB13101FF800D24B89 /* PBXTextBookmark */;
+			55C0CCAC13101FF800D24B89 /* PBXTextBookmark */ = 55C0CCAC13101FF800D24B89 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 55C0CAFD130FD27900D24B89 /* Source Control */;
 		userBuildSettings = {
@@ -87,7 +126,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -104,9 +143,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = CashRegister;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	55C0CAFD130FD27900D24B89 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -131,9 +174,9 @@
 	};
 	55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1716}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1846}}";
 			sepNavSelRange = "{2388, 0}";
-			sepNavVisRange = "{1807, 1237}";
+			sepNavVisRange = "{1702, 1748}";
 		};
 	};
 	55C0CB94130FEB9700D24B89 /* PBXBookmark */ = {
@@ -207,8 +250,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {751, 220}}",
-							"{{756, 0}, {395, 220}}",
+							"{{0, 0}, {751, 218}}",
+							"{{756, 0}, {395, 218}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -227,8 +270,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {245, 220}}",
-							"{{250, 0}, {499, 220}}",
+							"{{0, 0}, {245, 218}}",
+							"{{250, 0}, {499, 218}}",
 						);
 					};
 				};
@@ -341,6 +384,355 @@
 			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 280}";
+		};
+	};
+	55C0CC4A131018F100D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = A55772DB131016030009D6EB /* Reachability.h */;
+	};
+	55C0CC4B131018F100D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A55772DB131016030009D6EB /* Reachability.h */;
+		name = "Reachability.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1988;
+		vrLoc = 0;
+	};
+	55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:135 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		functionName = "-managedObjectModel";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 135;
+		location = CashRegister;
+		modificationTime = 319823812.235873;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:137 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		functionName = "-managedObjectModel";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 137;
+		location = CashRegister;
+		modificationTime = 319823817.346823;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	55C0CC9513101F8E00D24B89 /* CashRegisterAppDelegate.m:36 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		functionName = "-application:didFinishLaunchingWithOptions:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 36;
+		location = CashRegister;
+		modificationTime = 319823804.376692;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	55C0CC9913101F9D00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A55772DB131016030009D6EB /* Reachability.h */;
+		name = "Reachability.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1379;
+		vrLoc = 0;
+	};
+	55C0CC9A13101F9D00D24B89 /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+		uiCtxt = {
+			UIContextForDetailArea = {
+				_indexOfSelectedPane = 0;
+				_indexOfSelectedView = 0;
+			};
+			UIContextForEntityArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnns = (
+					"ET Entity",
+					"ET Abstract",
+					"ET Class",
+				);
+				chosenTableColumnns_sortDirections = (
+					YES,
+				);
+				chosenTableColumnns_sortKeys = (
+					name,
+				);
+				chosenTableColumnns_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidths = (
+					103.000000,
+					22.000000,
+					95.080078,
+				);
+			};
+			UIContextForLayoutManager = {
+				detailSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {751, 218}}",
+						"{{756, 0}, {395, 218}}",
+					);
+				};
+				diagramSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {1151, 220}}",
+						"{{0, 225}, {1151, 444}}",
+					);
+				};
+				tableSplitGeometry = {
+					_collapsingFrameDimension = 0;
+					_indexOfCollapsedView = 0;
+					_percentageOfCollapsedView = 0;
+					isCollapsed = yes;
+					sizes = (
+						"{{0, 0}, {245, 218}}",
+						"{{250, 0}, {499, 218}}",
+					);
+				};
+			};
+			UIContextForPropertyArea = {
+				_indexOfSelectedView = 0;
+				chosenTableColumnnFRTs = (
+					"FT Fetch Request",
+					"FT Predicate",
+				);
+				chosenTableColumnnFRTs_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnFRTs_sortKeys = (
+					name,
+				);
+				chosenTableColumnnFRTs_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsAT = (
+					"AT Attribute",
+					"AT Type",
+				);
+				chosenTableColumnnsAT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsAT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsAT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsFPT = (
+					"FP FetchedProperty",
+					"FP Destination",
+					"FP Predicate",
+				);
+				chosenTableColumnnsFPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsFPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsFPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsPT = (
+					"PT Property",
+					"PT Kind",
+					"PT SharedKeyOne",
+				);
+				chosenTableColumnnsPT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsPT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsPT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableColumnnsRT = (
+					"RT Relationship",
+					"RT Destination",
+				);
+				chosenTableColumnnsRT_sortDirections = (
+					YES,
+				);
+				chosenTableColumnnsRT_sortKeys = (
+					name,
+				);
+				chosenTableColumnnsRT_sortSelectors = (
+					"_xdcaseInsensitiveNumericCompare:",
+				);
+				chosenTableWidthsAT = (
+					128.000000,
+					64.000000,
+				);
+				chosenTableWidthsFPT = (
+					128.000000,
+					64.000000,
+					144.764160,
+				);
+				chosenTableWidthsFRT = (
+					128.000000,
+					249.764160,
+				);
+				chosenTableWidthsPT = (
+					128.000000,
+					108.110840,
+					236.570801,
+				);
+				chosenTableWidthsRT = (
+					128.000000,
+					64.000000,
+				);
+			};
+			"xdesign model browser state key - shown/hidden" = 1;
+			"xdesign model diagram view visible rect key" = "{{-219, -7}, {1136, 429}}";
+			"xdesign model selected entities key" = (
+			);
+			"xdesign model selected properties key" = (
+			);
+		};
+	};
+	55C0CC9B13101F9D00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 81";
+		rLen = 0;
+		rLoc = 2388;
+		rType = 0;
+		vrLen = 1748;
+		vrLoc = 1702;
+	};
+	55C0CC9C13101F9D00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 135";
+		rLen = 0;
+		rLoc = 4840;
+		rType = 0;
+		vrLen = 1732;
+		vrLoc = 153;
+	};
+	55C0CC9D13101F9D00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 135";
+		rLen = 0;
+		rLoc = 4840;
+		rType = 0;
+		vrLen = 1639;
+		vrLoc = 3815;
+	};
+	55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:120 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		functionName = "-managedObjectContext";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 120;
+		modificationTime = 319823836.109303;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:152 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		functionName = "-persistentStoreCoordinator";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 152;
+		modificationTime = 319823843.655663;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:156 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		functionName = "-persistentStoreCoordinator";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 156;
+		modificationTime = 319823846.819361;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	55C0CCAB13101FF800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 135";
+		rLen = 0;
+		rLoc = 4840;
+		rType = 0;
+		vrLen = 2787;
+		vrLoc = 4841;
+	};
+	55C0CCAC13101FF800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 135";
+		rLen = 0;
+		rLoc = 4840;
+		rType = 0;
+		vrLen = 1827;
+		vrLoc = 6471;
+	};
+	A55772DB131016030009D6EB /* Reachability.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 2509}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1379}";
 		};
 	};
 }

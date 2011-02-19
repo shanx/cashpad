@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 #import <GameKit/GameKit.h>
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource> 
@@ -14,5 +15,7 @@
 	IBOutlet UITableView *receiptTableView;
 	NSMutableArray *products;
 }
+
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 @end
