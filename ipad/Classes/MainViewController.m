@@ -78,6 +78,7 @@
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
+	DLog(@"%@", product);
 	[products addObject:product];
 	[product release];
 
