@@ -28,6 +28,6 @@ setup(name='cashpad',
                         ],
       entry_points={
           'fanstatic.libraries': [
-              'cashpad = cashpad.resource:library',
+              'cashpad = cashpad.browser.resource:library',
           ]
       })

@@ -7,6 +7,5 @@
   <p>Your Grok application is up and running.
   Edit <code>cashpad/app_templates/index.pt</code> to change
   this page.</p>
-  <img tal:attributes="src static/evencaveman.jpg"/>
 </body>
 </html>
