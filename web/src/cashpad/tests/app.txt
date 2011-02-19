@@ -1,42 +1,29 @@
-Do a functional doctest test on the app.
-========================================
+Let's first create an instance at the top level:
 
-Let's first create an instance of Cashpad at the top level:
-
-    >>> from cashpad.app import Cashpad
+    >>> from cashpad.app import App
     >>> root = getRootFolder()
-    >>> root['app'] = Cashpad()
+    >>> app = root['app'] = App()
 
-Run tests in the testbrowser
-----------------------------
+    >>> # Ugly import
+    >>> from grokcore.rest.ftests.test_grok_functional import http_call
 
-The zope.testbrowser.browser module exposes a Browser class that
-simulates a web browser similar to Mozilla Firefox or IE.  We use that
-to test how our application behaves in a browser.  For more
-information, see http://pypi.python.org/pypi/zope.testbrowser.
+Create a user::
 
-Create a browser and visit the instance you just created:
+    >>> response = http_call('PUT', 'http://localhost/app/api/user/123')
+    >>> response.getStatus()
+    201
 
-    >>> from zope.app.wsgi.testlayer import Browser
-    >>> browser = Browser()
-    >>> browser.open('http://localhost/app')
+User already exists::
 
-Check some basic information about the page you visit:
+    >>> response = http_call('PUT', 'http://localhost/app/api/user/123')
+    >>> response.getStatus()
+    204
 
-    >>> browser.url
-    'http://localhost/app'
+Create an order::
 
-    >>> print browser.contents
-    <html>
-    <head>
-    <link rel="stylesheet" type="text/css" href="http://localhost/fanstatic/cashpad/style.css" />
-    <base href="http://localhost/app/@@index" />
-    </head>
-    <body>
-      <h1>Congratulations!</h1>
-      <p>Your Grok application is up and running.
-      Edit <code>cashpad/app_templates/index.pt</code> to change
-      this page.</p>
-      <img src="http://localhost/fanstatic/cashpad/evencaveman.jpg" />
-    </body>
-    </html>
+    >>> response = http_call('POST', 'http://localhost/app/api/user/123/order/')
+    >>>
+
+
+
+

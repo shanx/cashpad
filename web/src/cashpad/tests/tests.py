@@ -1,9 +1,3 @@
-# The tests in test_cashpad.py are picked up by zope.testrunner.
-
-# When decorating a unittest.TestCase or doctest with a layer, the layer is
-# used to group tests and execute setup and teardown of the grok environment
-# for the test to run in.
-
 import unittest
 import doctest
 
