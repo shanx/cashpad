@@ -1,5 +1,7 @@
 ipad/build
 
+iphone/CashRegister/build
+
 *.py[oc]
 web/bin
 web/parts
