@@ -11,6 +11,7 @@
 #import "Product.h"
 #import "PaymentSession.h"
 #import "PaymentRequest.h"
+#import "ButtonGridView.h"
 
 @implementation MainViewController
 
@@ -108,6 +109,23 @@
 {
     [super viewDidLoad];
 	
+	NSArray *productTitles = [NSArray arrayWithObjects:
+							  @"Bier",
+							  @"7up",
+							  @"Coca Cola",
+							  @"Tonic",
+							  @"Cassis",
+							  @"Fanta",
+							  @"Spa Rood",
+							  @"Spa Blauw",
+							  @"Wijn",
+							  @"Whisky",
+							  @"Likeur",
+							  @"Pepsi", nil];
+	productsGridView.rowCount = 3;
+	productsGridView.columnCount = 3;
+	productsGridView.titles = productTitles;
+	
 	DLog(@"%@", self.managedObjectContext);
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
@@ -124,6 +142,14 @@
 	
 	self.navigationItem.rightBarButtonItem = connectItem;
 	[connectItem release];
+}
+
+#pragma mark -
+#pragma mark ButtonGridViewDelegate
+
+- (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
+{
+	DLog(@"index: %d", index);
 }
 
 
@@ -160,7 +186,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
     // Return YES for supported orientations.
-    return YES;
+    return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 
