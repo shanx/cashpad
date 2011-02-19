@@ -81,6 +81,31 @@
 }
 
 
+#pragma mark -
+#pragma mark UITableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
+{
+	return [products count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	static NSString *CellIdentifier = @"cell";
+	UITableViewCell *cell = [receiptTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil) {
+		
+	}
+	
+	return cell;
+}
+
+
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
