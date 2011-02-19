@@ -16,3 +16,12 @@ The request can contain the following fields:
     * **product_name** (``string``): Name of the product.
     * **amount** (``integer``): Amount of products ordered.
     * **unit_price** (``decimal``): Price of the product per unit.
+
+**Response**
+
+``201 Created``
+
+**Possible errors**
+
+``400 Bad request``
+    If the request data could not be parsed.
