@@ -11,10 +11,14 @@
 #import "Product.h"
 #import "PaymentSession.h"
 #import "PaymentRequest.h"
+#import "ButtonGridView.h"
+#import "ReceiptTotalView.h"
+#import "ReceiptView.h"
 
 @implementation MainViewController
 
 @synthesize managedObjectContext;
+@synthesize receiptView;
 
 - (id)init
 {
@@ -108,6 +112,23 @@
 {
     [super viewDidLoad];
 	
+	NSArray *productTitles = [NSArray arrayWithObjects:
+							  @"Bier",
+							  @"7up",
+							  @"Coca Cola",
+							  @"Tonic",
+							  @"Cassis",
+							  @"Fanta",
+							  @"Spa Rood",
+							  @"Spa Blauw",
+							  @"Wijn",
+							  @"Whisky",
+							  @"Likeur",
+							  @"Pepsi", nil];
+	productsGridView.rowCount = 3;
+	productsGridView.columnCount = 3;
+	productsGridView.titles = productTitles;
+	
 	DLog(@"%@", self.managedObjectContext);
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
@@ -124,6 +145,17 @@
 	
 	self.navigationItem.rightBarButtonItem = connectItem;
 	[connectItem release];
+    
+    receiptView.productTableView.delegate = self;
+    receiptView.productTableView.dataSource = self;
+}
+
+#pragma mark -
+#pragma mark ButtonGridViewDelegate
+
+- (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
+{
+	DLog(@"index: %d", index);
 }
 
 
@@ -143,7 +175,7 @@
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString *CellIdentifier = @"cell";
-	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptView.productTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	Product *product = [products objectAtIndex:indexPath.row];
 	if (cell == nil) {
 		cell = [[[ProductTableViewCell alloc] initWithProduct:product reuseIdentifier:CellIdentifier] autorelease];
@@ -160,7 +192,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
     // Return YES for supported orientations.
-    return YES;
+    return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 
@@ -171,14 +203,20 @@
     // Release any cached data, images, etc. that aren't in use.
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload 
+{
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+        
+    self.receiptView = nil;
 }
 
 
-- (void)dealloc {
+- (void)dealloc 
+{
+    [receiptView release];
+    [products release];
     [super dealloc];
 }
 
