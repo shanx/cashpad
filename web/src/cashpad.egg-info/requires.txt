@@ -1,6 +1,0 @@
-setuptools
-grok
-grokui.admin
-fanstatic
-zope.fanstatic
-grokcore.startup

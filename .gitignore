@@ -6,3 +6,4 @@ web/parts
 web/develop-eggs
 web/.installed.cfg
 web/eggs
+web/src/*egg-info
