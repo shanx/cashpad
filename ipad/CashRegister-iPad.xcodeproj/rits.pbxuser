@@ -216,9 +216,9 @@
 	};
 	55C0CBC213100E9C00D24B89 /* ProductTableViewCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 793}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 819}}";
 			sepNavSelRange = "{651, 0}";
-			sepNavVisRange = "{52, 1140}";
+			sepNavVisRange = "{52, 1088}";
 		};
 	};
 	55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */ = {
@@ -418,7 +418,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1092, 1417}}";
 			sepNavSelRange = "{1427, 376}";
-			sepNavVisRange = "{573, 1722}";
+			sepNavVisRange = "{573, 1721}";
 		};
 	};
 	55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:136 */ = {
@@ -789,6 +789,55 @@
 		rType = 0;
 		vrLen = 1777;
 		vrLoc = 3346;
+	};
+	55C0CE3C13105A0D00D24B89 /* ProductCategory.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 539}";
+		};
+	};
+	55C0CE4313105AE000D24B89 /* ButtonGridView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{622, 0}";
+			sepNavVisRange = "{0, 622}";
+		};
+	};
+	55C0CE4413105AE000D24B89 /* ButtonGridView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 1703}}";
+			sepNavSelRange = "{2452, 0}";
+			sepNavVisRange = "{1454, 1183}";
+		};
+	};
+	55C0CE4A13105B2F00D24B89 /* ButtonGridViewDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 356}";
+		};
+	};
+	55C0CE4B13105D1C00D24B89 /* ScrollingView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 326}";
+		};
+	};
+	55C0CE4C13105D1C00D24B89 /* ScrollingView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 622}";
+		};
+	};
+	55C0CE4D13105D1C00D24B89 /* ScrollingViewDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 417}";
+		};
 	};
 	A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {
 		uiCtxt = {
