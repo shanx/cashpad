@@ -39,8 +39,8 @@ Create an order::
     ...             'unit_price': 15.55,
     ...         }
     ...     ]
-    ... } 
-    
+    ... }
+
     >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data=simplejson.dumps(order))
     >>> response.getStatus()
     201
@@ -54,4 +54,4 @@ Create an order::
 
     >>> [i.product_name for i in app['user']['123']['order']['1'].item_list]
     ['cola', 'pizza calzone']
-    
+
