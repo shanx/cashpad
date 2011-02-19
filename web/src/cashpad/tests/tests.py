@@ -35,7 +35,7 @@ def http_call(method, path, data=None, headers=None):
 def test_suite():
     suite = unittest.TestSuite()
 
-    app_test = doctest.DocFileSuite('app.txt', # Add more doctest files here.
+    app_test = doctest.DocFileSuite('api.txt', 'browser.txt',
         optionflags = (
             doctest.ELLIPSIS +
             doctest.NORMALIZE_WHITESPACE +
