@@ -59,13 +59,15 @@
 <ul>
 <li><p class="first"><strong>created_on</strong> (<tt class="docutils literal"><span class="pre">integer</span></tt>): Timestamp of the creation datetime of the order in the CashPad app.</p>
 </li>
+<li><p class="first"><strong>total_price</strong> (<tt class="docutils literal"><span class="pre">float</span></tt>): Total price of the order</p>
+</li>
 <li><dl class="first docutils">
 <dt><strong>item_list</strong> (<tt class="docutils literal"><span class="pre">array</span></tt>): List of items that are part of the order.</dt>
 <dd><ul class="first last simple">
 <li><strong>product_id</strong> (<tt class="docutils literal"><span class="pre">integer</span></tt>): Unique id identifying the product.</li>
 <li><strong>product_name</strong> (<tt class="docutils literal"><span class="pre">string</span></tt>): Name of the product.</li>
 <li><strong>amount</strong> (<tt class="docutils literal"><span class="pre">integer</span></tt>): Amount of products ordered.</li>
-<li><strong>unit_price</strong> (<tt class="docutils literal"><span class="pre">decimal</span></tt>): Price of the product per unit.</li>
+<li><strong>unit_price</strong> (<tt class="docutils literal"><span class="pre">float</span></tt>): Price of the product per unit.</li>
 </ul>
 </dd>
 </dl>
