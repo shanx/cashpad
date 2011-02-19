@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "ProductTableViewCell.h"
 #import "Product.h"
+#import "PaymentSession.h"
+#import "PaymentRequest.h"
 
 @implementation MainViewController
 
@@ -33,7 +35,20 @@
 - (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type
 {
 	GKSession *session = [[[GKSession alloc] initWithSessionID:nil displayName:[UIDevice currentDevice].name sessionMode:GKSessionModePeer] autorelease];
+	
+	paymentSession = [[PaymentSession alloc] initWithGKSession:session];
+	paymentSession.delegate = self;
+	
 	return session;
+}
+
+- (void)sendPaymentRequest:(id)sender
+{
+	PaymentRequest *request = [[PaymentRequest alloc] init];
+	request.productDescription = @"Bier";
+	request.amount = 20.0;
+	[paymentSession sendPaymentRequest:request];
+	[request release];
 }
 
 - (void)peerPickerController:(GKPeerPickerController *)picker 

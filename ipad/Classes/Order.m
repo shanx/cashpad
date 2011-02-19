@@ -56,13 +56,13 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
-	DLog(@"request finished");
+	DLog(@"request finished, response status code: %d", request.responseStatusCode);
 	self.completionHandler(nil);
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-	DLog(@"request failed");
+	DLog(@"request failed, response status code: %d", request.responseStatusCode);
 	self.completionHandler([NSError errorWithDomain:nil code:0 userInfo:nil]);
 }
 

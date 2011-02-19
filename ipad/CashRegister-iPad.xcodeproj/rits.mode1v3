@@ -349,9 +349,6 @@
 								<string>55C0CBCD13100F1400D24B89</string>
 								<string>55C0CBB813100D5100D24B89</string>
 								<string>A5BB6745130FEFF200C813B2</string>
-								<string>A5BB6725130FEFB900C813B2</string>
-								<string>A55772D6131016030009D6EB</string>
-								<string>A5BB6726130FEFC700C813B2</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -360,9 +357,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
-									<integer>6</integer>
+									<integer>4</integer>
 									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -404,7 +401,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Order.m</string>
+								<string>MainViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -412,17 +409,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Order.m</string>
+										<string>MainViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0CD751310318700D24B89</string>
+										<string>55C0CD9B1310458500D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
 											<string>55C0CCF1131022D500D24B89</string>
 											<string>55C0CD2A131024E200D24B89</string>
-											<string>55C0CD3B1310297D00D24B89</string>
 											<string>55C0CD3C1310297D00D24B89</string>
 											<string>55C0CD3D1310297D00D24B89</string>
 											<string>55C0CD401310297D00D24B89</string>
@@ -432,10 +428,16 @@
 											<string>55C0CD61131030E600D24B89</string>
 											<string>55C0CD62131030E600D24B89</string>
 											<string>55C0CD63131030E600D24B89</string>
-											<string>55C0CD64131030E600D24B89</string>
-											<string>55C0CD721310318700D24B89</string>
-											<string>55C0CD731310318700D24B89</string>
-											<string>55C0CD741310318700D24B89</string>
+											<string>55C0CD7A131044CF00D24B89</string>
+											<string>55C0CD7B131044CF00D24B89</string>
+											<string>55C0CD7C131044CF00D24B89</string>
+											<string>55C0CD7D131044CF00D24B89</string>
+											<string>55C0CD7E131044CF00D24B89</string>
+											<string>55C0CD80131044CF00D24B89</string>
+											<string>55C0CD911310457300D24B89</string>
+											<string>55C0CD921310457300D24B89</string>
+											<string>55C0CD931310457300D24B89</string>
+											<string>55C0CD9A1310458500D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -616,7 +618,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319828359.25010699</real>
+	<real>319833477.32516998</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -633,12 +635,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>55C0CD9C1310458500D24B89</string>
 		<string>55C0CD201310239600D24B89</string>
 		<string>55C0CD101310233500D24B89</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>55C0CAF4130FD27900D24B89</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -657,12 +660,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Customer.m</string>
+								<string>MainViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -679,8 +684,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1022,7 +1025,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
