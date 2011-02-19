@@ -7,16 +7,19 @@
 //
 
 #import "MainViewController.h"
-
+#import "ProductTableViewCell.h"
+#import "Product.h"
 
 @implementation MainViewController
+
+@synthesize managedObjectContext;
 
 - (id)init
 {
 	self = [super initWithNibName:@"MainView" bundle:nil];
 	
 	if (self) {
-		
+		products = [[NSMutableArray alloc] init];
 	}
 	
 	return self;
@@ -70,6 +73,13 @@
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
+	
+	DLog(@"%@", self.managedObjectContext);
+	
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
+	[products addObject:product];
+	[product release];
 
 	UIBarButtonItem* connectItem = [[UIBarButtonItem alloc] initWithTitle:@"Connect" 
 																	style:UIBarButtonItemStyleBordered 
@@ -97,10 +107,13 @@
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString *CellIdentifier = @"cell";
-	UITableViewCell *cell = [receiptTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	Product *product = [products objectAtIndex:indexPath.row];
 	if (cell == nil) {
-		
+		cell = [[[ProductTableViewCell alloc] initWithProduct:product reuseIdentifier:CellIdentifier] autorelease];
 	}
+	
+	cell.product = product;
 	
 	return cell;
 }
