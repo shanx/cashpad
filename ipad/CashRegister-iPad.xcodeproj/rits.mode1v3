@@ -413,7 +413,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0CD9E131045E000D24B89</string>
+										<string>55C0CDED1310504800D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -437,7 +437,7 @@
 											<string>55C0CD911310457300D24B89</string>
 											<string>55C0CD921310457300D24B89</string>
 											<string>55C0CD931310457300D24B89</string>
-											<string>55C0CD9A1310458500D24B89</string>
+											<string>55C0CD9E131045E000D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -495,9 +495,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>55C0CD051310233500D24B89</string>
+				<string>55C0CDEE1310504800D24B89</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>55C0CD061310233500D24B89</string>
+				<string>55C0CDEF1310504800D24B89</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -618,7 +618,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319833568.14723098</real>
+	<real>319836232.60205001</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -635,10 +635,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0CD201310239600D24B89</string>
-		<string>55C0CD101310233500D24B89</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>55C0CAF4130FD27900D24B89</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
 	</array>
@@ -659,14 +655,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -722,7 +716,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55C0CAF4130FD27900D24B89</string>
-				<string>55C0CD071310233500D24B89</string>
+				<string>55C0CDF01310504800D24B89</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

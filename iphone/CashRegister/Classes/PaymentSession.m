@@ -22,8 +22,8 @@
 
 @interface PaymentSession ()
 
-@property (nonatomic, retain) PaymentRequest *receivedRequest;
-@property (nonatomic, retain) PaymentRequest *sentRequest;
+@property (nonatomic, retain, readwrite) PaymentRequest *receivedRequest;
+@property (nonatomic, retain, readwrite) PaymentRequest *sentRequest;
 
 - (void)sendObject:(id)sender;
 - (void)receiveObject:(id)object;
