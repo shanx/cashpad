@@ -1,0 +1,116 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* CashRegister */ = {
+		activeExec = 0;
+		executables = (
+			A5BB6754130FF05400C813B2 /* CashRegister */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A5BB6754130FF05400C813B2 /* CashRegister */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* CashRegister */;
+		codeSenseManager = A5BB6769130FF07300C813B2 /* Code sense */;
+		executables = (
+			A5BB6754130FF05400C813B2 /* CashRegister */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					508,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319811668;
+			PBXWorkspaceStateSaveDate = 319811668;
+		};
+		perUserProjectItems = {
+			A5BB6857130FF10700C813B2 /* PBXTextBookmark */ = A5BB6857130FF10700C813B2 /* PBXTextBookmark */;
+			A5BB685E13100A9900C813B2 /* PBXTextBookmark */ = A5BB685E13100A9900C813B2 /* PBXTextBookmark */;
+		};
+		sourceControlManager = A5BB6768130FF07300C813B2 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32CA4F630368D1EE00C91783 /* CashRegister_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 336}}";
+			sepNavSelRange = "{0, 733}";
+			sepNavVisRange = "{3, 730}";
+		};
+	};
+	A5BB6754130FF05400C813B2 /* CashRegister */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CashRegister;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A5BB6768130FF07300C813B2 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A5BB6769130FF07300C813B2 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	A5BB6857130FF10700C813B2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* CashRegister_Prefix.pch */;
+		rLen = 4;
+		rLoc = 196;
+		rType = 0;
+	};
+	A5BB685E13100A9900C813B2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* CashRegister_Prefix.pch */;
+		name = "CashRegister_Prefix.pch: 9";
+		rLen = 4;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 733;
+		vrLoc = 0;
+	};
+}
