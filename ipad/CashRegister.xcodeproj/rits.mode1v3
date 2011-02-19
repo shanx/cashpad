@@ -279,6 +279,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -319,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MyNewFile14.java</string>
+								<string>MainViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,7 +328,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MyNewFile14.java</string>
+										<string>MainViewController.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>55C0CB95130FEB9700D24B89</string>
+										<key>history</key>
+										<array>
+											<string>55C0CB94130FEB9700D24B89</string>
+										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -384,9 +393,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>55C0CAF1130FD27900D24B89</string>
+				<string>55C0CB96130FEB9700D24B89</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>55C0CAF2130FD27900D24B89</string>
+				<string>55C0CB97130FEB9700D24B89</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -524,10 +533,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>55C0CAF4130FD27900D24B89</string>
-		<string>/Users/rits/Desktop/CashRegister/CashRegister.xcodeproj</string>
+		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -607,7 +614,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55C0CAF4130FD27900D24B89</string>
-				<string>55C0CAF5130FD27900D24B89</string>
+				<string>55C0CB98130FEB9700D24B89</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
