@@ -1,0 +1,47 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   i18n_domain="cashpad"
+   package="cashpad"
+   >
+
+  <include package="cashpad" />
+
+  <!-- Typical functional testing security setup -->
+  <securityPolicy
+      component="zope.securitypolicy.zopepolicy.ZopeSecurityPolicy"
+      />
+
+  <unauthenticatedPrincipal
+      id="zope.anybody"
+      title="Unauthenticated User"
+      />
+  <unauthenticatedGroup
+      id="zope.Anybody"
+      title="Unauthenticated Users"
+      />
+  <authenticatedGroup
+      id="zope.Authenticated"
+      title="Authenticated Users"
+      />
+  <everybodyGroup
+      id="zope.Everybody"
+      title="All Users"
+      />
+
+  <grant
+      permission="zope.View"
+      principal="zope.Everybody"
+      />
+
+  <principal
+      id="zope.mgr"
+      title="Manager"
+      login="mgr"
+      password="mgrpw"
+      />
+
+  <role id="zope.Manager" title="Site Manager" />
+  <grantAll role="zope.Manager" />
+  <grant role="zope.Manager" principal="zope.mgr" />
+
+</configure>

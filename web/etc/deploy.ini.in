@@ -1,0 +1,75 @@
+[DEFAULT]
+zope_conf = %(here)s/zope.deploy.conf
+
+[server:main]
+use = egg:Paste#http
+host = ${:host}
+port = ${:port}
+
+[pipeline:main]
+pipeline = accesslogging gzip fanstatic grok
+
+[filter:accesslogging]
+use = egg:Paste#translogger
+setup_console_handler = False
+
+[filter:gzip]
+use = egg:Paste#gzip
+
+[filter:fanstatic]
+use = egg:fanstatic#fanstatic
+bottom = true
+versioning = true
+minified = true
+rollup = true
+recompute_hashes = false
+
+[app:grok]
+use = egg:grokcore.startup
+
+# Logging configuration
+
+[loggers]
+keys = root, accesslogging, grok
+
+[logger_root]
+level = INFO
+handlers = eventlog
+
+[logger_grok]
+# Set level to WARNING or below if you want to see
+# grok template registry warnings on commandline.
+level = ERROR
+handlers = eventlog
+qualname = grok
+propagate = 0
+
+[logger_accesslogging]
+level = INFO
+handlers = accesslog
+qualname = wsgi
+propagate = 0
+
+[handlers]
+keys = eventlog, accesslog
+
+[handler_eventlog]
+class = FileHandler
+args = (os.path.join(r'${buildout:directory}', 'log', 'event.log'), 'a')
+level = NOTSET
+formatter = generic
+
+[handler_accesslog]
+class = FileHandler
+args = (os.path.join(r'${buildout:directory}', 'log', 'accesslog.log'), 'a')
+level = INFO
+formatter = accesslog
+
+[formatters]
+keys = generic, accesslog
+
+[formatter_generic]
+format = %(asctime)s %(levelname)s [%(name)s] %(message)s
+
+[formatter_accesslog]
+format = %(message)s

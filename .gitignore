@@ -1,1 +1,8 @@
-/ipad/build
+ipad/build
+
+*.py[oc]
+web/bin
+web/parts
+web/develop-eggs
+web/.installed.cfg
+web/eggs
