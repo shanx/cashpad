@@ -10,7 +10,7 @@ A user is a unique instance of the CashPad application. Clients are responsible 
 
 **Route**
 
-``PUT http://www.ipadkassasysteem.nl/api/user/{user_id}``
+``PUT http://www.ipadkassasysteem.nl/++rest++api/user/{user_id}``
     Create or update a new User resource that can be addressed by ``user_id``.
 
 .. note::
