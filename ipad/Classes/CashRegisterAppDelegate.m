@@ -133,7 +133,8 @@
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CashRegister" withExtension:@"momd"];
 	DLog(@"%@", modelURL);
-    managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+	managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+ //   managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
 	
 	DLog(@"%@", managedObjectModel);
     return managedObjectModel;
