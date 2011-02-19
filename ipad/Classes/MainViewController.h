@@ -12,15 +12,17 @@
 #import "PaymentSessionDelegate.h"
 
 @class PaymentSession;
+@class ReceiptView;
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate>
 {
-	IBOutlet UITableView *receiptTableView;
+	IBOutlet ReceiptView* receiptView;
 	NSMutableArray *products;
 	PaymentSession *paymentSession;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) ReceiptView* receiptView;
 
 - (IBAction)sendPaymentRequest:(id)sender;
 
