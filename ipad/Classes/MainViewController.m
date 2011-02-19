@@ -51,6 +51,24 @@
 	[request release];
 }
 
+- (void)paymentSession:(PaymentSession *)session didDenyPaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"payment denied");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment denied" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
+}
+
+- (void)paymentSession:(PaymentSession *)session didAcceptPaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"payment accepted");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment accepted" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
+}
+
 - (void)peerPickerController:(GKPeerPickerController *)picker 
 			  didConnectPeer:(NSString *)peerID 
 				   toSession:(GKSession *)session

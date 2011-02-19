@@ -12,7 +12,7 @@
 
 @class PaymentSession;
 
-@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, PaymentSessionDelegate>
+@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, PaymentSessionDelegate, UIAlertViewDelegate>
 {
 	PaymentSession *paymentSession;
 }

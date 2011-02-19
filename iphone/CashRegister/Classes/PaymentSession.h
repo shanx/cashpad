@@ -19,6 +19,8 @@
 }
 
 @property (nonatomic, assign) id <PaymentSessionDelegate> delegate;
+@property (nonatomic, retain, readonly) PaymentRequest *receivedRequest;
+@property (nonatomic, retain, readonly) PaymentRequest *sentRequest;
 
 - (id)initWithGKSession:(GKSession *)aSession;
 - (void)sendPaymentRequest:(PaymentRequest *)request;

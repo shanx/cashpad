@@ -20,7 +20,7 @@
 	self = [super init];
 	
 	if (self) {
-		identifier = rand() % 10000;
+		identifier = arc4random() % 10000;
 	}
 	
 	return self;

@@ -54,10 +54,20 @@
 {
 	DLog(@"");
 	
-	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment requested" message:request.productDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment requested" message:request.productDescription delegate:self cancelButtonTitle:@"Deny" otherButtonTitles:@"Accept", nil];
 	[alertView show];
 	[alertView release];
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 0) {
+		[paymentSession denyPaymentRequest:paymentSession.receivedRequest];
+	} else {
+		[paymentSession acceptPaymentRequest:paymentSession.receivedRequest];
+	}
+}
+
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
