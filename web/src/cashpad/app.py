@@ -81,7 +81,16 @@ class OrdersREST(grok.REST):
     grok.layer(APILayer)
     
     def POST(self):
-        order_data = simplejson.loads(self.body)
+        if  self.request.getHeader('Content-Type') != 'application/json; charset=utf-8':
+            self.response.setStatus('400')
+            return 'Content is not of type: application/json; charset=utf-8'
+        
+        # Check if json can be parsed
+        try:
+            order_data = simplejson.loads(self.body)
+        except ValueError:
+            self.response.setStatus('400')
+            return 'Content could not be parsed'
         # Change the created_on timestamp to a datetime
         order_data['created_on'] = datetime.datetime.fromtimestamp(order_data['created_on'])
         
