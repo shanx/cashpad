@@ -1,0 +1,21 @@
+@import url('nature.css');
+
+blockquote {
+    border-left: 4px solid #ECF0F3; 
+    margin-left: 0; 
+    padding: 10px 10px 10px 15px;
+    font-style: italic;
+}
+div.related {
+    background-color: #111;
+    text-shadow: none;
+}
+div.related a {
+    color: #fff;
+}
+.maykinmedia {
+    font-family: 'Trebuchet MS';
+    text-shadow: text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff;
+    font-weight: bold;
+    font-style: normal;
+}

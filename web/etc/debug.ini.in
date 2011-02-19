@@ -1,0 +1,49 @@
+[DEFAULT]
+zope_conf = %(here)s/zope.debug.conf
+
+[server:main]
+use = egg:Paste#http
+host = ${:host}
+port = ${:port}
+
+[pipeline:main]
+pipeline = accesslogging evalexception fanstatic grok
+
+[filter:accesslogging]
+use = egg:Paste#translogger
+
+[filter:evalexception]
+use = egg:z3c.evalexception#ajax
+
+[filter:fanstatic]
+use = egg:fanstatic#fanstatic
+versioning = true
+recompute_hashes = true
+
+[app:grok]
+use = egg:grokcore.startup#debug
+exempt-exceptions = zope.security.interfaces.IUnauthorized
+
+# Logging configuration
+
+[loggers]
+keys = root
+
+[logger_root]
+level = INFO
+handlers = console
+
+[handlers]
+keys = console
+
+[handler_console]
+class = StreamHandler
+args = (sys.stderr,)
+level = NOTSET
+formatter = generic
+
+[formatters]
+keys = generic
+
+[formatter_generic]
+format = %(asctime)s %(levelname)s [%(name)s] %(message)s
