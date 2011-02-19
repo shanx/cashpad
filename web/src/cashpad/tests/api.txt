@@ -74,9 +74,42 @@ Create a new order::
     >>> print first_order
     http://localhost/++rest++api/app/user/123/order/1
 
+Test if the content actually was inserted in the ZODB::
+
     >>> app['user']['123']['order']['1'].created_on
     datetime.datetime(2011, 2, 19, 17, 45, 44)
 
     >>> [i.product_name for i in app['user']['123']['order']['1'].item_list]
     ['cola', 'pizza calzone']
 
+Test repeated insert
+
+    >>> order = {
+    ...     'created_on': 1298133944,
+    ...     'total_price': 19.75,
+    ...     'item_list': [
+    ...         {
+    ...             'product_id': 1,
+    ...             'product_name': 'cola',
+    ...             'amount': 2,
+    ...             'unit_price': 2.10,
+    ...         },
+    ...         {
+    ...             'product_id': 2,
+    ...             'product_name': 'pizza calzone',
+    ...             'amount': 1,
+    ...             'unit_price': 15.55,
+    ...         }
+    ...     ]
+    ... } 
+    
+    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data=simplejson.dumps(order),
+    ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
+    >>> response.getStatus()
+    201
+
+    >>> app['user']['123']['order']['2'].created_on
+    datetime.datetime(2011, 2, 19, 17, 45, 44)
+
+    >>> [i.product_name for i in app['user']['123']['order']['2'].item_list]
+    ['cola', 'pizza calzone']

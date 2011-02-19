@@ -102,7 +102,8 @@ class OrdersREST(grok.REST):
 
         order_data['item_list'] = item_list
 
-        key = len(self.context) and max(self.context) + 1 or 1
+        # FIXME: this is not very elegant
+        key = len(self.context) and max([int(c) for c in self.context]) + 1 or 1
         order = Order()
         applyData(order, grok.Fields(IOrder), order_data)
         self.context[str(key)] = order
