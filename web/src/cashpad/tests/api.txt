@@ -1,11 +1,13 @@
+User
+====
+
 Let's first create an instance at the top level:
 
     >>> from cashpad.app import App
     >>> root = getRootFolder()
     >>> app = root['app'] = App()
 
-    >>> # Ugly import
-    >>> from grokcore.rest.ftests.test_grok_functional import http_call
+    >>> from cashpad.tests.tests import http_call
 
 Create a user::
 
@@ -19,7 +21,29 @@ User already exists::
     >>> response.getStatus()
     204
 
-Create an order::
+Order
+=====
+
+Sending anything with a Content-Type other than application/json should have grok smash your head to pieces::
+
+    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data='')
+    >>> response.getStatus()
+    400
+
+    >>> print response.getBody()
+    Content is not of type: application/json; charset=utf-8
+
+Pushing no json should return 400 Bad request::
+
+    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data='', 
+    ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
+    >>> response.getStatus()
+    400
+    
+    >>> print response.getBody()
+    Content could not be parsed
+
+Create a new order::
 
     >>> import simplejson
     >>> order = {
@@ -41,7 +65,8 @@ Create an order::
     ...     ]
     ... } 
     
-    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data=simplejson.dumps(order))
+    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data=simplejson.dumps(order),
+    ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
     >>> response.getStatus()
     201
 
@@ -54,4 +79,4 @@ Create an order::
 
     >>> [i.product_name for i in app['user']['123']['order']['1'].item_list]
     ['cola', 'pizza calzone']
-    
+
