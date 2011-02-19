@@ -1,6 +1,8 @@
 Order
 =====
 
+An order is a list of products being paid by a customer using the CashPad app.
+
 **Route**
 
 ``POST http://test.cashpad.com/api/user/{user_id}/order/``
