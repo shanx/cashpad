@@ -1,0 +1,27 @@
+==========================
+Building the documentation
+==========================
+
+Quickstart
+----------
+
+If Sphinx is globally installed, simply run::
+
+    make html
+
+No globally installed Sphinx?
+-----------------------------
+
+If Sphinx is not globally installed, create a virtual environment and install it
+locally::
+    
+    virtualenv .
+    source bin/activate
+    bin/python bin/pip install sphinx
+    bin/python bin/pip install rst2pdf
+    deactivate
+    
+Now, create or update the documentation with::
+
+    source bin/activate
+    make html

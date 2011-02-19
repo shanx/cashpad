@@ -9,3 +9,10 @@ web/develop-eggs
 web/.installed.cfg
 web/eggs
 web/src/*egg-info
+
+web/include
+web/build
+web/lib
+web/.Python
+
+docs/_build

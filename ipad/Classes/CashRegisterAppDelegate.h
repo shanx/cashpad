@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GameKit/GameKit.h>
+#import <CoreData/CoreData.h>
 
 @interface CashRegisterAppDelegate : NSObject <UIApplicationDelegate> 
 {
     UIWindow *window;
 	UINavigationController *viewController;
+	NSManagedObjectContext *managedObjectContext;
+	NSManagedObjectModel *managedObjectModel;
+	NSPersistentStoreCoordinator *persistentStoreCoordinator;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
