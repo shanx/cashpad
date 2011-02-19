@@ -1,0 +1,121 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* CashRegisterAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{338, 0}";
+			sepNavVisRange = "{0, 406}";
+		};
+	};
+	1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1053}}";
+			sepNavSelRange = "{553, 0}";
+			sepNavVisRange = "{0, 1865}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* CashRegister */ = {
+		activeExec = 0;
+		executables = (
+			55C0CAE5130FD26C00D24B89 /* CashRegister */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 55C0CAE5130FD26C00D24B89 /* CashRegister */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* CashRegister */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* CashRegister */,
+		);
+		codeSenseManager = 55C0CAFE130FD27900D24B89 /* Code sense */;
+		executables = (
+			55C0CAE5130FD26C00D24B89 /* CashRegister */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					914,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319804012;
+			PBXWorkspaceStateSaveDate = 319804012;
+		};
+		sourceControlManager = 55C0CAFD130FD27900D24B89 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	55C0CAE5130FD26C00D24B89 /* CashRegister */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CashRegister;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	55C0CAFD130FD27900D24B89 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	55C0CAFE130FD27900D24B89 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	55C0CB0C130FD2C700D24B89 /* MainViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{286, 0}";
+			sepNavVisRange = "{0, 298}";
+		};
+	};
+	55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 988}}";
+			sepNavSelRange = "{425, 0}";
+			sepNavVisRange = "{0, 1235}";
+		};
+	};
+}
