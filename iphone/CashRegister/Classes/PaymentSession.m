@@ -22,8 +22,8 @@
 
 @interface PaymentSession ()
 
-@property (nonatomic, retain, readwrite) PaymentRequest *receivedRequest;
-@property (nonatomic, retain, readwrite) PaymentRequest *sentRequest;
+@property (nonatomic, retain) PaymentRequest *receivedRequest;
+@property (nonatomic, retain) PaymentRequest *sentRequest;
 
 - (void)sendObject:(id)sender;
 - (void)receiveObject:(id)object;
@@ -151,15 +151,15 @@
 									   productDescription,
 									   kPaymentSessionRequestProductDescriptionKey,
 									   amountNumber,
-									   kPaymentSessionRequestAmountKey, nil];
+									   kPaymentSessionRequestAmountKey,
+									   identifierNumber,
+									   kPaymentSessionRequestIdentifierKey, nil];
 	
 	NSDictionary *object = [NSDictionary dictionaryWithObjectsAndKeys:
 							kPaymentSessionRequestActionRequestPaymentKey,
 							kPaymentSessionRequestActionKey,
 							requestDictionary,
-							kPaymentSessionRequestPaymentRequestKey,
-							identifierNumber,
-							kPaymentSessionRequestIdentifierKey, nil];
+							kPaymentSessionRequestPaymentRequestKey, nil];
 	
 	[self sendObject:object];			
 }

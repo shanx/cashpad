@@ -29,6 +29,7 @@
 			1D6058900D05DD3D006BFB54 /* CashRegister */,
 		);
 		breakpoints = (
+			55C0CE121310548700D24B89 /* PaymentSession.m:107 */,
 		);
 		codeSenseManager = 55C0CAFE130FD27900D24B89 /* Code sense */;
 		executables = (
@@ -220,7 +221,7 @@
 	};
 	55C0CB43130FD84500D24B89 /* PaymentRequest.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 631}}";
 			sepNavSelRange = "{363, 0}";
 			sepNavVisRange = "{0, 399}";
 		};
@@ -457,5 +458,23 @@
 		rType = 0;
 		vrLen = 399;
 		vrLoc = 0;
+	};
+	55C0CE121310548700D24B89 /* PaymentSession.m:107 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 55C0CB39130FD78900D24B89 /* PaymentSession.m */;
+		functionName = "-receiveObject:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 107;
+		location = CashRegister;
+		modificationTime = 319837322.301469;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
 	};
 }
