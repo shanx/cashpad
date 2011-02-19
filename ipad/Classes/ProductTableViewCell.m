@@ -24,9 +24,30 @@
 	return self;
 }
 
+- (void)setProduct:(Product *)aProduct
+{
+	if (product == aProduct) {
+		return;
+	}
+	
+	[aProduct retain];
+	[product release];
+	product = aProduct;
+	
+	[self setNeedsDisplay];
+}
+
 - (void)drawRect:(CGRect)rect
 {
+	NSString *productName = product.name;
+	UIFont *nameFont = [UIFont boldSystemFontOfSize:16];
+	CGSize nameSize = [productName sizeWithFont:nameFont];
+	CGFloat x = 20.0;
+	CGFloat y = (self.bounds.size.height - nameSize.height) / 2.0;
+	CGPoint namePoint = CGPointMake(x, y);
 	
+	[[UIColor blackColor] set];
+	[productName drawAtPoint:namePoint withFont:nameFont];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
