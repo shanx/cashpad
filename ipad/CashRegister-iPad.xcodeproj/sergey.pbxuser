@@ -38,7 +38,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					705,
+					370,
 					20,
 					48,
 					43,
@@ -55,21 +55,46 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319811129;
-			PBXWorkspaceStateSaveDate = 319811129;
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					681,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 319821229;
+			PBXWorkspaceStateSaveDate = 319821229;
 		};
 		perUserProjectItems = {
-			A51F1CD6130FE74100588C1F /* PBXTextBookmark */ = A51F1CD6130FE74100588C1F /* PBXTextBookmark */;
-			A51F1CD7130FE74100588C1F /* PBXTextBookmark */ = A51F1CD7130FE74100588C1F /* PBXTextBookmark */;
-			A51F1CD8130FE74100588C1F /* PBXTextBookmark */ = A51F1CD8130FE74100588C1F /* PBXTextBookmark */;
-			A5BB6770130FF0BE00C813B2 /* PBXTextBookmark */ = A5BB6770130FF0BE00C813B2 /* PBXTextBookmark */;
-			A5BB6771130FF0BE00C813B2 /* PBXTextBookmark */ = A5BB6771130FF0BE00C813B2 /* PBXTextBookmark */;
-			A5BB6772130FF0BE00C813B2 /* PBXTextBookmark */ = A5BB6772130FF0BE00C813B2 /* PBXTextBookmark */;
-			A5BB6773130FF0BE00C813B2 /* PBXTextBookmark */ = A5BB6773130FF0BE00C813B2 /* PBXTextBookmark */;
-			A5BB6774130FF0BE00C813B2 /* PBXTextBookmark */ = A5BB6774130FF0BE00C813B2 /* PBXTextBookmark */;
-			A5BB685B13100A9900C813B2 /* PBXTextBookmark */ = A5BB685B13100A9900C813B2 /* PBXTextBookmark */;
-			A5BB685C13100A9900C813B2 /* PBXTextBookmark */ = A5BB685C13100A9900C813B2 /* PBXTextBookmark */;
-			A5BB685D13100A9900C813B2 /* PBXTextBookmark */ = A5BB685D13100A9900C813B2 /* PBXTextBookmark */;
+			A51F1CD6130FE74100588C1F = A51F1CD6130FE74100588C1F /* PBXTextBookmark */;
+			A51F1CD7130FE74100588C1F = A51F1CD7130FE74100588C1F /* PBXTextBookmark */;
+			A51F1CD8130FE74100588C1F = A51F1CD8130FE74100588C1F /* PBXTextBookmark */;
+			A557732F131018390009D6EB /* PBXTextBookmark */ = A557732F131018390009D6EB /* PBXTextBookmark */;
+			A5BB6770130FF0BE00C813B2 = A5BB6770130FF0BE00C813B2 /* PBXTextBookmark */;
+			A5BB6771130FF0BE00C813B2 = A5BB6771130FF0BE00C813B2 /* PBXTextBookmark */;
+			A5BB6772130FF0BE00C813B2 = A5BB6772130FF0BE00C813B2 /* PBXTextBookmark */;
+			A5BB6773130FF0BE00C813B2 = A5BB6773130FF0BE00C813B2 /* PBXTextBookmark */;
+			A5BB6774130FF0BE00C813B2 = A5BB6774130FF0BE00C813B2 /* PBXTextBookmark */;
+			A5BB685B13100A9900C813B2 = A5BB685B13100A9900C813B2 /* PBXTextBookmark */;
+			A5BB685C13100A9900C813B2 = A5BB685C13100A9900C813B2 /* PBXTextBookmark */;
+			A5BB685D13100A9900C813B2 = A5BB685D13100A9900C813B2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = A51F1C0F130FD63900588C1F /* Source Control */;
 		userBuildSettings = {
@@ -77,8 +102,8 @@
 	};
 	32CA4F630368D1EE00C91783 /* CashRegister-iPad_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {932, 564}}";
-			sepNavSelRange = "{119, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {932, 558}}";
+			sepNavSelRange = "{306, 0}";
 			sepNavVisRange = "{0, 725}";
 		};
 	};
@@ -169,6 +194,16 @@
 		rType = 0;
 		vrLen = 1205;
 		vrLoc = 156;
+	};
+	A557732F131018390009D6EB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* CashRegister-iPad_Prefix.pch */;
+		name = "CashRegister-iPad_Prefix.pch: 13";
+		rLen = 0;
+		rLoc = 306;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 0;
 	};
 	A5BB6747130FF00700C813B2 /* PaymentRequest.h */ = {
 		uiCtxt = {
