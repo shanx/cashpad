@@ -12,7 +12,7 @@ An order is a list of products being paid by a customer using the CashPad app.
 
 The request can contain the following fields:
 
-* **created_on** (``datetime``): Datetime on which the order was created in the CashPad app.
+* **created_on** (``integer``): Timestamp of the creation datetime of the order in the CashPad app.
 * **item_list** (``array``): List of items that are part of the order.
     * **product_id** (``integer``): Unique id identifying the product.
     * **product_name** (``string``): Name of the product.
