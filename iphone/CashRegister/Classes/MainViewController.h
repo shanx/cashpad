@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
+#import "PaymentSessionDelegate.h"
 
-@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate> {
+@class PaymentSession;
 
+@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, PaymentSessionDelegate>
+{
+	PaymentSession *paymentSession;
 }
 
 @end

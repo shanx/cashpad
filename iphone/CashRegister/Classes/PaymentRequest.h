@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 
 
-@interface PaymentRequest : NSObject {
+@interface PaymentRequest : NSObject
+{
 	float amount;
+	NSInteger identifier;
 }
 
 @property (nonatomic, assign) float amount;
 @property (nonatomic, copy) NSString *productDescription;
+@property (nonatomic, assign) NSInteger identifier;
 
 @end

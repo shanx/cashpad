@@ -22,5 +22,7 @@
 
 - (id)initWithGKSession:(GKSession *)aSession;
 - (void)sendPaymentRequest:(PaymentRequest *)request;
+- (void)acceptPaymentRequest:(PaymentRequest *)request;
+- (void)denyPaymentRequest:(PaymentRequest *)request;
 
 @end

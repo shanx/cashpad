@@ -13,6 +13,10 @@
 
 @protocol PaymentSessionDelegate <NSObject>
 
+@optional
+
 - (void)paymentSession:(PaymentSession *)session didReceivePaymentRequest:(PaymentRequest *)request;
+- (void)paymentSession:(PaymentSession *)session didAcceptPaymentRequest:(PaymentRequest *)request;
+- (void)paymentSession:(PaymentSession *)session didDenyPaymentRequest:(PaymentRequest *)request;
 
 @end
