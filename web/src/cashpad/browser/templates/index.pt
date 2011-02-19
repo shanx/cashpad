@@ -2,10 +2,8 @@
 <head>
 </head>
 <body>
-  <h1>Congratulations!</h1>
-
-  <p>Your Grok application is up and running.
-  Edit <code>cashpad/app_templates/index.pt</code> to change
-  this page.</p>
+<ul>
+    <li tal:repeat="order view/orders"><tal:block replace="order"/></li>
+</ul>
 </body>
 </html>

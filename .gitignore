@@ -17,3 +17,5 @@ web/.Python
 web/var
 
 docs/_build
+web/.project
+web/.pydevproject
