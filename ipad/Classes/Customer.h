@@ -20,6 +20,7 @@ typedef void(^CustomerSaveBlock)(NSError *error);
 @property (nonatomic, retain) NSNumber * id;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet* orders;
+@property (nonatomic, retain) NSString *identifier;
 
 - (void)saveWithCompletionHandler:(CustomerSaveBlock)completionHandler;
 

@@ -16,7 +16,7 @@
 	NSMutableArray *scrollingViews;
 }
 
-@property (nonatomic, assign) id <ButtonGridViewDelegate> delegate;
+@property (nonatomic, assign) IBOutlet id <ButtonGridViewDelegate> delegate;
 @property (nonatomic, retain) NSArray *titles;
 @property (nonatomic, assign) NSInteger rowCount;
 @property (nonatomic, assign) NSInteger columnCount;

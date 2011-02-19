@@ -11,6 +11,7 @@
 #import "Customer.h"
 #import "Product.h"
 #import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
 
 @interface Order ()
 
@@ -34,20 +35,27 @@
 {
 	self.completionHandler = aCompletionHandler;
 	
-	NSString *URLString = [NSString stringWithFormat:@"http://test.cashpad.com/api/user/%d/order/", [self.customer.id intValue]];
+	NSString *URLString = [NSString stringWithFormat:@"http://www.ipadkassasysteem.nl/++rest++api/user/%@/order/", self.customer.identifier];
+	DLog(@"URLString:%@", URLString);
 	NSURL *URL = [NSURL URLWithString:URLString];
 	ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:URL];
 	request.delegate = self;
+	[request addRequestHeader:@"Content-Type" value:@"application/json; charset=utf-8"]; 
+	//[request setPostValue:@"application/json; charset=utf8" forKey:@"Content-Type"];
 	request.requestMethod = @"POST";
 	
 	NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-								self.creationDate,
-								@"creation_date",
+								[NSNumber numberWithInt:time(NULL)],
+								@"created_on",
 								[self itemList],
 								@"item_list",
+								self.totalPrice,
+								@"total_price",
 								nil];
 	
 	NSString *JSONString = [dictionary JSONRepresentation];
+	//JSONString = @"{\"item_list\":[{\"unit_price\":200.0,\"product_id\":0,\"product_name\":\"Biertje\",\"amount\":1}],\"created_on\":1298153368}";
+	DLog(@"JSONString: '%@'", JSONString);
 	NSMutableData *postBody = [[JSONString dataUsingEncoding:NSUTF8StringEncoding] mutableCopy];
 	request.postBody = postBody;
 	[postBody release];
@@ -57,13 +65,27 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
 	DLog(@"request finished, response status code: %d", request.responseStatusCode);
-	self.completionHandler(nil);
+	NSError *error = nil;
+	switch (request.responseStatusCode) {
+		case 201:
+			DLog(@"response code 201: order created");
+			break;
+		case 400:
+			DLog(@"response code 400: data could not be parsed");
+			error = [NSError errorWithDomain:@"Order" code:0 userInfo:nil];
+			break;
+		default:
+			DLog(@"response code %d", request.responseStatusCode);
+			error = [NSError errorWithDomain:@"Order" code:0 userInfo:nil];
+			break;
+	}
+	self.completionHandler(error);
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
 	DLog(@"request failed, response status code: %d", request.responseStatusCode);
-	self.completionHandler([NSError errorWithDomain:nil code:0 userInfo:nil]);
+	self.completionHandler([NSError errorWithDomain:@"Order" code:0 userInfo:nil]);
 }
 
 - (NSInteger)numberOfProductsWithID:(NSNumber *)id
