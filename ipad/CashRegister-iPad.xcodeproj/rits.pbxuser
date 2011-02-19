@@ -9,9 +9,9 @@
 	};
 	1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 2782}}";
-			sepNavSelRange = "{634, 0}";
-			sepNavVisRange = "{0, 1708}";
+			sepNavIntBoundsRect = "{{0, 0}, {2371, 2691}}";
+			sepNavSelRange = "{530, 0}";
+			sepNavVisRange = "{6353, 1780}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* CashRegister */ = {
@@ -164,7 +164,7 @@
 			sepNavVisRange = "{0, 441}";
 		};
 	};
-	55C0CBC113100E9C00D24B89 /* ReceiptTableViewCell.h */ = {
+	55C0CBC113100E9C00D24B89 /* ProductTableViewCell.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
 			sepNavSelRange = "{232, 0}";
@@ -176,7 +176,7 @@
 			"Xdesign Model Editor Bookmark Key" = {
 				UIContextForDetailArea = {
 					_indexOfSelectedPane = 0;
-					_indexOfSelectedView = 1;
+					_indexOfSelectedView = 0;
 				};
 				UIContextForEntityArea = {
 					_indexOfSelectedView = 0;
@@ -197,7 +197,7 @@
 					chosenTableWidths = (
 						103.000000,
 						22.000000,
-						96.080078,
+						95.080078,
 					);
 				};
 				UIContextForLayoutManager = {
@@ -227,8 +227,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {246, 220}}",
-							"{{251, 0}, {500, 220}}",
+							"{{0, 0}, {245, 220}}",
+							"{{250, 0}, {499, 220}}",
 						);
 					};
 				};
@@ -317,7 +317,7 @@
 					chosenTableWidthsPT = (
 						128.000000,
 						108.110840,
-						237.570801,
+						236.570801,
 					);
 					chosenTableWidthsRT = (
 						128.000000,
@@ -327,6 +327,20 @@
 				"xdesign model browser state key - shown/hidden" = 1;
 				"xdesign model diagram view visible rect key" = "{{-219, -7}, {1136, 429}}";
 			};
+		};
+	};
+	55C0CC041310138900D24B89 /* Product.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{233, 0}";
+			sepNavVisRange = "{0, 639}";
+		};
+	};
+	55C0CC051310138900D24B89 /* Product.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 280}";
 		};
 	};
 }
