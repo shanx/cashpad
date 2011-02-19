@@ -14,17 +14,20 @@
 
 @class PaymentSession;
 @class ButtonGridView;
+@class ReceiptView;
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate, ButtonGridViewDelegate>
 {
 	IBOutlet UITableView *receiptTableView;
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
+	IBOutlet ReceiptView* receiptView;
 	NSMutableArray *products;
 	PaymentSession *paymentSession;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) ReceiptView* receiptView;
 
 - (IBAction)sendPaymentRequest:(id)sender;
 

@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class ReceiptTotalView;
 
 @interface ReceiptView : UIView
 {
-
 }
+
+@property(nonatomic, retain) UITableView*       productTableView;
+@property(nonatomic, retain) ReceiptTotalView*  receiptTotalView;
+
+
 
 @end

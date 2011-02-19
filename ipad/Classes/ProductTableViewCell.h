@@ -19,4 +19,5 @@
 
 - (id)initWithProduct:(Product *)aProduct reuseIdentifier:(NSString *)identifier;
 
+
 @end
