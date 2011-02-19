@@ -7,16 +7,21 @@
 //
 
 #import <CoreData/CoreData.h>
+#import "ASIHTTPRequestDelegate.h"
+
+typedef void(^CustomerSaveBlock)(NSError *error);
 
 @class Order;
 
-@interface Customer :  NSManagedObject  
+@interface Customer :  NSManagedObject   <ASIHTTPRequestDelegate>
 {
 }
 
 @property (nonatomic, retain) NSNumber * id;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet* orders;
+
+- (void)saveWithCompletionHandler:(CustomerSaveBlock)completionHandler;
 
 @end
 

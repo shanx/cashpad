@@ -7,7 +7,8 @@
 //
 
 #import "MainViewController.h"
-
+#import "PaymentSession.h"
+#import "PaymentRequest.h"
 
 @implementation MainViewController
 
@@ -29,18 +30,44 @@
 
 - (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type
 {
+	DLog(@"");
+	
 	GKSession *session = [[[GKSession alloc] initWithSessionID:nil displayName:[UIDevice currentDevice].name sessionMode:GKSessionModePeer] autorelease];
 	return session;
 }
 
 - (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session
 {
+	DLog(@"");
+	
 	[picker dismiss];
 	
 	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Connected!" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[alertView show];
 	[alertView release];
+	
+	paymentSession = [[PaymentSession alloc] initWithGKSession:session];
+	paymentSession.delegate = self;
 }
+
+- (void)paymentSession:(PaymentSession *)session didReceivePaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment requested" message:request.productDescription delegate:self cancelButtonTitle:@"Deny" otherButtonTitles:@"Accept", nil];
+	[alertView show];
+	[alertView release];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 0) {
+		[paymentSession denyPaymentRequest:paymentSession.receivedRequest];
+	} else {
+		[paymentSession acceptPaymentRequest:paymentSession.receivedRequest];
+	}
+}
+
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*

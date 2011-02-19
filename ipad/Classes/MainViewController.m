@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "ProductTableViewCell.h"
 #import "Product.h"
+#import "PaymentSession.h"
+#import "PaymentRequest.h"
 
 @implementation MainViewController
 
@@ -33,7 +35,38 @@
 - (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type
 {
 	GKSession *session = [[[GKSession alloc] initWithSessionID:nil displayName:[UIDevice currentDevice].name sessionMode:GKSessionModePeer] autorelease];
+	
+	paymentSession = [[PaymentSession alloc] initWithGKSession:session];
+	paymentSession.delegate = self;
+	
 	return session;
+}
+
+- (void)sendPaymentRequest:(id)sender
+{
+	PaymentRequest *request = [[PaymentRequest alloc] init];
+	request.productDescription = @"Bier";
+	request.amount = 20.0;
+	[paymentSession sendPaymentRequest:request];
+	[request release];
+}
+
+- (void)paymentSession:(PaymentSession *)session didDenyPaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"payment denied");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment denied" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
+}
+
+- (void)paymentSession:(PaymentSession *)session didAcceptPaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"payment accepted");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment accepted" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
 }
 
 - (void)peerPickerController:(GKPeerPickerController *)picker 
@@ -78,6 +111,7 @@
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
+	product.name = @"Bier";
 	DLog(@"%@", product);
 	[products addObject:product];
 	[product release];
