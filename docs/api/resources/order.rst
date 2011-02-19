@@ -25,5 +25,5 @@ The request can contain the following fields:
 
 **Possible errors**
 
-``400 Bad request``
+``400 Bad Request``
     If the request data could not be parsed.
