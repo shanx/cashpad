@@ -1,0 +1,8 @@
+python2.6 bootstrap.py
+
+bin/buildout
+
+bin/test
+
+bin/paster serve parts/etc/debug.ini
+

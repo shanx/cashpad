@@ -1,5 +1,18 @@
-<<<<<<< HEAD
-/iphone/CashRegister/build
-=======
->>>>>>> 12f9a4323008de365d3c5093a42c069b096561fd
-/ipad/build
+ipad/build
+
+iphone/CashRegister/build
+
+*.py[oc]
+web/bin
+web/parts
+web/develop-eggs
+web/.installed.cfg
+web/eggs
+web/src/*egg-info
+
+web/include
+web/build
+web/lib
+web/.Python
+
+docs/_build
