@@ -38,9 +38,6 @@
 		A5577320131017400009D6EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A557731F131017400009D6EB /* CoreFoundation.framework */; };
 		A5577324131017A70009D6EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5577323131017A70009D6EB /* SystemConfiguration.framework */; };
 		A55773281310180B0009D6EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55773271310180B0009D6EB /* MobileCoreServices.framework */; };
-		A557746B13105B320009D6EB /* ProductCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A557746A13105B320009D6EB /* ProductCategoryView.m */; };
-		A55774C613105BAF0009D6EB /* ClickableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55774C313105BAF0009D6EB /* ClickableImageView.m */; };
-		A55774C713105BAF0009D6EB /* ClickableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55774C513105BAF0009D6EB /* ClickableView.m */; };
 		A5BB6740130FEFE300C813B2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */; };
 		A5BB6741130FEFE300C813B2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */; };
 		A5BB6742130FEFE300C813B2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673B130FEFE300C813B2 /* SBJsonBase.m */; };
@@ -108,8 +105,6 @@
 		A557731F131017400009D6EB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A5577323131017A70009D6EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A55773271310180B0009D6EB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		A557746913105B320009D6EB /* ProductCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCategoryView.h; sourceTree = "<group>"; };
-		A557746A13105B320009D6EB /* ProductCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCategoryView.m; sourceTree = "<group>"; };
 		A55774C213105BAF0009D6EB /* ClickableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableImageView.h; sourceTree = "<group>"; };
 		A55774C313105BAF0009D6EB /* ClickableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableImageView.m; sourceTree = "<group>"; };
 		A55774C413105BAF0009D6EB /* ClickableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableView.h; sourceTree = "<group>"; };
@@ -235,17 +230,12 @@
 				55C0CBB413100D4C00D24B89 /* ReceiptView.m */,
 				55C0CBC113100E9C00D24B89 /* ProductTableViewCell.h */,
 				55C0CBC213100E9C00D24B89 /* ProductTableViewCell.m */,
-<<<<<<< HEAD
 				55C0CE4A13105B2F00D24B89 /* ButtonGridViewDelegate.h */,
 				55C0CE4313105AE000D24B89 /* ButtonGridView.h */,
 				55C0CE4413105AE000D24B89 /* ButtonGridView.m */,
 				55C0CE4B13105D1C00D24B89 /* ScrollingView.h */,
 				55C0CE4C13105D1C00D24B89 /* ScrollingView.m */,
 				55C0CE4D13105D1C00D24B89 /* ScrollingViewDelegate.h */,
-=======
-				A557746913105B320009D6EB /* ProductCategoryView.h */,
-				A557746A13105B320009D6EB /* ProductCategoryView.m */,
->>>>>>> fc577b29f8cf6502321d30e3fdbc777d764fea1c
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -426,14 +416,8 @@
 				A55772EE131016030009D6EB /* ASIDataDecompressor.m in Sources */,
 				A55772EF131016030009D6EB /* ASIDataCompressor.m in Sources */,
 				55C0CE3E13105A0D00D24B89 /* ProductCategory.m in Sources */,
-<<<<<<< HEAD
 				55C0CE4513105AE000D24B89 /* ButtonGridView.m in Sources */,
 				55C0CE4E13105D1C00D24B89 /* ScrollingView.m in Sources */,
-=======
-				A557746B13105B320009D6EB /* ProductCategoryView.m in Sources */,
-				A55774C613105BAF0009D6EB /* ClickableImageView.m in Sources */,
-				A55774C713105BAF0009D6EB /* ClickableView.m in Sources */,
->>>>>>> fc577b29f8cf6502321d30e3fdbc777d764fea1c
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

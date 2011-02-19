@@ -357,8 +357,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>17</integer>
+									<integer>25</integer>
+									<integer>14</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -401,7 +401,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PaymentSession.m</string>
+								<string>ButtonGridView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -409,35 +409,33 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PaymentSession.m</string>
+										<string>ButtonGridView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0CE241310562F00D24B89</string>
+										<string>55C0CE7F1310653500D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
 											<string>55C0CCF1131022D500D24B89</string>
-											<string>55C0CD2A131024E200D24B89</string>
 											<string>55C0CD3C1310297D00D24B89</string>
 											<string>55C0CD3D1310297D00D24B89</string>
 											<string>55C0CD401310297D00D24B89</string>
 											<string>55C0CD4813102A4F00D24B89</string>
 											<string>55C0CD4F13102D9A00D24B89</string>
-											<string>55C0CD5013102D9A00D24B89</string>
 											<string>55C0CD61131030E600D24B89</string>
 											<string>55C0CD62131030E600D24B89</string>
 											<string>55C0CD63131030E600D24B89</string>
 											<string>55C0CD7A131044CF00D24B89</string>
 											<string>55C0CD7B131044CF00D24B89</string>
-											<string>55C0CD7C131044CF00D24B89</string>
 											<string>55C0CD7D131044CF00D24B89</string>
 											<string>55C0CD7E131044CF00D24B89</string>
 											<string>55C0CD921310457300D24B89</string>
 											<string>55C0CD931310457300D24B89</string>
 											<string>55C0CE14131055EE00D24B89</string>
 											<string>55C0CE15131055EE00D24B89</string>
-											<string>55C0CE16131055EE00D24B89</string>
+											<string>55C0CE7D1310653500D24B89</string>
+											<string>55C0CE7E1310653500D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -495,9 +493,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>55C0CE18131055EE00D24B89</string>
+				<string>55C0CE801310653500D24B89</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>55C0CE19131055EE00D24B89</string>
+				<string>55C0CE811310653500D24B89</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -618,7 +616,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319837743.16264999</real>
+	<real>319841589.96487802</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -635,9 +633,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0CE22131055EE00D24B89</string>
-		<string>55C0CE23131055EE00D24B89</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>55C0CAF4130FD27900D24B89</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
@@ -720,7 +715,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55C0CAF4130FD27900D24B89</string>
-				<string>55C0CE1A131055EE00D24B89</string>
+				<string>55C0CE821310653500D24B89</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -764,8 +759,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {657, 366}}</string>
-											<string>{{657, 0}, {783, 366}}</string>
+											<string>{{0, 0}, {657, 368}}</string>
+											<string>{{657, 0}, {783, 368}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -780,8 +775,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {1440, 366}}</string>
-											<string>{{0, 366}, {1440, 324}}</string>
+											<string>{{0, 0}, {1440, 368}}</string>
+											<string>{{0, 368}, {1440, 322}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -814,7 +809,7 @@
 										<real>553</real>
 									</array>
 									<key>Frame</key>
-									<string>{{657, 0}, {783, 366}}</string>
+									<string>{{657, 0}, {783, 368}}</string>
 									<key>RubberWindowFrame</key>
 									<string>0 147 1440 731 0 0 1440 878 </string>
 								</dict>
@@ -842,13 +837,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>55C0CE1B131055EE00D24B89</string>
+				<string>55C0CE831310653500D24B89</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>55C0CE1C131055EE00D24B89</string>
-				<string>55C0CE1D131055EE00D24B89</string>
-				<string>55C0CE1E131055EE00D24B89</string>
-				<string>55C0CE1F131055EE00D24B89</string>
-				<string>55C0CE20131055EE00D24B89</string>
+				<string>55C0CE841310653500D24B89</string>
+				<string>55C0CE851310653500D24B89</string>
+				<string>55C0CE861310653500D24B89</string>
+				<string>55C0CE871310653500D24B89</string>
+				<string>55C0CE881310653500D24B89</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1509,7 +1504,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55C0CC40131018D400D24B89</string>
-				<string>55C0CC41131018D400D24B89</string>
+				<string>55C0CE5F1310635E00D24B89</string>
 				<string>55C0CC3F131018D400D24B89</string>
 			</array>
 			<key>WindowString</key>
