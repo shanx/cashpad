@@ -14,5 +14,6 @@ web/include
 web/build
 web/lib
 web/.Python
+web/var
 
 docs/_build
