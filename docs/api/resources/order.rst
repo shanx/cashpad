@@ -5,7 +5,7 @@ An order is a list of products being paid by a customer using the CashPad app.
 
 **Route**
 
-``POST http://test.cashpad.com/api/user/{user_id}/order/``
+``POST http://www.ipadkassasysteem.nl/api/user/{user_id}/order/``
     Create a new order for the selected ``User`` resource.
 
 **Request**
