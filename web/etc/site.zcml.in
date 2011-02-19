@@ -15,9 +15,9 @@
                       title="All Users" />
       <principal id="zope.manager"
                  title="Manager"
-                 login="admin"
-                 password_manager="SSHA"
-                 password="{SSHA}9WMDTwF6_7PUkkRl2yOrCSDt9F7GE9un"
+                 login="${admin_credentials:username}"
+                 password_manager="${admin_credentials:manager}"
+                 password="${admin_credentials:password}"
                  />
 
       <!-- Replace the following directive if you do not want
