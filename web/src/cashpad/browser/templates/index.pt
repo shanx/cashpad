@@ -2,8 +2,24 @@
 <head>
 </head>
 <body>
+<h1>ipad kassa</h1>
+<h2>users</h2>
 <ul>
-    <li tal:repeat="order view/orders"><tal:block replace="order"/></li>
+  <li tal:repeat="user view/users">
+    <tal:block replace="user"/></li>
 </ul>
+<h2>total orders</h2>
+<table>
+  <thead>
+    <tr>
+      <td>created on</td>
+      <td>total price</td>
+    </tr>
+  </thead>
+  <tr tal:repeat="order view/orders">
+    <td tal:content="order/created_on"/>
+    <td tal:content="order/total_price"/>
+  </tr>
+</table>
 </body>
 </html>
