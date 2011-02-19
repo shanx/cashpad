@@ -16,6 +16,13 @@
 		55C0CB07130FD2B100D24B89 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0CB06130FD2B100D24B89 /* GameKit.framework */; };
 		55C0CB0F130FD2C700D24B89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */; };
 		55C0CB10130FD2C700D24B89 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C0CB0E130FD2C700D24B89 /* MainView.xib */; };
+		A5BB6740130FEFE300C813B2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */; };
+		A5BB6741130FEFE300C813B2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */; };
+		A5BB6742130FEFE300C813B2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673B130FEFE300C813B2 /* SBJsonBase.m */; };
+		A5BB6743130FEFE300C813B2 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673D130FEFE300C813B2 /* SBJsonParser.m */; };
+		A5BB6744130FEFE300C813B2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673F130FEFE300C813B2 /* SBJsonWriter.m */; };
+		A5BB674C130FF00700C813B2 /* PaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6748130FF00700C813B2 /* PaymentRequest.m */; };
+		A5BB674D130FF00700C813B2 /* PaymentSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB674A130FF00700C813B2 /* PaymentSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +34,28 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* CashRegister_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashRegister_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CashRegister-iPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CashRegister-iPad_Prefix.pch"; sourceTree = "<group>"; };
 		55C0CB06130FD2B100D24B89 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		55C0CB0C130FD2C700D24B89 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		55C0CB0E130FD2C700D24B89 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainView.xib; path = Classes/MainView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CashRegister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CashRegister-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A5BB6735130FEFE300C813B2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		A5BB6736130FEFE300C813B2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		A5BB6738130FEFE300C813B2 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		A5BB673A130FEFE300C813B2 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		A5BB673B130FEFE300C813B2 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		A5BB673C130FEFE300C813B2 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		A5BB673D130FEFE300C813B2 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		A5BB673E130FEFE300C813B2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		A5BB673F130FEFE300C813B2 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A5BB6747130FF00700C813B2 /* PaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentRequest.h; sourceTree = "<group>"; };
+		A5BB6748130FF00700C813B2 /* PaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentRequest.m; sourceTree = "<group>"; };
+		A5BB6749130FF00700C813B2 /* PaymentSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentSession.h; sourceTree = "<group>"; };
+		A5BB674A130FF00700C813B2 /* PaymentSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentSession.m; sourceTree = "<group>"; };
+		A5BB674B130FF00700C813B2 /* PaymentSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentSessionDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +76,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A5BB6745130FEFF200C813B2 /* Payment */,
+				A5BB6725130FEFB900C813B2 /* Helper Classes */,
 				1D3623240D0F684500981E51 /* CashRegisterAppDelegate.h */,
 				1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */,
 				55C0CB0C130FD2C700D24B89 /* MainViewController.h */,
@@ -84,7 +109,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* CashRegister_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* CashRegister-iPad_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -109,6 +134,44 @@
 				55C0CB06130FD2B100D24B89 /* GameKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5BB6725130FEFB900C813B2 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB6726130FEFC700C813B2 /* JSON */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		A5BB6726130FEFC700C813B2 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB6735130FEFE300C813B2 /* JSON.h */,
+				A5BB6736130FEFE300C813B2 /* NSObject+SBJSON.h */,
+				A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */,
+				A5BB6738130FEFE300C813B2 /* NSString+SBJSON.h */,
+				A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */,
+				A5BB673A130FEFE300C813B2 /* SBJsonBase.h */,
+				A5BB673B130FEFE300C813B2 /* SBJsonBase.m */,
+				A5BB673C130FEFE300C813B2 /* SBJsonParser.h */,
+				A5BB673D130FEFE300C813B2 /* SBJsonParser.m */,
+				A5BB673E130FEFE300C813B2 /* SBJsonWriter.h */,
+				A5BB673F130FEFE300C813B2 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		A5BB6745130FEFF200C813B2 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB6747130FF00700C813B2 /* PaymentRequest.h */,
+				A5BB6748130FF00700C813B2 /* PaymentRequest.m */,
+				A5BB6749130FF00700C813B2 /* PaymentSession.h */,
+				A5BB674A130FF00700C813B2 /* PaymentSession.m */,
+				A5BB674B130FF00700C813B2 /* PaymentSessionDelegate.h */,
+			);
+			name = Payment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +202,7 @@
 			attributes = {
 				ORGANIZATIONNAME = FlockOfFlies;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CashRegister" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CashRegister-iPad" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -178,6 +241,13 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* CashRegisterAppDelegate.m in Sources */,
 				55C0CB0F130FD2C700D24B89 /* MainViewController.m in Sources */,
+				A5BB6740130FEFE300C813B2 /* NSObject+SBJSON.m in Sources */,
+				A5BB6741130FEFE300C813B2 /* NSString+SBJSON.m in Sources */,
+				A5BB6742130FEFE300C813B2 /* SBJsonBase.m in Sources */,
+				A5BB6743130FEFE300C813B2 /* SBJsonParser.m in Sources */,
+				A5BB6744130FEFE300C813B2 /* SBJsonWriter.m in Sources */,
+				A5BB674C130FF00700C813B2 /* PaymentRequest.m in Sources */,
+				A5BB674D130FF00700C813B2 /* PaymentSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +262,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CashRegister_Prefix.pch;
+				GCC_PREFIX_HEADER = "CashRegister-iPad_Prefix.pch";
 				INFOPLIST_FILE = "CashRegister-Info.plist";
 				PRODUCT_NAME = CashRegister;
 			};
@@ -204,7 +274,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CashRegister_Prefix.pch;
+				GCC_PREFIX_HEADER = "CashRegister-iPad_Prefix.pch";
 				INFOPLIST_FILE = "CashRegister-Info.plist";
 				PRODUCT_NAME = CashRegister;
 				VALIDATE_PRODUCT = YES;
@@ -252,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CashRegister" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CashRegister-iPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
