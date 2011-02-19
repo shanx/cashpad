@@ -16,8 +16,14 @@
 #define kPaymentSessionRequestPaymentRequestKey			@"payment_request"
 #define kPaymentSessionRequestProductDescriptionKey		@"product_description"
 #define kPaymentSessionRequestAmountKey					@"amount"
+#define kPaymentSessionRequestIdentifierKey				@"id"
+#define kPaymentSessionRequestActionAcceptPaymentKey	@"accept_payment"
+#define kPaymentSessionRequestActionDenyPaymentKey		@"deny_payment"
 
 @interface PaymentSession ()
+
+@property (nonatomic, retain) PaymentRequest *receivedRequest;
+@property (nonatomic, retain) PaymentRequest *sentRequest;
 
 - (void)sendObject:(id)sender;
 - (void)receiveObject:(id)object;
@@ -27,6 +33,8 @@
 @implementation PaymentSession
 
 @synthesize delegate;
+@synthesize receivedRequest;
+@synthesize sentRequest;
 
 - (id)initWithGKSession:(GKSession *)aSession
 {
@@ -80,7 +88,7 @@
 
 - (void)sendObject:(id)object
 {
-	// DLog(@"object:%@", object);
+	DLog(@"object:%@", object);
 	NSString *JSONValue = [object JSONRepresentation];
 	DLog(@"sending: '%@'", JSONValue);
 	NSData *data = [JSONValue dataUsingEncoding:NSUTF8StringEncoding];
@@ -89,38 +97,63 @@
 
 - (void)receiveObject:(id)object
 {
-	// DLog(@"object:%@", object);
+	DLog(@"object:%@", object);
 	NSString *action = [object objectForKey:kPaymentSessionRequestActionKey];
 	if (action == nil) {
 		return;
 	}
 	
-	if (action == kPaymentSessionRequestActionRequestPaymentKey) {
+	if ([action isEqualToString:kPaymentSessionRequestActionRequestPaymentKey]) {
 		NSDictionary *requestDictionary = [object objectForKey:kPaymentSessionRequestPaymentRequestKey];
 		
 		NSString *productDescription = [requestDictionary objectForKey:kPaymentSessionRequestProductDescriptionKey];
 		NSNumber *amountNumber = [requestDictionary objectForKey:kPaymentSessionRequestAmountKey];
+		NSNumber *identifierNumber = [requestDictionary objectForKey:kPaymentSessionRequestIdentifierKey];
 		
 		PaymentRequest *request = [[PaymentRequest alloc] init];
 		request.productDescription = productDescription;
 		request.amount = [amountNumber floatValue];
+		request.identifier = [identifierNumber intValue];
+		
+		self.receivedRequest = request;
 		
 		[delegate paymentSession:self didReceivePaymentRequest:request];
 		
 		[request release];
+	} else if ([action isEqualToString:kPaymentSessionRequestActionAcceptPaymentKey]) {
+		NSNumber *identifierNumber = [object objectForKey:kPaymentSessionRequestIdentifierKey];
+		
+		if (sentRequest.identifier == [identifierNumber intValue]) {
+			[delegate paymentSession:self didAcceptPaymentRequest:sentRequest];
+			
+			self.sentRequest = nil;
+		}			
+	} else if ([action isEqualToString:kPaymentSessionRequestActionDenyPaymentKey]) {
+		NSNumber *identifierNumber = [object objectForKey:kPaymentSessionRequestIdentifierKey];
+		
+		if (sentRequest.identifier == [identifierNumber intValue]) {
+			[delegate paymentSession:self didDenyPaymentRequest:sentRequest];
+			
+			self.sentRequest = nil;
+		}
 	}
 }
 
 - (void)sendPaymentRequest:(PaymentRequest *)request
 {
+	self.sentRequest = request;
+	
 	NSString *productDescription = request.productDescription;
 	NSNumber *amountNumber = [NSNumber numberWithFloat:request.amount];
+	NSNumber *identifierNumber = [NSNumber numberWithInt:request.identifier];
 	
 	NSDictionary *requestDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
 									   productDescription,
 									   kPaymentSessionRequestProductDescriptionKey,
 									   amountNumber,
-									   kPaymentSessionRequestAmountKey, nil];
+									   kPaymentSessionRequestAmountKey,
+									   identifierNumber,
+									   kPaymentSessionRequestIdentifierKey, nil];
 	
 	NSDictionary *object = [NSDictionary dictionaryWithObjectsAndKeys:
 							kPaymentSessionRequestActionRequestPaymentKey,
@@ -128,7 +161,36 @@
 							requestDictionary,
 							kPaymentSessionRequestPaymentRequestKey, nil];
 	
-	[self sendObject:object];						
+	[self sendObject:object];			
+}
+
+- (void)acceptPaymentRequest:(PaymentRequest *)request
+{
+	if (request == receivedRequest) {
+		NSNumber *identifierNumber = [NSNumber numberWithInt:request.identifier];
+		NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+									kPaymentSessionRequestActionAcceptPaymentKey,
+									kPaymentSessionRequestActionKey,
+									identifierNumber,
+									kPaymentSessionRequestIdentifierKey, nil];
+		
+		[self sendObject:dictionary];
+	}
+}
+
+
+- (void)denyPaymentRequest:(PaymentRequest *)request
+{
+	if (request == receivedRequest) {
+		NSNumber *identifierNumber = [NSNumber numberWithInt:request.identifier];
+		NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+									kPaymentSessionRequestActionDenyPaymentKey,
+									kPaymentSessionRequestActionKey,
+									identifierNumber,
+									kPaymentSessionRequestIdentifierKey, nil];
+		
+		[self sendObject:dictionary];
+	}
 }
 
 @end

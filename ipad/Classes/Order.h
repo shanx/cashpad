@@ -7,11 +7,14 @@
 //
 
 #import <CoreData/CoreData.h>
+#import "ASIHTTPRequestDelegate.h"
 
 @class Customer;
 @class Product;
 
-@interface Order :  NSManagedObject  
+typedef void(^OrderCompletionHandler)(NSError *error);
+
+@interface Order :  NSManagedObject <ASIHTTPRequestDelegate>
 {
 }
 
@@ -19,6 +22,9 @@
 @property (nonatomic, retain) NSNumber * totalPrice;
 @property (nonatomic, retain) NSSet* products;
 @property (nonatomic, retain) Customer * customer;
+@property (nonatomic, retain) NSDate *creationDate;
+
+- (void)saveWithCompletionHandler:(OrderCompletionHandler)completionHandler;
 
 @end
 

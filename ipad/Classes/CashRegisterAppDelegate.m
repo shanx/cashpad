@@ -32,7 +32,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
 {    
-	UIViewController* mainViewController = [[MainViewController alloc] init];
+	MainViewController* mainViewController = [[MainViewController alloc] init];
+	mainViewController.managedObjectContext = self.managedObjectContext;
 	viewController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
 	[mainViewController release];
 	
@@ -131,7 +132,11 @@
         return managedObjectModel;
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CashRegister" withExtension:@"momd"];
-    managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
+	DLog(@"%@", modelURL);
+	managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+ //   managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+	
+	DLog(@"%@", managedObjectModel);
     return managedObjectModel;
 }
 
@@ -177,6 +182,8 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }    
+	
+	DLog(@"%@", persistentStoreCoordinator);
     
     return persistentStoreCoordinator;
 }

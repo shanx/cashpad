@@ -1,6 +1,6 @@
 //
-//  PaymentSession.h
-//  CashRegister
+//  NearbyMatch.h
+//  MinesweeperFlags
 //
 //  Created by Rits Plasman on 23-01-11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
@@ -19,8 +19,12 @@
 }
 
 @property (nonatomic, assign) id <PaymentSessionDelegate> delegate;
+@property (nonatomic, retain, readonly) PaymentRequest *receivedRequest;
+@property (nonatomic, retain, readonly) PaymentRequest *sentRequest;
 
 - (id)initWithGKSession:(GKSession *)aSession;
 - (void)sendPaymentRequest:(PaymentRequest *)request;
+- (void)acceptPaymentRequest:(PaymentRequest *)request;
+- (void)denyPaymentRequest:(PaymentRequest *)request;
 
 @end

@@ -7,16 +7,21 @@
 //
 
 #import "MainViewController.h"
-
+#import "ProductTableViewCell.h"
+#import "Product.h"
+#import "PaymentSession.h"
+#import "PaymentRequest.h"
 
 @implementation MainViewController
+
+@synthesize managedObjectContext;
 
 - (id)init
 {
 	self = [super initWithNibName:@"MainView" bundle:nil];
 	
 	if (self) {
-		
+		products = [[NSMutableArray alloc] init];
 	}
 	
 	return self;
@@ -24,13 +29,45 @@
 
 - (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker
 {
-	
 }
 
 - (GKSession *)peerPickerController:(GKPeerPickerController *)picker sessionForConnectionType:(GKPeerPickerConnectionType)type
 {
 	GKSession *session = [[[GKSession alloc] initWithSessionID:nil displayName:[UIDevice currentDevice].name sessionMode:GKSessionModePeer] autorelease];
+	
+	paymentSession = [[PaymentSession alloc] initWithGKSession:session];
+	paymentSession.delegate = self;
+	
+	[picker dismiss];
+	
 	return session;
+}
+
+- (void)sendPaymentRequest:(id)sender
+{
+	PaymentRequest *request = [[PaymentRequest alloc] init];
+	request.productDescription = @"Bier";
+	request.amount = 20.0;
+	[paymentSession sendPaymentRequest:request];
+	[request release];
+}
+
+- (void)paymentSession:(PaymentSession *)session didDenyPaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"payment denied");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment denied" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
+}
+
+- (void)paymentSession:(PaymentSession *)session didAcceptPaymentRequest:(PaymentRequest *)request
+{
+	DLog(@"payment accepted");
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment accepted" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
 }
 
 - (void)peerPickerController:(GKPeerPickerController *)picker 
@@ -70,6 +107,15 @@
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
+	
+	DLog(@"%@", self.managedObjectContext);
+	
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
+	product.name = @"Bier";
+	DLog(@"%@", product);
+	[products addObject:product];
+	[product release];
 
 	UIBarButtonItem* connectItem = [[UIBarButtonItem alloc] initWithTitle:@"Connect" 
 																	style:UIBarButtonItemStyleBordered 
@@ -97,10 +143,13 @@
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString *CellIdentifier = @"cell";
-	UITableViewCell *cell = [receiptTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	Product *product = [products objectAtIndex:indexPath.row];
 	if (cell == nil) {
-		
+		cell = [[[ProductTableViewCell alloc] initWithProduct:product reuseIdentifier:CellIdentifier] autorelease];
 	}
+	
+	cell.product = product;
 	
 	return cell;
 }

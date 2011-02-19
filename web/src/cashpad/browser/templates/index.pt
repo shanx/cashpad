@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<ul>
+    <li tal:repeat="order view/orders"><tal:block replace="order"/></li>
+</ul>
+</body>
+</html>
