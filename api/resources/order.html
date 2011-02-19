@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Order &mdash; CashPad v0.1 alpha documentation</title>
+    <link rel="stylesheet" href="../../_static/maykinmedia.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1 alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="CashPad v0.1 alpha documentation" href="../../index.html" />
+    <link rel="up" title="Resources" href="index.html" />
+    <link rel="prev" title="User" href="user.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="user.html" title="User"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">CashPad v0.1 alpha documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Resources</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="order">
+<h1>Order<a class="headerlink" href="#order" title="Permalink to this headline">¶</a></h1>
+<p>An order is a list of products being paid by a customer using the CashPad app.</p>
+<p><strong>Route</strong></p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">POST</span> <span class="pre">http://test.cashpad.com/api/user/{user_id}/order/</span></tt></dt>
+<dd>Create a new order for the selected <tt class="docutils literal"><span class="pre">User</span></tt> resource.</dd>
+</dl>
+<p><strong>Request</strong></p>
+<p>The request can contain the following fields:</p>
+<ul>
+<li><p class="first"><strong>created_on</strong> (<tt class="docutils literal"><span class="pre">datetime</span></tt>): Datetime on which the order was created in the CashPad app.</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>item_list</strong> (<tt class="docutils literal"><span class="pre">array</span></tt>): List of items that are part of the order.</dt>
+<dd><ul class="first last simple">
+<li><strong>product_id</strong> (<tt class="docutils literal"><span class="pre">integer</span></tt>): Unique id identifying the product.</li>
+<li><strong>product_name</strong> (<tt class="docutils literal"><span class="pre">string</span></tt>): Name of the product.</li>
+<li><strong>amount</strong> (<tt class="docutils literal"><span class="pre">integer</span></tt>): Amount of products ordered.</li>
+<li><strong>unit_price</strong> (<tt class="docutils literal"><span class="pre">decimal</span></tt>): Price of the product per unit.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Response</strong></p>
+<p><tt class="docutils literal"><span class="pre">201</span> <span class="pre">Created</span></tt></p>
+<p><strong>Possible errors</strong></p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">400</span> <span class="pre">Bad</span> <span class="pre">Request</span></tt></dt>
+<dd>If the request data could not be parsed.</dd>
+</dl>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="user.html"
+                        title="previous chapter">User</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/api/resources/order.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="user.html" title="User"
+             >previous</a> |</li>
+        <li><a href="../../index.html">CashPad v0.1 alpha documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API</a> &raquo;</li>
+          <li><a href="index.html" >Resources</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011 - 2011, KassaRosso.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

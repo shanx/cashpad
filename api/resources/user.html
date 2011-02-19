@@ -1,0 +1,142 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>User &mdash; CashPad v0.1 alpha documentation</title>
+    <link rel="stylesheet" href="../../_static/maykinmedia.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1 alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="CashPad v0.1 alpha documentation" href="../../index.html" />
+    <link rel="up" title="Resources" href="index.html" />
+    <link rel="next" title="Order" href="order.html" />
+    <link rel="prev" title="Resources" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="order.html" title="Order"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Resources"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">CashPad v0.1 alpha documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Resources</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="user">
+<h1>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Having multiple clients generate global unique id&#8217;s is of course <strong>quite crazy</strong> but for the first prototype
+these unnecessary levels of abstraction have been left out.</p>
+</div>
+<p>A user is a unique instance of the CashPad application. Clients are responsible for creating their own unique user_id.</p>
+<p><strong>Route</strong></p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">PUT</span> <span class="pre">http://test.cashpad.com/api/user/{user_id}</span></tt></dt>
+<dd>Create or update a new User resource that can be addressed by <tt class="docutils literal"><span class="pre">user_id</span></tt>.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Our advice for creating the <tt class="docutils literal"><span class="pre">user_id</span></tt> locally is to hash the unique device id with a local pre-generated key.</p>
+</div>
+<p><strong>Request</strong></p>
+<p>The request doesn&#8217;t have request parameters.</p>
+<p><strong>Response</strong></p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">201</span> <span class="pre">Created</span></tt></dt>
+<dd>If a new user was successfully created.</dd>
+<dt><tt class="docutils literal"><span class="pre">204</span> <span class="pre">No</span> <span class="pre">Content</span></tt></dt>
+<dd>If a currently existing user was updated successfully</dd>
+</dl>
+<p><strong>Possible errors</strong></p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">400</span> <span class="pre">Bad</span> <span class="pre">Request</span></tt></dt>
+<dd>If the request data could not be parsed.</dd>
+</dl>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Resources</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="order.html"
+                        title="next chapter">Order</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/api/resources/user.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="order.html" title="Order"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Resources"
+             >previous</a> |</li>
+        <li><a href="../../index.html">CashPad v0.1 alpha documentation</a> &raquo;</li>
+          <li><a href="../index.html" >API</a> &raquo;</li>
+          <li><a href="index.html" >Resources</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011 - 2011, KassaRosso.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
