@@ -13,5 +13,17 @@
 
 @synthesize amount;
 @synthesize productDescription;
+@synthesize identifier;
+
+- (id)init
+{
+	self = [super init];
+	
+	if (self) {
+		identifier = rand() % 10000;
+	}
+	
+	return self;
+}
 
 @end
