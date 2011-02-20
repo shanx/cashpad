@@ -18,7 +18,6 @@
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate, ButtonGridViewDelegate>
 {
-	IBOutlet UITableView *receiptTableView;
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
