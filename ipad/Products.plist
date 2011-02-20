@@ -80,6 +80,12 @@
 				<key>price</key>
 				<integer>0</integer>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>Dr. Pepper</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
 		</array>
 	</dict>
 </array>

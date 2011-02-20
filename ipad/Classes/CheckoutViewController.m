@@ -24,11 +24,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)aTableView
 {
-	return 1;
+	return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
 {
+	if (section == 0) {
+		return 1;
+	}
+	
 	return [checkoutMethods count];
 }
 
@@ -40,9 +44,23 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-	cell.textLabel.text = [checkoutMethods objectAtIndex:indexPath.row];
+	if (indexPath.section == 1) {
+		cell.hidden = NO;
+		cell.textLabel.text = [checkoutMethods objectAtIndex:indexPath.row];
+	} else {
+		cell.hidden = YES;
+	}
+
 	
 	return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (indexPath.section == 0) {
+		return 300.0;
+	}
+	return 44.0;
 }
 				
 
@@ -67,6 +85,14 @@
 	[cancelBarButtonItem release];
 	
 	self.title = @"Checkout";
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	
+	DLog(@"%@", [NSValue valueWithCGRect:self.view.frame]);
 }
 
 - (void)cancel
