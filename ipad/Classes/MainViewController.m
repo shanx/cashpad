@@ -15,6 +15,8 @@
 #import "ReceiptTotalView.h"
 #import "ReceiptView.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @implementation MainViewController
 
 @synthesize managedObjectContext;
@@ -131,6 +133,10 @@
 	productsGridView.titles = productTitles;
 	productsGridView.buttonSize = CGSizeMake(200.0, 100.0);
 	
+    productsGridView.layer.masksToBounds = YES;
+    productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    productsGridView.layer.borderWidth = 1.0;
+    
 	NSArray *categoryTitles = [NSArray arrayWithObjects:
 							   @"Koffie en thee",
 							   @"Alcoholische dranken",
@@ -143,6 +149,11 @@
 	categoriesGridView.buttonSize = CGSizeMake(150.0, 100.0);
 	
 	
+    categoriesGridView.layer.masksToBounds = YES;
+    categoriesGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    categoriesGridView.layer.borderWidth = 1.0;
+    
+    
 	DLog(@"%@", self.managedObjectContext);
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
@@ -194,10 +205,12 @@
 	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptView.productTableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	Product *product = [products objectAtIndex:indexPath.row];
 	if (cell == nil) {
-		cell = [[[ProductTableViewCell alloc] initWithProduct:product reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[ProductTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+                                            reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-	cell.product = product;
+#warning "Set product fields!!!"    
+	//cell.product = product;
 	
 	return cell;
 }
@@ -208,7 +221,8 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
     // Return YES for supported orientations.
-    return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+    return interfaceOrientation == UIInterfaceOrientationLandscapeRight || 
+           interfaceOrientation == UIInterfaceOrientationLandscapeLeft;
 }
 
 
