@@ -358,14 +358,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>27</integer>
-									<integer>16</integer>
-									<integer>1</integer>
+									<integer>74</integer>
+									<integer>47</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 110}, {265, 673}}</string>
+							<string>{{0, 618}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -395,14 +394,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ButtonGridView.m</string>
+								<string>CashRegister-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -410,11 +407,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ButtonGridView.m</string>
+										<string>CashRegister-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0D33013113F8E00D24B89</string>
+										<string>55C0D33B1311406700D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -464,7 +461,8 @@
 											<string>55C0D31F13113E8800D24B89</string>
 											<string>55C0D32E13113F8E00D24B89</string>
 											<string>55C0D32F13113F8E00D24B89</string>
-											<string>55C0D30813113A7100D24B89</string>
+											<string>55C0D3391311406700D24B89</string>
+											<string>55C0D33A1311406700D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -645,7 +643,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319897486.05505401</real>
+	<real>319897703.26297998</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -662,12 +660,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0D33113113F8E00D24B89</string>
+		<string>55C0D33C1311406700D24B89</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>55C0D2E81311312500D24B89</string>
 		<string>55C0D2CC13112ED500D24B89</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>55C0CAF4130FD27900D24B89</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
+		<string>55C0CAF4130FD27900D24B89</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
@@ -968,8 +967,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>55C0CFA41310786800D24B89</string>
-				<string>55C0CFA51310786800D24B89</string>
+				<string>55C0D3351311405E00D24B89</string>
+				<string>55C0D3361311405E00D24B89</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>

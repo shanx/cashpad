@@ -558,6 +558,9 @@
 			55C0D32E13113F8E00D24B89 /* PBXTextBookmark */ = 55C0D32E13113F8E00D24B89 /* PBXTextBookmark */;
 			55C0D32F13113F8E00D24B89 /* PBXTextBookmark */ = 55C0D32F13113F8E00D24B89 /* PBXTextBookmark */;
 			55C0D33013113F8E00D24B89 /* PBXTextBookmark */ = 55C0D33013113F8E00D24B89 /* PBXTextBookmark */;
+			55C0D3391311406700D24B89 /* PBXTextBookmark */ = 55C0D3391311406700D24B89 /* PBXTextBookmark */;
+			55C0D33A1311406700D24B89 /* PlistBookmark */ = 55C0D33A1311406700D24B89 /* PlistBookmark */;
+			55C0D33B1311406700D24B89 /* PlistBookmark */ = 55C0D33B1311406700D24B89 /* PlistBookmark */;
 		};
 		sourceControlManager = 55C0CAFD130FD27900D24B89 /* Source Control */;
 		userBuildSettings = {
@@ -879,7 +882,7 @@
 		ignoreCount = 0;
 		lineNumber = 176;
 		location = CashRegister;
-		modificationTime = 319897450.133006;
+		modificationTime = 319897572.789311;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -897,7 +900,7 @@
 		ignoreCount = 0;
 		lineNumber = 178;
 		location = CashRegister;
-		modificationTime = 319897450.13308;
+		modificationTime = 319897572.789378;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -925,7 +928,7 @@
 		ignoreCount = 0;
 		lineNumber = 160;
 		location = CashRegister;
-		modificationTime = 319897450.133124;
+		modificationTime = 319897572.789401;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -943,7 +946,7 @@
 		ignoreCount = 0;
 		lineNumber = 193;
 		location = CashRegister;
-		modificationTime = 319897450.133145;
+		modificationTime = 319897572.789422;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -961,7 +964,7 @@
 		ignoreCount = 0;
 		lineNumber = 197;
 		location = CashRegister;
-		modificationTime = 319897450.133167;
+		modificationTime = 319897572.789442;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1155,7 +1158,7 @@
 		ignoreCount = 0;
 		lineNumber = 107;
 		location = CashRegister;
-		modificationTime = 319897450.133187;
+		modificationTime = 319897573.472092;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1224,7 +1227,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1092, 3055}}";
 			sepNavSelRange = "{1187, 0}";
-			sepNavVisRange = "{571, 847}";
+			sepNavVisRange = "{571, 850}";
 		};
 	};
 	55C0CE4A13105B2F00D24B89 /* ButtonGridViewDelegate.h */ = {
@@ -4073,7 +4076,7 @@
 		fRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */;
 		name = "CheckoutViewController.m: 82";
 		rLen = 0;
-		rLoc = 2771;
+		rLoc = 2770;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 0;
@@ -4514,7 +4517,7 @@
 		fRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */;
 		name = "CheckoutViewController.m: 82";
 		rLen = 0;
-		rLoc = 2771;
+		rLoc = 2770;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 0;
@@ -4898,7 +4901,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 354";
 		rLen = 0;
-		rLoc = 13258;
+		rLoc = 13257;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 11219;
@@ -4908,7 +4911,7 @@
 		fRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */;
 		name = "CheckoutViewController.m: 82";
 		rLen = 0;
-		rLoc = 2771;
+		rLoc = 2770;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 0;
@@ -4938,7 +4941,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 359";
 		rLen = 0;
-		rLoc = 13258;
+		rLoc = 13257;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 11320;
@@ -4956,7 +4959,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13232;
+		rLoc = 13231;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -4996,7 +4999,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13232;
+		rLoc = 13231;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5006,7 +5009,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13232;
+		rLoc = 13231;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5016,7 +5019,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13232;
+		rLoc = 13231;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5597,6 +5600,38 @@
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 571;
+	};
+	55C0D3391311406700D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 64";
+		rLen = 0;
+		rLoc = 1187;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 571;
+	};
+	55C0D33A1311406700D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	55C0D33B1311406700D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {
 		uiCtxt = {
