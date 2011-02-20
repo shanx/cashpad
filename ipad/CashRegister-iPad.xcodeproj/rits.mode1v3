@@ -358,14 +358,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>2</integer>
+									<integer>21</integer>
+									<integer>16</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {265, 673}}</string>
+							<string>{{0, 713}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -414,7 +414,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0D303131137E800D24B89</string>
+										<string>55C0D30B13113A7100D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -440,7 +440,6 @@
 											<string>55C0D1FC131125C900D24B89</string>
 											<string>55C0D1FD131125C900D24B89</string>
 											<string>55C0D20D131126CF00D24B89</string>
-											<string>55C0D2131311276100D24B89</string>
 											<string>55C0D2141311276100D24B89</string>
 											<string>55C0D23613112A5000D24B89</string>
 											<string>55C0D24613112B9700D24B89</string>
@@ -451,10 +450,11 @@
 											<string>55C0D2DF1311312500D24B89</string>
 											<string>55C0D2E11311312500D24B89</string>
 											<string>55C0D2E21311312500D24B89</string>
-											<string>55C0D2E41311312500D24B89</string>
 											<string>55C0D2F4131136F700D24B89</string>
-											<string>55C0D301131137E800D24B89</string>
-											<string>55C0D302131137E800D24B89</string>
+											<string>55C0D30713113A7100D24B89</string>
+											<string>55C0D30813113A7100D24B89</string>
+											<string>55C0D30913113A7100D24B89</string>
+											<string>55C0D30A13113A7100D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -635,7 +635,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319895528.11747903</real>
+	<real>319896177.28514099</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -652,13 +652,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0D304131137E800D24B89</string>
 		<string>55C0D2E81311312500D24B89</string>
 		<string>55C0D2CC13112ED500D24B89</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
-		<string>55C0CAF4130FD27900D24B89</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>55C0CAF4130FD27900D24B89</string>
+		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -1034,7 +1033,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
