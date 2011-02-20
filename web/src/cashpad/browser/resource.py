@@ -11,6 +11,8 @@ def ltie8renderer(url):
     return '''<!--[if lt IE 8]><link rel="stylesheet" type="text/css"
         href="%s" media="all" /><![endif]-->''' % url
 
+favicon = Resource(library, 'images/favicon.ico')
+
 css_ie = Resource(library, 'css/ie.css', renderer=ltie8renderer)
 
 style = GroupResource([style_css, css_ie])

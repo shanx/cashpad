@@ -268,12 +268,12 @@
 //    categoriesGridView.layer.borderWidth = 1.0;
     
     
-	DLog(@"%@", self.managedObjectContext);
+	//DLog(@"%@", self.managedObjectContext);
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
 	product.name = @"Bier";
-	DLog(@"%@", product);
+	//DLog(@"%@", product);
 	//[products addObject:product];
 	[product release];
 
@@ -317,7 +317,7 @@
 		[order addProductsObject:newProduct];
 		[newProduct release];
 		
-		DLog(@"%@", order.products);
+		//DLog(@"%@", order.products);
 		
 		self.productGroupDictionaries = [order itemList];
 
@@ -339,6 +339,15 @@
 - (void)checkoutViewControllerDidFinish:(CheckoutViewController *)controller
 {
 	[self dismissModalViewControllerAnimated:YES];
+	
+	NSEntityDescription *orderEntity = [NSEntityDescription entityForName:@"Order" inManagedObjectContext:self.managedObjectContext];
+	Order *tempOrder = [[Order alloc] initWithEntity:orderEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	self.order = tempOrder;
+	[tempOrder release];
+	
+	self.productGroupDictionaries = [order itemList];
+	[receiptView.productTableView reloadData];
+	receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %.2f", 0x20ac, [[order totalPrice] floatValue]];
 }
 
 - (IBAction)category:(id)sender
@@ -370,7 +379,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-	DLog(@"%d", productsGridView.currentPageIndex);
+	//DLog(@"%d", productsGridView.currentPageIndex);
 	productsPageControl.currentPage = productsGridView.currentPageIndex;
 }
 
