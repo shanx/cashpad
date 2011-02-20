@@ -23,7 +23,7 @@
             </ul>
           </li>
         </ul>
-        <p class="user">Hello, <a href="#">John</a> | <a tal:attributes="href python:view.url('logout')">Logout</a></p>
+        <p class="user"><a tal:attributes="href python:view.url('logout')">Logout</a></p>
       </div>    <!-- #header ends -->
 
       <div class="block">
