@@ -9,9 +9,9 @@
 	};
 	1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {964, 3419}}";
-			sepNavSelRange = "{1318, 0}";
-			sepNavVisRange = "{1042, 756}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 3406}}";
+			sepNavSelRange = "{1149, 0}";
+			sepNavVisRange = "{284, 1805}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* CashRegister */ = {
@@ -29,11 +29,11 @@
 			1D6058900D05DD3D006BFB54 /* CashRegister */,
 		);
 		breakpoints = (
-			55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:176 */,
-			55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:178 */,
-			55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:160 */,
-			55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:193 */,
-			55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:197 */,
+			55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:173 */,
+			55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:175 */,
+			55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:157 */,
+			55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:190 */,
+			55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:194 */,
 			55C0CE0C131053A500D24B89 /* PaymentSession.m:107 */,
 		);
 		codeSenseManager = 55C0CAFE130FD27900D24B89 /* Code sense */;
@@ -614,6 +614,15 @@
 			55C0D3C0131148BA00D24B89 /* PBXTextBookmark */ = 55C0D3C0131148BA00D24B89 /* PBXTextBookmark */;
 			55C0D3C3131148CA00D24B89 /* PBXTextBookmark */ = 55C0D3C3131148CA00D24B89 /* PBXTextBookmark */;
 			55C0D3C5131148DE00D24B89 /* PBXTextBookmark */ = 55C0D3C5131148DE00D24B89 /* PBXTextBookmark */;
+			55C0D3CA13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CA13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CB13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CB13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CC13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CC13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CD13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CD13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CE13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CE13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CF13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CF13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3D013114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3D013114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3D213114B6000D24B89 /* PBXTextBookmark */ = 55C0D3D213114B6000D24B89 /* PBXTextBookmark */;
+			55C0D3D313114B6A00D24B89 /* PBXTextBookmark */ = 55C0D3D313114B6A00D24B89 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 55C0CAFD130FD27900D24B89 /* Source Control */;
 		userBuildSettings = {
@@ -688,9 +697,9 @@
 	};
 	55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 5434}}";
-			sepNavSelRange = "{11975, 0}";
-			sepNavVisRange = "{10377, 1787}";
+			sepNavIntBoundsRect = "{{0, 0}, {1104, 5590}}";
+			sepNavSelRange = "{1722, 0}";
+			sepNavVisRange = "{636, 1442}";
 		};
 	};
 	55C0CBB313100D4C00D24B89 /* ReceiptView.h */ = {
@@ -921,7 +930,7 @@
 			sepNavVisRange = "{2712, 1359}";
 		};
 	};
-	55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:176 */ = {
+	55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:173 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -933,13 +942,13 @@
 		functionName = "-managedObjectModel";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 176;
+		lineNumber = 173;
 		location = CashRegister;
-		modificationTime = 319899850.936053;
+		modificationTime = 319900476.164685;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:178 */ = {
+	55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:175 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -951,9 +960,9 @@
 		functionName = "-managedObjectModel";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 178;
+		lineNumber = 175;
 		location = CashRegister;
-		modificationTime = 319899850.93625;
+		modificationTime = 319900476.164944;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -967,7 +976,7 @@
 		vrLen = 1379;
 		vrLoc = 0;
 	};
-	55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:160 */ = {
+	55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:157 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -979,13 +988,13 @@
 		functionName = "-managedObjectContext";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 160;
+		lineNumber = 157;
 		location = CashRegister;
-		modificationTime = 319899850.936317;
+		modificationTime = 319900476.165056;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:193 */ = {
+	55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:190 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -997,13 +1006,13 @@
 		functionName = "-persistentStoreCoordinator";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 193;
+		lineNumber = 190;
 		location = CashRegister;
-		modificationTime = 319899850.936381;
+		modificationTime = 319900476.165161;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:197 */ = {
+	55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:194 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1015,9 +1024,9 @@
 		functionName = "-persistentStoreCoordinator";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 197;
+		lineNumber = 194;
 		location = CashRegister;
-		modificationTime = 319899850.936445;
+		modificationTime = 319900476.16527;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1047,7 +1056,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 137";
 		rLen = 0;
-		rLoc = 6697;
+		rLoc = 6468;
 		rType = 0;
 		vrLen = 2154;
 		vrLoc = 754;
@@ -1211,7 +1220,7 @@
 		ignoreCount = 0;
 		lineNumber = 107;
 		location = CashRegister;
-		modificationTime = 319899850.936507;
+		modificationTime = 319900476.165382;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1400,7 +1409,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 137";
 		rLen = 0;
-		rLoc = 6697;
+		rLoc = 6468;
 		rType = 0;
 		vrLen = 2154;
 		vrLoc = 754;
@@ -1490,7 +1499,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 55";
 		rLen = 0;
-		rLoc = 3114;
+		rLoc = 2885;
 		rType = 0;
 		vrLen = 1913;
 		vrLoc = 522;
@@ -1500,7 +1509,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 49";
 		rLen = 1316;
-		rLoc = 1798;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1858;
 		vrLoc = 522;
@@ -1510,7 +1519,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 51";
 		rLen = 0;
-		rLoc = 1798;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1927;
 		vrLoc = 522;
@@ -1600,7 +1609,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 51";
 		rLen = 0;
-		rLoc = 1798;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1927;
 		vrLoc = 522;
@@ -1610,7 +1619,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1798;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1844;
 		vrLoc = 522;
@@ -1620,7 +1629,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1798;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1844;
 		vrLoc = 522;
@@ -1707,7 +1716,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 45";
 		rLen = 0;
-		rLoc = 1539;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1947;
 		vrLoc = 433;
@@ -1937,7 +1946,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 2344;
 		vrLoc = 757;
@@ -1977,7 +1986,7 @@
 		comments = "Request for member 'customer' in something not a structure or union";
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		rLen = 1;
-		rLoc = 51;
+		rLoc = 48;
 		rType = 1;
 	};
 	55C0CF351310730000D24B89 /* PBXTextBookmark */ = {
@@ -1985,7 +1994,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 1366;
@@ -2025,7 +2034,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 58";
 		rLen = 0;
-		rLoc = 2028;
+		rLoc = 1799;
 		rType = 0;
 		vrLen = 2276;
 		vrLoc = 757;
@@ -2085,7 +2094,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 58";
 		rLen = 0;
-		rLoc = 2028;
+		rLoc = 1799;
 		rType = 0;
 		vrLen = 2276;
 		vrLoc = 757;
@@ -2095,7 +2104,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 79";
 		rLen = 0;
-		rLoc = 3105;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 2132;
 		vrLoc = 725;
@@ -2105,7 +2114,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 79";
 		rLen = 0;
-		rLoc = 3105;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 2141;
 		vrLoc = 725;
@@ -2160,7 +2169,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 1735;
@@ -2200,7 +2209,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 2278;
+		rLoc = 2049;
 		rType = 0;
 		vrLen = 2106;
 		vrLoc = 757;
@@ -2210,7 +2219,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 2278;
+		rLoc = 2049;
 		rType = 0;
 		vrLen = 2111;
 		vrLoc = 757;
@@ -2240,7 +2249,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2280,7 +2289,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2300,7 +2309,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2320,7 +2329,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2340,7 +2349,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2360,7 +2369,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 2278;
+		rLoc = 2049;
 		rType = 0;
 		vrLen = 2111;
 		vrLoc = 757;
@@ -2370,7 +2379,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 64";
 		rLen = 0;
-		rLoc = 2457;
+		rLoc = 2228;
 		rType = 0;
 		vrLen = 2059;
 		vrLoc = 813;
@@ -2380,7 +2389,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2390,7 +2399,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2400,7 +2409,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 64";
 		rLen = 0;
-		rLoc = 2457;
+		rLoc = 2228;
 		rType = 0;
 		vrLen = 2077;
 		vrLoc = 813;
@@ -2430,7 +2439,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2440,7 +2449,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2450,7 +2459,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2470,7 +2479,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 1735;
@@ -2480,7 +2489,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2858,7 +2867,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 64";
 		rLen = 0;
-		rLoc = 2457;
+		rLoc = 2228;
 		rType = 0;
 		vrLen = 2059;
 		vrLoc = 813;
@@ -2868,7 +2877,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 70";
 		rLen = 0;
-		rLoc = 2834;
+		rLoc = 2605;
 		rType = 0;
 		vrLen = 2133;
 		vrLoc = 813;
@@ -2878,7 +2887,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 70";
 		rLen = 0;
-		rLoc = 2865;
+		rLoc = 2636;
 		rType = 0;
 		vrLen = 2129;
 		vrLoc = 848;
@@ -2898,7 +2907,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 62";
 		rLen = 0;
-		rLoc = 2317;
+		rLoc = 2088;
 		rType = 0;
 		vrLen = 2150;
 		vrLoc = 848;
@@ -2908,7 +2917,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 62";
 		rLen = 0;
-		rLoc = 2317;
+		rLoc = 2088;
 		rType = 0;
 		vrLen = 2150;
 		vrLoc = 848;
@@ -4075,7 +4084,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1347;
+		rLoc = 1149;
 		rType = 0;
 		vrLen = 2032;
 		vrLoc = 284;
@@ -4099,7 +4108,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1347;
+		rLoc = 1149;
 		rType = 0;
 		vrLen = 2145;
 		vrLoc = 284;
@@ -4223,7 +4232,7 @@
 		comments = "Method definition for '-categoryTitles' not found";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 415;
+		rLoc = 414;
 		rType = 1;
 	};
 	55C0D1A213111F0100D24B89 /* PBXTextBookmark */ = {
@@ -4231,7 +4240,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 293";
 		rLen = 0;
-		rLoc = 13693;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 9398;
@@ -4367,7 +4376,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 315";
 		rLen = 0;
-		rLoc = 13693;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 9779;
@@ -4417,7 +4426,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 315";
 		rLen = 0;
-		rLoc = 13693;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 9779;
@@ -4461,7 +4470,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 315";
 		rLen = 0;
-		rLoc = 13693;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 9779;
@@ -4512,7 +4521,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 320";
 		rLen = 0;
-		rLoc = 13693;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 10041;
@@ -4946,7 +4955,7 @@
 		comments = "Method definition for '-selectedCategory' not found";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 415;
+		rLoc = 414;
 		rType = 1;
 	};
 	55C0D224131128D100D24B89 /* PBXTextBookmark */ = {
@@ -4954,7 +4963,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 354";
 		rLen = 0;
-		rLoc = 13747;
+		rLoc = 13713;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 11219;
@@ -4994,7 +5003,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 359";
 		rLen = 0;
-		rLoc = 13747;
+		rLoc = 13713;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 11320;
@@ -5004,7 +5013,7 @@
 		comments = "'products' undeclared (first use in this function)";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 410;
+		rLoc = 409;
 		rType = 1;
 	};
 	55C0D23113112A4C00D24B89 /* PBXTextBookmark */ = {
@@ -5012,7 +5021,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13721;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5052,7 +5061,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13721;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5062,7 +5071,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13721;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5072,7 +5081,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 13721;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5804,7 +5813,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1346;
+		rLoc = 1148;
 		rType = 0;
 		vrLen = 1759;
 		vrLoc = 559;
@@ -5824,7 +5833,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1346;
+		rLoc = 1148;
 		rType = 0;
 		vrLen = 1907;
 		vrLoc = 559;
@@ -5865,7 +5874,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 41;
+		rLoc = 39;
 		rType = 1;
 	};
 	55C0D3861311452600D24B89 /* PBXTextBookmark */ = {
@@ -5873,7 +5882,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 1042;
@@ -5893,7 +5902,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1346;
+		rLoc = 1148;
 		rType = 0;
 		vrLen = 1733;
 		vrLoc = 265;
@@ -5923,7 +5932,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -5953,7 +5962,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -5983,7 +5992,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -6053,7 +6062,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -6083,7 +6092,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -6133,7 +6142,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -6173,7 +6182,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -6193,7 +6202,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
@@ -6213,10 +6222,100 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1318;
+		rLoc = 1120;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 1042;
+	};
+	55C0D3CA13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4A13105B2F00D24B89 /* ButtonGridViewDelegate.h */;
+		name = "ButtonGridViewDelegate.h: 15";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	55C0D3CB13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 157";
+		rLen = 0;
+		rLoc = 3901;
+		rType = 0;
+		vrLen = 1429;
+		vrLoc = 3016;
+	};
+	55C0D3CC13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4313105AE000D24B89 /* ButtonGridView.h */;
+		name = "ButtonGridView.h: 29";
+		rLen = 0;
+		rLoc = 897;
+		rType = 0;
+		vrLen = 904;
+		vrLoc = 0;
+	};
+	55C0D3CD13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
+		name = "MainViewController.h: 40";
+		rLen = 0;
+		rLoc = 1227;
+		rType = 0;
+		vrLen = 1234;
+		vrLoc = 0;
+	};
+	55C0D3CE13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 68";
+		rLen = 0;
+		rLoc = 1722;
+		rType = 0;
+		vrLen = 1442;
+		vrLoc = 636;
+	};
+	55C0D3CF13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1148;
+		rType = 0;
+		vrLen = 1733;
+		vrLoc = 265;
+	};
+	55C0D3D013114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 1149;
+		rType = 0;
+		vrLen = 1760;
+		vrLoc = 284;
+	};
+	55C0D3D213114B6000D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 1112;
+	};
+	55C0D3D313114B6A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 1149;
+		rType = 0;
+		vrLen = 1805;
+		vrLoc = 284;
 	};
 	A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {
 		uiCtxt = {

@@ -358,14 +358,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>2</integer>
+									<integer>43</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 38}, {265, 673}}</string>
+							<string>{{0, 427}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -402,7 +401,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string>CashRegisterAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -410,11 +409,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainViewController.m</string>
+										<string>CashRegisterAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0D3C3131148CA00D24B89</string>
+										<string>55C0D3D313114B6A00D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -428,7 +427,6 @@
 											<string>55C0D0A913108DA600D24B89</string>
 											<string>55C0D0DC1310912100D24B89</string>
 											<string>55C0D0DE1310912100D24B89</string>
-											<string>55C0D100131093A900D24B89</string>
 											<string>55C0D15B1310988D00D24B89</string>
 											<string>55C0D1A813111FEA00D24B89</string>
 											<string>55C0D1AA13111FEA00D24B89</string>
@@ -462,11 +460,12 @@
 											<string>55C0D372131143E500D24B89</string>
 											<string>55C0D3791311440500D24B89</string>
 											<string>55C0D38B1311457000D24B89</string>
-											<string>55C0D38C1311457000D24B89</string>
-											<string>55C0D3A1131147D300D24B89</string>
-											<string>55C0D3B01311485A00D24B89</string>
-											<string>55C0D3B71311488200D24B89</string>
-											<string>55C0D3B81311488200D24B89</string>
+											<string>55C0D3CA13114B3A00D24B89</string>
+											<string>55C0D3CB13114B3A00D24B89</string>
+											<string>55C0D3CC13114B3A00D24B89</string>
+											<string>55C0D3CD13114B3A00D24B89</string>
+											<string>55C0D3CE13114B3A00D24B89</string>
+											<string>55C0D3CF13114B3A00D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -647,7 +646,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319899850.21613801</real>
+	<real>319900522.67675102</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -664,13 +663,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0D3C4131148CA00D24B89</string>
 		<string>55C0D36A131142B700D24B89</string>
 		<string>55C0D357131140AE00D24B89</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
-		<string>55C0CAF4130FD27900D24B89</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>55C0CAF4130FD27900D24B89</string>
+		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -689,12 +687,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CashRegisterAppDelegate.m</string>
+								<string>MainViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -711,8 +711,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1046,7 +1044,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
