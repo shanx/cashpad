@@ -39,6 +39,7 @@
 		A5577324131017A70009D6EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5577323131017A70009D6EB /* SystemConfiguration.framework */; };
 		A55773281310180B0009D6EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55773271310180B0009D6EB /* MobileCoreServices.framework */; };
 		A557752213106AA10009D6EB /* ReceiptTotalView.m in Sources */ = {isa = PBXBuildFile; fileRef = A557752113106AA10009D6EB /* ReceiptTotalView.m */; };
+		A557760C13108B3C0009D6EB /* ReceiptTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A557760B13108B3C0009D6EB /* ReceiptTitleView.m */; };
 		A5BB6740130FEFE300C813B2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */; };
 		A5BB6741130FEFE300C813B2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */; };
 		A5BB6742130FEFE300C813B2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673B130FEFE300C813B2 /* SBJsonBase.m */; };
@@ -112,6 +113,8 @@
 		A55774C513105BAF0009D6EB /* ClickableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableView.m; sourceTree = "<group>"; };
 		A557752013106AA10009D6EB /* ReceiptTotalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptTotalView.h; sourceTree = "<group>"; };
 		A557752113106AA10009D6EB /* ReceiptTotalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptTotalView.m; sourceTree = "<group>"; };
+		A557760A13108B3C0009D6EB /* ReceiptTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptTitleView.h; sourceTree = "<group>"; };
+		A557760B13108B3C0009D6EB /* ReceiptTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptTitleView.m; sourceTree = "<group>"; };
 		A5BB6735130FEFE300C813B2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		A5BB6736130FEFE300C813B2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -241,6 +244,8 @@
 				55C0CE4D13105D1C00D24B89 /* ScrollingViewDelegate.h */,
 				A557752013106AA10009D6EB /* ReceiptTotalView.h */,
 				A557752113106AA10009D6EB /* ReceiptTotalView.m */,
+				A557760A13108B3C0009D6EB /* ReceiptTitleView.h */,
+				A557760B13108B3C0009D6EB /* ReceiptTitleView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				55C0CE4513105AE000D24B89 /* ButtonGridView.m in Sources */,
 				55C0CE4E13105D1C00D24B89 /* ScrollingView.m in Sources */,
 				A557752213106AA10009D6EB /* ReceiptTotalView.m in Sources */,
+				A557760C13108B3C0009D6EB /* ReceiptTitleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
