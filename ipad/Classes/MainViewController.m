@@ -182,6 +182,8 @@
 {
     [super viewDidLoad];
 	
+	self.title = @"Jelle Prins - iPad Kassasysteem";
+	
 	NSInteger productID = 0;
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"Products" ofType:@"plist"];
 	NSArray *categoryDictionaries = [[NSArray alloc] initWithContentsOfFile:path];

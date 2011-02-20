@@ -114,7 +114,7 @@
 	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
 
 	
-	UIFont *titleFont = [UIFont boldSystemFontOfSize:16];
+	UIFont *titleFont = [UIFont boldSystemFontOfSize:22];
 	
 	CGFloat horizontalMargin = (self.bounds.size.width - buttonSize.width * columnCount) / (columnCount + 1);
 	CGFloat verticalMargin = (self.bounds.size.height - buttonSize.height * rowCount) / (rowCount + 1);
@@ -138,7 +138,7 @@
 		CGFloat y = (row + 1) * verticalMargin + row * buttonSize.height;
 		
 		CGFloat titleX = x + 0.5 * buttonSize.width - titleSize.width / 2.0;
-		CGFloat titleY = y + 0.5 * buttonSize.height - titleSize.height / 2.0;
+		CGFloat titleY = y + 0.5 * buttonSize.height - titleSize.height / 2.0 + 20.0;
 		
 		
 		if (index == highlightedIndex) {
