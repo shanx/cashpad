@@ -26,22 +26,21 @@ Order
 
 Sending anything with a Content-Type other than application/json should have grok smash your head to pieces::
 
-    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data='')
-    >>> response.getStatus()
-    400
+    >>> from zope.publisher.interfaces import BadRequest
+    
 
-    >>> print response.getBody()
-    Content is not of type: application/json; charset=utf-8
+    >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data='')
+    Traceback (most recent call last):
+    ...
+    BadRequest: Content is not of type: application/json; charset=utf-8
 
 Pushing no json should return 400 Bad request::
 
     >>> response = http_call('POST', 'http://localhost/++rest++api/app/user/123/order/', data='', 
     ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
-    >>> response.getStatus()
-    400
-    
-    >>> print response.getBody()
-    Content could not be parsed
+    Traceback (most recent call last):
+    ...
+    BadRequest: Content could not be parsed
 
 Create a new order::
 
