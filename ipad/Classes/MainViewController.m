@@ -121,7 +121,6 @@
 	[alert release];
 }
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -177,7 +176,6 @@
 	return products;
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
@@ -190,7 +188,8 @@
     CGRect ownBounds = self.view.bounds;
     CGRect receiptViewFrame = receiptView.frame;
     receiptViewFrame.origin.x = ownBounds.size.width - receiptViewFrame.size.width;
-    receiptViewFrame.size.height = ownBounds.size.height;
+	receiptViewFrame.origin.y = 44.0;
+    receiptViewFrame.size.height = ownBounds.size.height - 44.0;
     receiptView.frame = receiptViewFrame;
     
 	[self.view addSubview:receiptView];
@@ -245,9 +244,9 @@
 	productsGridView.buttonImage = [UIImage imageNamed:@"button-big"];
 	productsGridView.highlightedButtonImage = [UIImage imageNamed:@"button-big-pressed"];
 	
-    productsGridView.layer.masksToBounds = YES;
-    productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    productsGridView.layer.borderWidth = 1.0;
+//    productsGridView.layer.masksToBounds = YES;
+//    productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    productsGridView.layer.borderWidth = 1.0;
 	
 	categoriesGridView.rowCount = 1;
 	categoriesGridView.columnCount = 4;
@@ -255,9 +254,9 @@
 	categoriesGridView.buttonSize = CGSizeMake(150.0, 100.0);
 	
 	
-    categoriesGridView.layer.masksToBounds = YES;
-    categoriesGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    categoriesGridView.layer.borderWidth = 1.0;
+//    categoriesGridView.layer.masksToBounds = YES;
+//    categoriesGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    categoriesGridView.layer.borderWidth = 1.0;
     
     
 	DLog(@"%@", self.managedObjectContext);
@@ -279,6 +278,8 @@
     
     receiptView.productTableView.delegate = self;
     receiptView.productTableView.dataSource = self;
+    
+    [receiptView.payButton addTarget:self action:@selector(pay:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (ProductCategory *)selectedCategory
@@ -292,7 +293,11 @@
 - (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
 {
 	if (aButtonGridView == productsGridView) {
-		Product *product = [[self productsInSelectedCategory] objectAtIndex:index];
+		NSArray *productsInSelectedCategory = [self productsInSelectedCategory];
+		if (index >= [productsInSelectedCategory count]) {
+			return;
+		}
+		Product *product = [productsInSelectedCategory objectAtIndex:index];
 		
 		NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 		Product *newProduct = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
@@ -315,6 +320,44 @@
 		productsGridView.titles = [self productTitles];
 	}
 
+}
+
+- (IBAction)category:(id)sender
+{
+	[category1 setImage:[UIImage imageNamed:@"category-button-red"] forState:UIControlStateNormal];
+	[category2 setImage:[UIImage imageNamed:@"category-button-green"] forState:UIControlStateNormal];
+	[category3 setImage:[UIImage imageNamed:@"category-button-blue"] forState:UIControlStateNormal];
+	[category4 setImage:[UIImage imageNamed:@"category-button-lightblue"] forState:UIControlStateNormal];
+	if (sender == category1) {
+		selectedCategoryIndex = 0;
+		[category1 setImage:[UIImage imageNamed:@"category-button-red-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category2) {
+		selectedCategoryIndex = 1;
+		[category2 setImage:[UIImage imageNamed:@"category-button-green-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category3) {
+		selectedCategoryIndex = 2;
+		[category3 setImage:[UIImage imageNamed:@"category-button-blue-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category4) {
+		selectedCategoryIndex = 3;
+		[category4 setImage:[UIImage imageNamed:@"category-button-lightblue-pressed"] forState:UIControlStateNormal];
+	}
+	
+	selectedCategoryIndex = MIN(selectedCategoryIndex, [categories count] - 1);
+	
+	productsGridView.titles = [self productTitles];
+	
+	productsPageControl.numberOfPages = productsGridView.numberOfPages;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	DLog(@"%d", productsGridView.currentPageIndex);
+	productsPageControl.currentPage = productsGridView.currentPageIndex;
+}
+
+- (void)pageControlValueChanged:(id)sender
+{
+	
 }
 
 
@@ -341,7 +384,6 @@
                                             reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-#warning "Set product fields!!!" 
 	cell.priceLabel.text = [[dictionary objectForKey:@"product_price"] stringValue];
 	cell.nameLabel.text = [dictionary objectForKey:@"product_name"];
 	cell.amountLabel.text = [[dictionary objectForKey:@"amount"] stringValue];
@@ -356,8 +398,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
     // Return YES for supported orientations.
-    return interfaceOrientation == UIInterfaceOrientationLandscapeRight || 
-           interfaceOrientation == UIInterfaceOrientationLandscapeLeft;
+    return interfaceOrientation == UIInterfaceOrientationLandscapeLeft;
 }
 
 

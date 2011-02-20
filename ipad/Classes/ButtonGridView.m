@@ -27,6 +27,7 @@
 @synthesize buttonImage;
 @synthesize highlightedButtonImage;
 @synthesize buttonSize;
+@synthesize numberOfPages;
 
 - (id)initWithFrame:(CGRect)frame
 {    
@@ -61,7 +62,7 @@
 	self.showsVerticalScrollIndicator = NO;
 	self.showsHorizontalScrollIndicator = NO;
 	self.alwaysBounceHorizontal = YES;
-	self.backgroundColor = [UIColor redColor];
+	self.backgroundColor = [UIColor clearColor];
 	scrollingViews = [[NSMutableArray alloc] init];
 }
 
@@ -87,7 +88,7 @@
 	
 	NSInteger buttonCount = [titles count];
 	NSInteger buttonsPerPage = rowCount * columnCount;
-	NSInteger numberOfPages = ceil((float) buttonCount / buttonsPerPage);
+	numberOfPages = ceil((float) buttonCount / buttonsPerPage);
 	
 	for (NSInteger i = 0; i < numberOfPages; i++) {
 		CGFloat x = i * self.bounds.size.width;
@@ -96,6 +97,7 @@
 		CGFloat height = self.bounds.size.height;
 		CGRect frame = CGRectMake(x, y, width, height);
 		ScrollingView *scrollingView = [[ScrollingView alloc] initWithFrame:frame];
+		scrollingView.backgroundColor = [UIColor clearColor];
 		scrollingView.delegate = self;
 		
 		[scrollingViews addObject:scrollingView];
@@ -108,16 +110,13 @@
 
 - (void)scrollingView:(ScrollingView *)aScrollingView drawRect:(CGRect)rect
 {
-	[[UIColor redColor] set];
-	UIRectFill(rect);
-	
 	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
 
 	
 	UIFont *titleFont = [UIFont boldSystemFontOfSize:22];
 	
-	CGFloat horizontalMargin = (self.bounds.size.width - buttonSize.width * columnCount) / (columnCount + 1);
-	CGFloat verticalMargin = (self.bounds.size.height - buttonSize.height * rowCount) / (rowCount + 1);
+	CGFloat horizontalMargin = (self.bounds.size.width - buttonImage.size.width * columnCount) / (columnCount + 1);
+	CGFloat verticalMargin = (self.bounds.size.height - buttonImage.size.height * rowCount) / (rowCount + 1);
 	
 	NSInteger buttonsPerPage = rowCount * columnCount;
 	
@@ -134,11 +133,11 @@
 		NSInteger row = floor(i / columnCount);
 		NSInteger column = i % columnCount;
 		
-		CGFloat x = (column + 1) * horizontalMargin + column * buttonSize.width;
-		CGFloat y = (row + 1) * verticalMargin + row * buttonSize.height;
+		CGFloat x = (column + 1) * horizontalMargin + column * buttonImage.size.width;
+		CGFloat y = (row + 1) * verticalMargin + row * buttonImage.size.height;
 		
-		CGFloat titleX = x + 0.5 * buttonSize.width - titleSize.width / 2.0;
-		CGFloat titleY = y + 0.5 * buttonSize.height - titleSize.height / 2.0 + 20.0;
+		CGFloat titleX = x + 0.5 * buttonImage.size.width - titleSize.width / 2.0;
+		CGFloat titleY = y + 0.5 * buttonImage.size.height - titleSize.height / 2.0;
 		
 		
 		if (index == highlightedIndex) {
@@ -150,6 +149,11 @@
 		[[UIColor blackColor] set];
 		[title drawAtPoint:CGPointMake(titleX, titleY) withFont:titleFont];		
 	}
+}
+
+- (NSInteger)currentPageIndex
+{
+	return self.contentOffset.x / self.bounds.size.width;
 }
 
 - (void)scrollingView:(ScrollingView *)aScrollingView touchesBegan:(NSSet *)touches
@@ -191,16 +195,16 @@
 
 - (CGRect)rectForButtonAtIndex:(NSInteger)index
 {
-	CGFloat horizontalMargin = (self.bounds.size.width - buttonSize.width * columnCount) / (columnCount + 1);
-	CGFloat verticalMargin = (self.bounds.size.height - buttonSize.height * rowCount) / (rowCount + 1);
+	CGFloat horizontalMargin = (self.bounds.size.width - buttonImage.size.width * columnCount) / (columnCount + 1);
+	CGFloat verticalMargin = (self.bounds.size.height - buttonImage.size.height * rowCount) / (rowCount + 1);
 	
 	NSInteger row = floor(index / columnCount);
 	NSInteger column = index % columnCount;
 	
-	CGFloat x = (column + 1) * horizontalMargin + column * buttonSize.width;
-	CGFloat y = (row + 1) * verticalMargin + row * buttonSize.height;
+	CGFloat x = (column + 1) * horizontalMargin + column * buttonImage.size.width;
+	CGFloat y = (row + 1) * verticalMargin + row * buttonImage.size.height;
 	
-	return CGRectMake(x, y, buttonSize.width, buttonSize.height);
+	return CGRectMake(x, y, buttonImage.size.width, buttonImage.size.height);
 }
 
 

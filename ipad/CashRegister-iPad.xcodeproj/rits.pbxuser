@@ -2,16 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* CashRegisterAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 654}}";
-			sepNavSelRange = "{496, 0}";
-			sepNavVisRange = "{0, 564}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 606}}";
+			sepNavSelRange = "{324, 0}";
+			sepNavVisRange = "{0, 558}";
 		};
 	};
 	1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 3419}}";
-			sepNavSelRange = "{1349, 0}";
-			sepNavVisRange = "{284, 2145}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 3406}}";
+			sepNavSelRange = "{1149, 0}";
+			sepNavVisRange = "{284, 1805}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* CashRegister */ = {
@@ -29,11 +29,11 @@
 			1D6058900D05DD3D006BFB54 /* CashRegister */,
 		);
 		breakpoints = (
-			55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:176 */,
-			55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:178 */,
-			55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:160 */,
-			55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:193 */,
-			55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:197 */,
+			55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:173 */,
+			55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:175 */,
+			55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:157 */,
+			55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:190 */,
+			55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:194 */,
 			55C0CE0C131053A500D24B89 /* PaymentSession.m:107 */,
 		);
 		codeSenseManager = 55C0CAFE130FD27900D24B89 /* Code sense */;
@@ -85,8 +85,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319893200;
-			PBXWorkspaceStateSaveDate = 319893200;
+			PBXPerProjectTemplateStateSaveDate = 319897770;
+			PBXWorkspaceStateSaveDate = 319897770;
 		};
 		perUserProjectItems = {
 			55C0CC9913101F9D00D24B89 = 55C0CC9913101F9D00D24B89 /* PBXTextBookmark */;
@@ -517,29 +517,112 @@
 			55C0D2AF13112E8E00D24B89 = 55C0D2AF13112E8E00D24B89 /* PBXTextBookmark */;
 			55C0D2B013112E8E00D24B89 = 55C0D2B013112E8E00D24B89 /* PBXBookmark */;
 			55C0D2B113112E8E00D24B89 = 55C0D2B113112E8E00D24B89 /* PBXBookmark */;
-			55C0D2DF1311312500D24B89 /* PBXBookmark */ = 55C0D2DF1311312500D24B89 /* PBXBookmark */;
-			55C0D2E01311312500D24B89 /* PBXTextBookmark */ = 55C0D2E01311312500D24B89 /* PBXTextBookmark */;
-			55C0D2E11311312500D24B89 /* PBXBookmark */ = 55C0D2E11311312500D24B89 /* PBXBookmark */;
-			55C0D2E21311312500D24B89 /* PBXBookmark */ = 55C0D2E21311312500D24B89 /* PBXBookmark */;
-			55C0D2E31311312500D24B89 /* PBXTextBookmark */ = 55C0D2E31311312500D24B89 /* PBXTextBookmark */;
-			55C0D2E41311312500D24B89 /* PBXTextBookmark */ = 55C0D2E41311312500D24B89 /* PBXTextBookmark */;
-			55C0D2E51311312500D24B89 /* PBXTextBookmark */ = 55C0D2E51311312500D24B89 /* PBXTextBookmark */;
-			55C0D2E61311312500D24B89 /* PBXTextBookmark */ = 55C0D2E61311312500D24B89 /* PBXTextBookmark */;
-			55C0D2E9131134F700D24B89 /* PBXTextBookmark */ = 55C0D2E9131134F700D24B89 /* PBXTextBookmark */;
-			55C0D2EC1311353700D24B89 /* PBXTextBookmark */ = 55C0D2EC1311353700D24B89 /* PBXTextBookmark */;
-			55C0D2ED1311353700D24B89 /* PBXTextBookmark */ = 55C0D2ED1311353700D24B89 /* PBXTextBookmark */;
-			55C0D2F4131136F700D24B89 /* PBXTextBookmark */ = 55C0D2F4131136F700D24B89 /* PBXTextBookmark */;
-			55C0D2F5131136F700D24B89 /* PBXTextBookmark */ = 55C0D2F5131136F700D24B89 /* PBXTextBookmark */;
-			55C0D2F91311370700D24B89 /* PBXTextBookmark */ = 55C0D2F91311370700D24B89 /* PBXTextBookmark */;
-			55C0D2FD1311371300D24B89 /* PBXTextBookmark */ = 55C0D2FD1311371300D24B89 /* PBXTextBookmark */;
-			55C0D301131137E800D24B89 /* PBXTextBookmark */ = 55C0D301131137E800D24B89 /* PBXTextBookmark */;
-			55C0D302131137E800D24B89 /* PBXTextBookmark */ = 55C0D302131137E800D24B89 /* PBXTextBookmark */;
-			55C0D303131137E800D24B89 /* PBXTextBookmark */ = 55C0D303131137E800D24B89 /* PBXTextBookmark */;
-			55C0D30713113A7100D24B89 /* PBXTextBookmark */ = 55C0D30713113A7100D24B89 /* PBXTextBookmark */;
-			55C0D30813113A7100D24B89 /* PBXTextBookmark */ = 55C0D30813113A7100D24B89 /* PBXTextBookmark */;
-			55C0D30913113A7100D24B89 /* PBXTextBookmark */ = 55C0D30913113A7100D24B89 /* PBXTextBookmark */;
-			55C0D30A13113A7100D24B89 /* PBXTextBookmark */ = 55C0D30A13113A7100D24B89 /* PBXTextBookmark */;
-			55C0D30B13113A7100D24B89 /* PBXTextBookmark */ = 55C0D30B13113A7100D24B89 /* PBXTextBookmark */;
+			55C0D2DF1311312500D24B89 = 55C0D2DF1311312500D24B89 /* PBXBookmark */;
+			55C0D2E01311312500D24B89 = 55C0D2E01311312500D24B89 /* PBXTextBookmark */;
+			55C0D2E11311312500D24B89 = 55C0D2E11311312500D24B89 /* PBXBookmark */;
+			55C0D2E21311312500D24B89 = 55C0D2E21311312500D24B89 /* PBXBookmark */;
+			55C0D2E31311312500D24B89 = 55C0D2E31311312500D24B89 /* PBXTextBookmark */;
+			55C0D2E41311312500D24B89 = 55C0D2E41311312500D24B89 /* PBXTextBookmark */;
+			55C0D2E51311312500D24B89 = 55C0D2E51311312500D24B89 /* PBXTextBookmark */;
+			55C0D2E61311312500D24B89 = 55C0D2E61311312500D24B89 /* PBXTextBookmark */;
+			55C0D2E9131134F700D24B89 = 55C0D2E9131134F700D24B89 /* PBXTextBookmark */;
+			55C0D2EC1311353700D24B89 = 55C0D2EC1311353700D24B89 /* PBXTextBookmark */;
+			55C0D2ED1311353700D24B89 = 55C0D2ED1311353700D24B89 /* PBXTextBookmark */;
+			55C0D2F4131136F700D24B89 = 55C0D2F4131136F700D24B89 /* PBXTextBookmark */;
+			55C0D2F5131136F700D24B89 = 55C0D2F5131136F700D24B89 /* PBXTextBookmark */;
+			55C0D2F91311370700D24B89 = 55C0D2F91311370700D24B89 /* PBXTextBookmark */;
+			55C0D2FD1311371300D24B89 = 55C0D2FD1311371300D24B89 /* PBXTextBookmark */;
+			55C0D301131137E800D24B89 = 55C0D301131137E800D24B89 /* PBXTextBookmark */;
+			55C0D302131137E800D24B89 = 55C0D302131137E800D24B89 /* PBXTextBookmark */;
+			55C0D303131137E800D24B89 = 55C0D303131137E800D24B89 /* PBXTextBookmark */;
+			55C0D30713113A7100D24B89 = 55C0D30713113A7100D24B89 /* PBXTextBookmark */;
+			55C0D30813113A7100D24B89 = 55C0D30813113A7100D24B89 /* PBXTextBookmark */;
+			55C0D30913113A7100D24B89 = 55C0D30913113A7100D24B89 /* PBXTextBookmark */;
+			55C0D30A13113A7100D24B89 = 55C0D30A13113A7100D24B89 /* PBXTextBookmark */;
+			55C0D30B13113A7100D24B89 = 55C0D30B13113A7100D24B89 /* PBXTextBookmark */;
+			55C0D31513113E8800D24B89 = 55C0D31513113E8800D24B89 /* PBXBookmark */;
+			55C0D31613113E8800D24B89 = 55C0D31613113E8800D24B89 /* PBXBookmark */;
+			55C0D31713113E8800D24B89 = 55C0D31713113E8800D24B89 /* PBXBookmark */;
+			55C0D31813113E8800D24B89 = 55C0D31813113E8800D24B89 /* PBXBookmark */;
+			55C0D31913113E8800D24B89 = 55C0D31913113E8800D24B89 /* PBXBookmark */;
+			55C0D31A13113E8800D24B89 = 55C0D31A13113E8800D24B89 /* PBXBookmark */;
+			55C0D31B13113E8800D24B89 = 55C0D31B13113E8800D24B89 /* PBXBookmark */;
+			55C0D31C13113E8800D24B89 = 55C0D31C13113E8800D24B89 /* PBXBookmark */;
+			55C0D31D13113E8800D24B89 = 55C0D31D13113E8800D24B89 /* PBXBookmark */;
+			55C0D31E13113E8800D24B89 = 55C0D31E13113E8800D24B89 /* PBXBookmark */;
+			55C0D31F13113E8800D24B89 = 55C0D31F13113E8800D24B89 /* PBXTextBookmark */;
+			55C0D32013113E8800D24B89 = 55C0D32013113E8800D24B89 /* PBXTextBookmark */;
+			55C0D32113113E8800D24B89 = 55C0D32113113E8800D24B89 /* PBXTextBookmark */;
+			55C0D32613113EAA00D24B89 = 55C0D32613113EAA00D24B89 /* PBXTextBookmark */;
+			55C0D32A13113F6800D24B89 = 55C0D32A13113F6800D24B89 /* PBXTextBookmark */;
+			55C0D32E13113F8E00D24B89 = 55C0D32E13113F8E00D24B89 /* PBXTextBookmark */;
+			55C0D32F13113F8E00D24B89 = 55C0D32F13113F8E00D24B89 /* PBXTextBookmark */;
+			55C0D33013113F8E00D24B89 = 55C0D33013113F8E00D24B89 /* PBXTextBookmark */;
+			55C0D3391311406700D24B89 = 55C0D3391311406700D24B89 /* PBXTextBookmark */;
+			55C0D33A1311406700D24B89 = 55C0D33A1311406700D24B89 /* PlistBookmark */;
+			55C0D33B1311406700D24B89 = 55C0D33B1311406700D24B89 /* PlistBookmark */;
+			55C0D366131142B300D24B89 /* XCBuildMessageTextBookmark */ = 55C0D366131142B300D24B89 /* XCBuildMessageTextBookmark */;
+			55C0D367131142B300D24B89 /* PBXTextBookmark */ = 55C0D367131142B300D24B89 /* PBXTextBookmark */;
+			55C0D368131142B700D24B89 /* PBXTextBookmark */ = 55C0D368131142B700D24B89 /* PBXTextBookmark */;
+			55C0D369131142B700D24B89 /* PBXTextBookmark */ = 55C0D369131142B700D24B89 /* PBXTextBookmark */;
+			55C0D36E1311433500D24B89 /* PBXTextBookmark */ = 55C0D36E1311433500D24B89 /* PBXTextBookmark */;
+			55C0D371131143E500D24B89 /* PBXTextBookmark */ = 55C0D371131143E500D24B89 /* PBXTextBookmark */;
+			55C0D372131143E500D24B89 /* PlistBookmark */ = 55C0D372131143E500D24B89 /* PlistBookmark */;
+			55C0D373131143E500D24B89 /* PlistBookmark */ = 55C0D373131143E500D24B89 /* PlistBookmark */;
+			55C0D374131143E500D24B89 /* PlistBookmark */ = 55C0D374131143E500D24B89 /* PlistBookmark */;
+			55C0D376131143F500D24B89 /* PBXTextBookmark */ = 55C0D376131143F500D24B89 /* PBXTextBookmark */;
+			55C0D3791311440500D24B89 /* PlistBookmark */ = 55C0D3791311440500D24B89 /* PlistBookmark */;
+			55C0D37A1311440500D24B89 /* PBXTextBookmark */ = 55C0D37A1311440500D24B89 /* PBXTextBookmark */;
+			55C0D37C1311441400D24B89 /* PBXTextBookmark */ = 55C0D37C1311441400D24B89 /* PBXTextBookmark */;
+			55C0D37D1311441500D24B89 /* PBXTextBookmark */ = 55C0D37D1311441500D24B89 /* PBXTextBookmark */;
+			55C0D3801311448C00D24B89 /* PBXTextBookmark */ = 55C0D3801311448C00D24B89 /* PBXTextBookmark */;
+			55C0D3831311451D00D24B89 /* PBXTextBookmark */ = 55C0D3831311451D00D24B89 /* PBXTextBookmark */;
+			55C0D3841311452600D24B89 /* PBXTextBookmark */ = 55C0D3841311452600D24B89 /* PBXTextBookmark */;
+			55C0D3851311452600D24B89 /* XCBuildMessageTextBookmark */ = 55C0D3851311452600D24B89 /* XCBuildMessageTextBookmark */;
+			55C0D3861311452600D24B89 /* PBXTextBookmark */ = 55C0D3861311452600D24B89 /* PBXTextBookmark */;
+			55C0D38B1311457000D24B89 /* PBXTextBookmark */ = 55C0D38B1311457000D24B89 /* PBXTextBookmark */;
+			55C0D38C1311457000D24B89 /* PBXTextBookmark */ = 55C0D38C1311457000D24B89 /* PBXTextBookmark */;
+			55C0D38D1311457000D24B89 /* PBXTextBookmark */ = 55C0D38D1311457000D24B89 /* PBXTextBookmark */;
+			55C0D38E1311457000D24B89 /* PBXTextBookmark */ = 55C0D38E1311457000D24B89 /* PBXTextBookmark */;
+			55C0D3901311458700D24B89 /* PBXTextBookmark */ = 55C0D3901311458700D24B89 /* PBXTextBookmark */;
+			55C0D393131145A800D24B89 /* PBXTextBookmark */ = 55C0D393131145A800D24B89 /* PBXTextBookmark */;
+			55C0D394131145A800D24B89 /* PBXTextBookmark */ = 55C0D394131145A800D24B89 /* PBXTextBookmark */;
+			55C0D396131145B300D24B89 /* PBXTextBookmark */ = 55C0D396131145B300D24B89 /* PBXTextBookmark */;
+			55C0D397131145BA00D24B89 /* PBXTextBookmark */ = 55C0D397131145BA00D24B89 /* PBXTextBookmark */;
+			55C0D398131145BA00D24B89 /* PBXTextBookmark */ = 55C0D398131145BA00D24B89 /* PBXTextBookmark */;
+			55C0D39D131146D900D24B89 /* PBXTextBookmark */ = 55C0D39D131146D900D24B89 /* PBXTextBookmark */;
+			55C0D39E131146DA00D24B89 /* PBXTextBookmark */ = 55C0D39E131146DA00D24B89 /* PBXTextBookmark */;
+			55C0D3A1131147D300D24B89 /* PBXTextBookmark */ = 55C0D3A1131147D300D24B89 /* PBXTextBookmark */;
+			55C0D3A2131147D300D24B89 /* PBXTextBookmark */ = 55C0D3A2131147D300D24B89 /* PBXTextBookmark */;
+			55C0D3A3131147D300D24B89 /* PBXTextBookmark */ = 55C0D3A3131147D300D24B89 /* PBXTextBookmark */;
+			55C0D3A4131147D300D24B89 /* PBXTextBookmark */ = 55C0D3A4131147D300D24B89 /* PBXTextBookmark */;
+			55C0D3A5131147D300D24B89 /* PBXTextBookmark */ = 55C0D3A5131147D300D24B89 /* PBXTextBookmark */;
+			55C0D3A7131147DC00D24B89 /* PBXTextBookmark */ = 55C0D3A7131147DC00D24B89 /* PBXTextBookmark */;
+			55C0D3A8131147DD00D24B89 /* PBXTextBookmark */ = 55C0D3A8131147DD00D24B89 /* PBXTextBookmark */;
+			55C0D3A91311480B00D24B89 /* PBXTextBookmark */ = 55C0D3A91311480B00D24B89 /* PBXTextBookmark */;
+			55C0D3AC1311482B00D24B89 /* PBXTextBookmark */ = 55C0D3AC1311482B00D24B89 /* PBXTextBookmark */;
+			55C0D3AF1311485A00D24B89 /* PBXTextBookmark */ = 55C0D3AF1311485A00D24B89 /* PBXTextBookmark */;
+			55C0D3B01311485A00D24B89 /* PBXTextBookmark */ = 55C0D3B01311485A00D24B89 /* PBXTextBookmark */;
+			55C0D3B11311485A00D24B89 /* PBXTextBookmark */ = 55C0D3B11311485A00D24B89 /* PBXTextBookmark */;
+			55C0D3B21311485A00D24B89 /* PBXTextBookmark */ = 55C0D3B21311485A00D24B89 /* PBXTextBookmark */;
+			55C0D3B41311485F00D24B89 /* PBXTextBookmark */ = 55C0D3B41311485F00D24B89 /* PBXTextBookmark */;
+			55C0D3B71311488200D24B89 /* PBXTextBookmark */ = 55C0D3B71311488200D24B89 /* PBXTextBookmark */;
+			55C0D3B81311488200D24B89 /* PBXTextBookmark */ = 55C0D3B81311488200D24B89 /* PBXTextBookmark */;
+			55C0D3B91311488200D24B89 /* PBXTextBookmark */ = 55C0D3B91311488200D24B89 /* PBXTextBookmark */;
+			55C0D3BB1311488C00D24B89 /* PBXTextBookmark */ = 55C0D3BB1311488C00D24B89 /* PBXTextBookmark */;
+			55C0D3BE131148AB00D24B89 /* PBXTextBookmark */ = 55C0D3BE131148AB00D24B89 /* PBXTextBookmark */;
+			55C0D3C0131148BA00D24B89 /* PBXTextBookmark */ = 55C0D3C0131148BA00D24B89 /* PBXTextBookmark */;
+			55C0D3C3131148CA00D24B89 /* PBXTextBookmark */ = 55C0D3C3131148CA00D24B89 /* PBXTextBookmark */;
+			55C0D3C5131148DE00D24B89 /* PBXTextBookmark */ = 55C0D3C5131148DE00D24B89 /* PBXTextBookmark */;
+			55C0D3CA13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CA13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CB13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CB13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CC13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CC13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CD13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CD13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CE13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CE13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3CF13114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3CF13114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3D013114B3A00D24B89 /* PBXTextBookmark */ = 55C0D3D013114B3A00D24B89 /* PBXTextBookmark */;
+			55C0D3D213114B6000D24B89 /* PBXTextBookmark */ = 55C0D3D213114B6000D24B89 /* PBXTextBookmark */;
+			55C0D3D313114B6A00D24B89 /* PBXTextBookmark */ = 55C0D3D313114B6A00D24B89 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 55C0CAFD130FD27900D24B89 /* Source Control */;
 		userBuildSettings = {
@@ -607,16 +690,16 @@
 	};
 	55C0CB0C130FD2C700D24B89 /* MainViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1223, 654}}";
-			sepNavSelRange = "{743, 0}";
-			sepNavVisRange = "{0, 1024}";
+			sepNavIntBoundsRect = "{{0, 0}, {1223, 606}}";
+			sepNavSelRange = "{1227, 0}";
+			sepNavVisRange = "{0, 1234}";
 		};
 	};
 	55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 4940}}";
-			sepNavSelRange = "{5622, 0}";
-			sepNavVisRange = "{4770, 2171}";
+			sepNavIntBoundsRect = "{{0, 0}, {1104, 5590}}";
+			sepNavSelRange = "{1722, 0}";
+			sepNavVisRange = "{636, 1442}";
 		};
 	};
 	55C0CBB313100D4C00D24B89 /* ReceiptView.h */ = {
@@ -847,7 +930,7 @@
 			sepNavVisRange = "{2712, 1359}";
 		};
 	};
-	55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:176 */ = {
+	55C0CC9113101F8400D24B89 /* CashRegisterAppDelegate.m:173 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -859,13 +942,13 @@
 		functionName = "-managedObjectModel";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 176;
+		lineNumber = 173;
 		location = CashRegister;
-		modificationTime = 319895596.889571;
+		modificationTime = 319900476.164685;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:178 */ = {
+	55C0CC9313101F8600D24B89 /* CashRegisterAppDelegate.m:175 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -877,9 +960,9 @@
 		functionName = "-managedObjectModel";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 178;
+		lineNumber = 175;
 		location = CashRegister;
-		modificationTime = 319895596.889685;
+		modificationTime = 319900476.164944;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -893,7 +976,7 @@
 		vrLen = 1379;
 		vrLoc = 0;
 	};
-	55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:160 */ = {
+	55C0CCA313101FDC00D24B89 /* CashRegisterAppDelegate.m:157 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -905,13 +988,13 @@
 		functionName = "-managedObjectContext";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 160;
+		lineNumber = 157;
 		location = CashRegister;
-		modificationTime = 319895596.889706;
+		modificationTime = 319900476.165056;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:193 */ = {
+	55C0CCA513101FE300D24B89 /* CashRegisterAppDelegate.m:190 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -923,13 +1006,13 @@
 		functionName = "-persistentStoreCoordinator";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 193;
+		lineNumber = 190;
 		location = CashRegister;
-		modificationTime = 319895596.889774;
+		modificationTime = 319900476.165161;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:197 */ = {
+	55C0CCA713101FE600D24B89 /* CashRegisterAppDelegate.m:194 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -941,9 +1024,9 @@
 		functionName = "-persistentStoreCoordinator";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 197;
+		lineNumber = 194;
 		location = CashRegister;
-		modificationTime = 319895596.889807;
+		modificationTime = 319900476.16527;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -973,7 +1056,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 137";
 		rLen = 0;
-		rLoc = 6699;
+		rLoc = 6468;
 		rType = 0;
 		vrLen = 2154;
 		vrLoc = 754;
@@ -1137,7 +1220,7 @@
 		ignoreCount = 0;
 		lineNumber = 107;
 		location = CashRegister;
-		modificationTime = 319895596.889868;
+		modificationTime = 319900476.165382;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1146,7 +1229,7 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 25";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 1047;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 0;
@@ -1197,16 +1280,16 @@
 	};
 	55C0CE4313105AE000D24B89 /* ButtonGridView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 631}}";
-			sepNavSelRange = "{733, 0}";
-			sepNavVisRange = "{0, 789}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 606}}";
+			sepNavSelRange = "{897, 0}";
+			sepNavVisRange = "{0, 904}";
 		};
 	};
 	55C0CE4413105AE000D24B89 /* ButtonGridView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1092, 2769}}";
-			sepNavSelRange = "{963, 0}";
-			sepNavVisRange = "{461, 924}";
+			sepNavIntBoundsRect = "{{0, 0}, {1092, 2795}}";
+			sepNavSelRange = "{3901, 0}";
+			sepNavVisRange = "{3016, 1429}";
 		};
 	};
 	55C0CE4A13105B2F00D24B89 /* ButtonGridViewDelegate.h */ = {
@@ -1256,7 +1339,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 103";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 1504;
@@ -1276,7 +1359,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 116";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1385;
 		vrLoc = 1455;
@@ -1326,7 +1409,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 137";
 		rLen = 0;
-		rLoc = 6699;
+		rLoc = 6468;
 		rType = 0;
 		vrLen = 2154;
 		vrLoc = 754;
@@ -1406,7 +1489,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 121";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 1504;
@@ -1416,7 +1499,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 55";
 		rLen = 0;
-		rLoc = 3116;
+		rLoc = 2885;
 		rType = 0;
 		vrLen = 1913;
 		vrLoc = 522;
@@ -1426,7 +1509,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 49";
 		rLen = 1316;
-		rLoc = 1800;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1858;
 		vrLoc = 522;
@@ -1436,7 +1519,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 51";
 		rLen = 0;
-		rLoc = 1800;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1927;
 		vrLoc = 522;
@@ -1466,7 +1549,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 117";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 2728;
@@ -1476,7 +1559,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 121";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 0;
@@ -1486,7 +1569,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 97";
 		rLen = 0;
-		rLoc = 2318;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 1033;
@@ -1496,7 +1579,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 29";
 		rLen = 0;
-		rLoc = 607;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 234;
@@ -1506,7 +1589,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 60";
 		rLen = 0;
-		rLoc = 1236;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 645;
@@ -1516,7 +1599,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 60";
 		rLen = 0;
-		rLoc = 1236;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1511;
 		vrLoc = 1016;
@@ -1526,7 +1609,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 51";
 		rLen = 0;
-		rLoc = 1800;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1927;
 		vrLoc = 522;
@@ -1536,7 +1619,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1800;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1844;
 		vrLoc = 522;
@@ -1546,7 +1629,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1800;
+		rLoc = 1569;
 		rType = 0;
 		vrLen = 1844;
 		vrLoc = 522;
@@ -1555,7 +1638,7 @@
 		isa = PBXTextBookmark;
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		rLen = 0;
-		rLoc = 89;
+		rLoc = 90;
 		rType = 1;
 	};
 	55C0CEE513106F0B00D24B89 /* PBXTextBookmark */ = {
@@ -1563,7 +1646,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 73";
 		rLen = 0;
-		rLoc = 1388;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 1016;
@@ -1573,7 +1656,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 78";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 1016;
@@ -1583,7 +1666,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 78";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 985;
@@ -1633,7 +1716,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 45";
 		rLen = 0;
-		rLoc = 1541;
+		rLoc = 1310;
 		rType = 0;
 		vrLen = 1947;
 		vrLoc = 433;
@@ -1643,7 +1726,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 78";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1331;
 		vrLoc = 985;
@@ -1653,7 +1736,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 77";
 		rLen = 0;
-		rLoc = 1448;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 985;
@@ -1663,7 +1746,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 73";
 		rLen = 0;
-		rLoc = 1388;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 622;
@@ -1683,7 +1766,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 119";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 2728;
@@ -1693,7 +1776,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 119";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 2728;
@@ -1703,7 +1786,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 87";
 		rLen = 0;
-		rLoc = 1750;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1610;
 		vrLoc = 1141;
@@ -1713,7 +1796,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 87";
 		rLen = 0;
-		rLoc = 1750;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 1141;
@@ -1723,7 +1806,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 58";
 		rLen = 0;
-		rLoc = 1236;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1006;
 		vrLoc = 648;
@@ -1733,7 +1816,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 58";
 		rLen = 0;
-		rLoc = 1236;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 648;
@@ -1743,7 +1826,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 119";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1544;
 		vrLoc = 2712;
@@ -1753,7 +1836,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 118";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 2712;
@@ -1773,7 +1856,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 58";
 		rLen = 0;
-		rLoc = 1236;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 778;
@@ -1783,7 +1866,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 118";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 2762;
@@ -1793,7 +1876,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 118";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1494;
 		vrLoc = 2762;
@@ -1803,7 +1886,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 118";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 2762;
@@ -1823,7 +1906,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 105";
 		rLen = 0;
-		rLoc = 2447;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 1826;
@@ -1833,7 +1916,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 87";
 		rLen = 0;
-		rLoc = 1799;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 985;
@@ -1843,7 +1926,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 87";
 		rLen = 0;
-		rLoc = 1799;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1379;
 		vrLoc = 985;
@@ -1863,7 +1946,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 2344;
 		vrLoc = 757;
@@ -1903,7 +1986,7 @@
 		comments = "Request for member 'customer' in something not a structure or union";
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		rLen = 1;
-		rLoc = 51;
+		rLoc = 48;
 		rType = 1;
 	};
 	55C0CF351310730000D24B89 /* PBXTextBookmark */ = {
@@ -1911,7 +1994,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 54";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 1366;
@@ -1951,7 +2034,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 58";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 1799;
 		rType = 0;
 		vrLen = 2276;
 		vrLoc = 757;
@@ -2011,7 +2094,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 58";
 		rLen = 0;
-		rLoc = 2030;
+		rLoc = 1799;
 		rType = 0;
 		vrLen = 2276;
 		vrLoc = 757;
@@ -2021,7 +2104,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 79";
 		rLen = 0;
-		rLoc = 3107;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 2132;
 		vrLoc = 725;
@@ -2031,7 +2114,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 79";
 		rLen = 0;
-		rLoc = 3107;
+		rLoc = 2876;
 		rType = 0;
 		vrLen = 2141;
 		vrLoc = 725;
@@ -2086,7 +2169,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 1735;
@@ -2126,7 +2209,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 2280;
+		rLoc = 2049;
 		rType = 0;
 		vrLen = 2106;
 		vrLoc = 757;
@@ -2136,7 +2219,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 2280;
+		rLoc = 2049;
 		rType = 0;
 		vrLen = 2111;
 		vrLoc = 757;
@@ -2166,7 +2249,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2206,7 +2289,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2226,7 +2309,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2246,7 +2329,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2266,7 +2349,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 1735;
@@ -2286,7 +2369,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 61";
 		rLen = 0;
-		rLoc = 2280;
+		rLoc = 2049;
 		rType = 0;
 		vrLen = 2111;
 		vrLoc = 757;
@@ -2296,7 +2379,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 64";
 		rLen = 0;
-		rLoc = 2459;
+		rLoc = 2228;
 		rType = 0;
 		vrLen = 2059;
 		vrLoc = 813;
@@ -2306,7 +2389,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2316,7 +2399,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2326,7 +2409,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 64";
 		rLen = 0;
-		rLoc = 2459;
+		rLoc = 2228;
 		rType = 0;
 		vrLen = 2077;
 		vrLoc = 813;
@@ -2356,7 +2439,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2366,7 +2449,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2376,7 +2459,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2396,7 +2479,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 1735;
@@ -2406,7 +2489,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 50";
 		rLen = 0;
-		rLoc = 1797;
+		rLoc = 1566;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 1735;
@@ -2784,7 +2867,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 64";
 		rLen = 0;
-		rLoc = 2459;
+		rLoc = 2228;
 		rType = 0;
 		vrLen = 2059;
 		vrLoc = 813;
@@ -2794,7 +2877,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 70";
 		rLen = 0;
-		rLoc = 2836;
+		rLoc = 2605;
 		rType = 0;
 		vrLen = 2133;
 		vrLoc = 813;
@@ -2804,7 +2887,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 70";
 		rLen = 0;
-		rLoc = 2867;
+		rLoc = 2636;
 		rType = 0;
 		vrLen = 2129;
 		vrLoc = 848;
@@ -2824,7 +2907,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 62";
 		rLen = 0;
-		rLoc = 2319;
+		rLoc = 2088;
 		rType = 0;
 		vrLen = 2150;
 		vrLoc = 848;
@@ -2834,7 +2917,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 62";
 		rLen = 0;
-		rLoc = 2319;
+		rLoc = 2088;
 		rType = 0;
 		vrLen = 2150;
 		vrLoc = 848;
@@ -2844,7 +2927,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 87";
 		rLen = 0;
-		rLoc = 1799;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 985;
@@ -2854,7 +2937,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 86";
 		rLen = 0;
-		rLoc = 1748;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 986;
@@ -2874,7 +2957,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 69";
 		rLen = 0;
-		rLoc = 1383;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 744;
@@ -2894,7 +2977,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 109";
 		rLen = 0;
-		rLoc = 2445;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1449;
 		vrLoc = 2084;
@@ -2954,7 +3037,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 84";
 		rLen = 0;
-		rLoc = 1709;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 986;
@@ -3004,7 +3087,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 84";
 		rLen = 0;
-		rLoc = 1731;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1322;
 		vrLoc = 1027;
@@ -3024,7 +3107,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 58";
 		rLen = 0;
-		rLoc = 1187;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 728;
 		vrLoc = 503;
@@ -3064,7 +3147,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 58";
 		rLen = 0;
-		rLoc = 1187;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1345;
 		vrLoc = 1021;
@@ -3074,7 +3157,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 126";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1765;
 		vrLoc = 1737;
@@ -3084,7 +3167,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 128";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1478;
 		vrLoc = 2335;
@@ -3114,7 +3197,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 127";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1491;
 		vrLoc = 2337;
@@ -3134,7 +3217,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 127";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 2337;
@@ -3154,7 +3237,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 2768;
@@ -3174,7 +3257,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 123";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 2768;
@@ -3204,7 +3287,7 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 21";
 		rLen = 0;
-		rLoc = 614;
+		rLoc = 660;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 0;
@@ -3214,7 +3297,7 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 21";
 		rLen = 0;
-		rLoc = 614;
+		rLoc = 660;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 0;
@@ -3235,7 +3318,7 @@
 		comments = "'buttonGridView' undeclared (first use in this function)";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 0;
-		rLoc = 223;
+		rLoc = 224;
 		rType = 1;
 	};
 	55C0D0531310857F00D24B89 /* PBXTextBookmark */ = {
@@ -3243,7 +3326,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 125";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 2933;
@@ -3263,7 +3346,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 127";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 3321;
@@ -3273,7 +3356,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 125";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 3004;
@@ -3283,7 +3366,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 127";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 3321;
@@ -3293,7 +3376,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 125";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1449;
 		vrLoc = 3004;
@@ -3303,7 +3386,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 127";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 3321;
@@ -3313,7 +3396,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 125";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1428;
 		vrLoc = 3026;
@@ -3323,7 +3406,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 127";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 3321;
@@ -3333,7 +3416,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 125";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 3121;
@@ -3353,7 +3436,7 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 22";
 		rLen = 0;
-		rLoc = 614;
+		rLoc = 660;
 		rType = 0;
 		vrLen = 960;
 		vrLoc = 0;
@@ -3363,7 +3446,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 124";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1597;
 		vrLoc = 3011;
@@ -3373,7 +3456,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 124";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1726;
 		vrLoc = 1120;
@@ -3383,7 +3466,7 @@
 		comments = "'i' undeclared (first use in this function)";
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		rLen = 1;
-		rLoc = 197;
+		rLoc = 201;
 		rType = 1;
 	};
 	55C0D0A213108CC200D24B89 /* PBXTextBookmark */ = {
@@ -3391,7 +3474,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 180";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 3969;
@@ -3421,7 +3504,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 128";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 2840;
@@ -3461,7 +3544,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 156";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 2960;
@@ -3471,7 +3554,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 178";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 3308;
@@ -3481,7 +3564,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 187";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 3966;
@@ -3491,7 +3574,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 178";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 3308;
@@ -3521,7 +3604,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 187";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 3966;
@@ -3541,7 +3624,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 187";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 3966;
@@ -3561,7 +3644,7 @@
 		fRef = 55C0CE4313105AE000D24B89 /* ButtonGridView.h */;
 		name = "ButtonGridView.h: 25";
 		rLen = 0;
-		rLoc = 782;
+		rLoc = 897;
 		rType = 0;
 		vrLen = 697;
 		vrLoc = 0;
@@ -3571,7 +3654,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 156";
 		rLen = 0;
-		rLoc = 3755;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 3614;
@@ -3581,7 +3664,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 128";
 		rLen = 0;
-		rLoc = 7195;
+		rLoc = 7237;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 2868;
@@ -3591,7 +3674,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 143";
 		rLen = 0;
-		rLoc = 7696;
+		rLoc = 7738;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 2903;
@@ -3601,7 +3684,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 193";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 385;
 		vrLoc = 3712;
@@ -3611,7 +3694,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 143";
 		rLen = 0;
-		rLoc = 7696;
+		rLoc = 7738;
 		rType = 0;
 		vrLen = 1211;
 		vrLoc = 2903;
@@ -3638,7 +3721,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 193";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 451;
 		vrLoc = 3712;
@@ -3648,7 +3731,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 193";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 451;
 		vrLoc = 3712;
@@ -3668,7 +3751,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 193";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 451;
 		vrLoc = 3712;
@@ -3718,7 +3801,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 148";
 		rLen = 0;
-		rLoc = 3755;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1537;
 		vrLoc = 3394;
@@ -3728,7 +3811,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 138";
 		rLen = 0;
-		rLoc = 2990;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1470;
 		vrLoc = 2361;
@@ -3738,7 +3821,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 199";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 602;
 		vrLoc = 3630;
@@ -3748,7 +3831,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 163";
 		rLen = 0;
-		rLoc = 4281;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1444;
 		vrLoc = 3761;
@@ -3758,7 +3841,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 197";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 3455;
@@ -3768,7 +3851,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 133";
 		rLen = 0;
-		rLoc = 2990;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 2262;
@@ -3778,7 +3861,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 200";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 500;
 		vrLoc = 3354;
@@ -3788,7 +3871,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 128";
 		rLen = 0;
-		rLoc = 2839;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1577;
 		vrLoc = 2652;
@@ -3798,7 +3881,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 202";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 515;
 		vrLoc = 3318;
@@ -3808,7 +3891,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 203";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 415;
 		vrLoc = 3317;
@@ -3818,7 +3901,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 204";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 3291;
@@ -3848,7 +3931,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 192";
 		rLen = 0;
-		rLoc = 4753;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 4301;
@@ -3858,7 +3941,7 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 22";
 		rLen = 0;
-		rLoc = 614;
+		rLoc = 660;
 		rType = 0;
 		vrLen = 960;
 		vrLoc = 0;
@@ -3868,7 +3951,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 174";
 		rLen = 0;
-		rLoc = 8659;
+		rLoc = 8713;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 4070;
@@ -3878,7 +3961,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 170";
 		rLen = 0;
-		rLoc = 8589;
+		rLoc = 8643;
 		rType = 0;
 		vrLen = 1533;
 		vrLoc = 3860;
@@ -3888,7 +3971,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 208";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 3291;
@@ -3898,7 +3981,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 170";
 		rLen = 0;
-		rLoc = 8589;
+		rLoc = 8643;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 3860;
@@ -3908,7 +3991,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 208";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 3291;
@@ -3918,7 +4001,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 208";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 3291;
@@ -3928,7 +4011,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 174";
 		rLen = 0;
-		rLoc = 8660;
+		rLoc = 8714;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 4009;
@@ -3938,7 +4021,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 208";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 3291;
@@ -3948,7 +4031,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 174";
 		rLen = 0;
-		rLoc = 8660;
+		rLoc = 8714;
 		rType = 0;
 		vrLen = 1302;
 		vrLoc = 4009;
@@ -3981,7 +4064,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 208";
 		rLen = 0;
-		rLoc = 5368;
+		rLoc = 5550;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 3291;
@@ -3991,7 +4074,7 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 22";
 		rLen = 0;
-		rLoc = 614;
+		rLoc = 660;
 		rType = 0;
 		vrLen = 960;
 		vrLoc = 0;
@@ -4001,7 +4084,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1349;
+		rLoc = 1149;
 		rType = 0;
 		vrLen = 2032;
 		vrLoc = 284;
@@ -4025,7 +4108,7 @@
 		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
 		name = "CashRegisterAppDelegate.m: 42";
 		rLen = 0;
-		rLoc = 1349;
+		rLoc = 1149;
 		rType = 0;
 		vrLen = 2145;
 		vrLoc = 284;
@@ -4035,9 +4118,9 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 33";
 		rLen = 0;
-		rLoc = 1017;
+		rLoc = 1234;
 		rType = 0;
-		vrLen = 988;
+		vrLen = 983;
 		vrLoc = 0;
 	};
 	55C0D15B1310988D00D24B89 /* PBXTextBookmark */ = {
@@ -4055,7 +4138,7 @@
 		fRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */;
 		name = "CheckoutViewController.m: 82";
 		rLen = 0;
-		rLoc = 2771;
+		rLoc = 2770;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 0;
@@ -4075,7 +4158,7 @@
 		comments = "Unused variable 'product'";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 322;
+		rLoc = 365;
 		rType = 1;
 	};
 	55C0D17D131117DF00D24B89 /* PBXTextBookmark */ = {
@@ -4083,7 +4166,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 217";
 		rLen = 0;
-		rLoc = 10596;
+		rLoc = 12335;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 6159;
@@ -4093,7 +4176,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 217";
 		rLen = 0;
-		rLoc = 10596;
+		rLoc = 12335;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 6159;
@@ -4103,7 +4186,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 217";
 		rLen = 0;
-		rLoc = 10596;
+		rLoc = 12335;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 6159;
@@ -4113,7 +4196,7 @@
 		comments = "'productTitles' undeclared (first use in this function)";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 227;
+		rLoc = 228;
 		rType = 1;
 	};
 	55C0D19A13111EA400D24B89 /* PBXTextBookmark */ = {
@@ -4121,7 +4204,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 183";
 		rLen = 0;
-		rLoc = 7284;
+		rLoc = 7326;
 		rType = 0;
 		vrLen = 539;
 		vrLoc = 5822;
@@ -4131,7 +4214,7 @@
 		comments = "'NSArray' may not respond to '-addObject:'";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 192;
+		rLoc = 193;
 		rType = 1;
 	};
 	55C0D19E13111EC700D24B89 /* PBXTextBookmark */ = {
@@ -4139,7 +4222,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 152";
 		rLen = 0;
-		rLoc = 5862;
+		rLoc = 5904;
 		rType = 0;
 		vrLen = 737;
 		vrLoc = 4550;
@@ -4149,7 +4232,7 @@
 		comments = "Method definition for '-categoryTitles' not found";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 372;
+		rLoc = 414;
 		rType = 1;
 	};
 	55C0D1A213111F0100D24B89 /* PBXTextBookmark */ = {
@@ -4157,7 +4240,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 293";
 		rLen = 0;
-		rLoc = 11954;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 9398;
@@ -4167,7 +4250,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 43";
 		rLen = 0;
-		rLoc = 798;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 849;
@@ -4265,9 +4348,9 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 25";
 		rLen = 0;
-		rLoc = 743;
+		rLoc = 913;
 		rType = 0;
-		vrLen = 1017;
+		vrLen = 983;
 		vrLoc = 0;
 	};
 	55C0D1B213111FEA00D24B89 /* PBXTextBookmark */ = {
@@ -4275,7 +4358,7 @@
 		comments = "#warning \"Set product fields!!!\"";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 331;
+		rLoc = 374;
 		rType = 1;
 	};
 	55C0D1B313111FEA00D24B89 /* PBXTextBookmark */ = {
@@ -4293,7 +4376,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 315";
 		rLen = 0;
-		rLoc = 11954;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 9779;
@@ -4313,7 +4396,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 43";
 		rLen = 0;
-		rLoc = 798;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 849;
@@ -4323,7 +4406,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 43";
 		rLen = 0;
-		rLoc = 798;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1590;
 		vrLoc = 2028;
@@ -4333,7 +4416,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 134";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1614;
 		vrLoc = 1823;
@@ -4343,7 +4426,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 315";
 		rLen = 0;
-		rLoc = 11954;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 9779;
@@ -4353,7 +4436,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 134";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1647;
 		vrLoc = 1823;
@@ -4387,7 +4470,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 315";
 		rLen = 0;
-		rLoc = 11954;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 9779;
@@ -4418,7 +4501,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 279";
 		rLen = 0;
-		rLoc = 10875;
+		rLoc = 12614;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 8210;
@@ -4428,7 +4511,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 10037;
+		rLoc = 10227;
 		rType = 0;
 		vrLen = 1464;
 		vrLoc = 7845;
@@ -4438,7 +4521,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 320";
 		rLen = 0;
-		rLoc = 11954;
+		rLoc = 13659;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 10041;
@@ -4448,7 +4531,7 @@
 		comments = "'Order' may not respond to '-addOrdersObject:'";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 293;
+		rLoc = 298;
 		rType = 1;
 	};
 	55C0D1D3131122E200D24B89 /* PBXTextBookmark */ = {
@@ -4456,7 +4539,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 317;
 		vrLoc = 8136;
@@ -4466,9 +4549,9 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 27";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 980;
 		rType = 0;
-		vrLen = 1017;
+		vrLen = 983;
 		vrLoc = 0;
 	};
 	55C0D1D91311233400D24B89 /* PBXTextBookmark */ = {
@@ -4496,7 +4579,7 @@
 		fRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */;
 		name = "CheckoutViewController.m: 82";
 		rLen = 0;
-		rLoc = 2771;
+		rLoc = 2770;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 0;
@@ -4506,7 +4589,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 288";
 		rLen = 0;
-		rLoc = 11135;
+		rLoc = 12874;
 		rType = 0;
 		vrLen = 1623;
 		vrLoc = 7859;
@@ -4516,7 +4599,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 259";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 1512;
 		vrLoc = 7946;
@@ -4526,7 +4609,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 368;
 		vrLoc = 8136;
@@ -4536,7 +4619,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 261";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 1461;
 		vrLoc = 8152;
@@ -4546,7 +4629,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 364;
 		vrLoc = 8136;
@@ -4556,7 +4639,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 254";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9177;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 7505;
@@ -4566,7 +4649,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 254";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9177;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 7505;
@@ -4576,7 +4659,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 364;
 		vrLoc = 8136;
@@ -4586,7 +4669,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 364;
 		vrLoc = 8136;
@@ -4607,7 +4690,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 254";
 		rLen = 0;
-		rLoc = 9123;
+		rLoc = 9177;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 7505;
@@ -4617,7 +4700,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 185";
 		rLen = 0;
-		rLoc = 6339;
+		rLoc = 6381;
 		rType = 0;
 		vrLen = 2218;
 		vrLoc = 4414;
@@ -4627,7 +4710,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 260";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 364;
 		vrLoc = 8228;
@@ -4637,7 +4720,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 261";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 1402;
 		vrLoc = 7471;
@@ -4647,7 +4730,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 259";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 328;
 		vrLoc = 8228;
@@ -4672,7 +4755,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 267";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 1653;
 		vrLoc = 7471;
@@ -4682,7 +4765,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 267";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 1642;
 		vrLoc = 7471;
@@ -4692,7 +4775,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 266";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 8228;
@@ -4702,7 +4785,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 304";
 		rLen = 0;
-		rLoc = 11135;
+		rLoc = 12874;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 8992;
@@ -4742,7 +4825,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 266";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 8228;
@@ -4772,7 +4855,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 304";
 		rLen = 0;
-		rLoc = 11135;
+		rLoc = 12874;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 8992;
@@ -4782,7 +4865,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 304";
 		rLen = 0;
-		rLoc = 11135;
+		rLoc = 12874;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 8992;
@@ -4812,7 +4895,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 304";
 		rLen = 0;
-		rLoc = 11135;
+		rLoc = 12874;
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 8992;
@@ -4822,7 +4905,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 275";
 		rLen = 0;
-		rLoc = 10037;
+		rLoc = 10227;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 7717;
@@ -4832,7 +4915,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 266";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 8228;
@@ -4842,7 +4925,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 275";
 		rLen = 0;
-		rLoc = 9867;
+		rLoc = 10057;
 		rType = 0;
 		vrLen = 1527;
 		vrLoc = 7717;
@@ -4852,7 +4935,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 266";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 8228;
@@ -4862,7 +4945,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 266";
 		rLen = 0;
-		rLoc = 9169;
+		rLoc = 9223;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 8228;
@@ -4872,7 +4955,7 @@
 		comments = "Method definition for '-selectedCategory' not found";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 372;
+		rLoc = 414;
 		rType = 1;
 	};
 	55C0D224131128D100D24B89 /* PBXTextBookmark */ = {
@@ -4880,7 +4963,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 354";
 		rLen = 0;
-		rLoc = 12009;
+		rLoc = 13713;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 11219;
@@ -4890,7 +4973,7 @@
 		fRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */;
 		name = "CheckoutViewController.m: 82";
 		rLen = 0;
-		rLoc = 2771;
+		rLoc = 2770;
 		rType = 0;
 		vrLen = 1362;
 		vrLoc = 0;
@@ -4900,9 +4983,9 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 28";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 980;
 		rType = 0;
-		vrLen = 1051;
+		vrLen = 983;
 		vrLoc = 0;
 	};
 	55C0D229131128F000D24B89 /* PBXTextBookmark */ = {
@@ -4910,7 +4993,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 257";
 		rLen = 0;
-		rLoc = 8974;
+		rLoc = 9028;
 		rType = 0;
 		vrLen = 1776;
 		vrLoc = 7331;
@@ -4920,7 +5003,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 359";
 		rLen = 0;
-		rLoc = 12009;
+		rLoc = 13713;
 		rType = 0;
 		vrLen = 141;
 		vrLoc = 11320;
@@ -4930,7 +5013,7 @@
 		comments = "'products' undeclared (first use in this function)";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 367;
+		rLoc = 409;
 		rType = 1;
 	};
 	55C0D23113112A4C00D24B89 /* PBXTextBookmark */ = {
@@ -4938,7 +5021,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 11983;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -4948,9 +5031,9 @@
 		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
 		name = "MainViewController.h: 25";
 		rLen = 0;
-		rLoc = 743;
+		rLoc = 913;
 		rType = 0;
-		vrLen = 1024;
+		vrLen = 983;
 		vrLoc = 0;
 	};
 	55C0D23713112A5000D24B89 /* PBXTextBookmark */ = {
@@ -4968,7 +5051,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 254";
 		rLen = 0;
-		rLoc = 8410;
+		rLoc = 8464;
 		rType = 0;
 		vrLen = 1677;
 		vrLoc = 7219;
@@ -4978,7 +5061,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 11983;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -4988,7 +5071,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 11983;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -4998,7 +5081,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 368";
 		rLen = 0;
-		rLoc = 11983;
+		rLoc = 13687;
 		rType = 0;
 		vrLen = 150;
 		vrLoc = 11732;
@@ -5029,7 +5112,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 254";
 		rLen = 0;
-		rLoc = 8410;
+		rLoc = 8464;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 7221;
@@ -5039,7 +5122,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 254";
 		rLen = 0;
-		rLoc = 8410;
+		rLoc = 8464;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 7221;
@@ -5049,7 +5132,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 247";
 		rLen = 0;
-		rLoc = 8069;
+		rLoc = 8117;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 7221;
@@ -5069,7 +5152,7 @@
 		comments = "#warning \"Set product fields!!!\"";
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		rLen = 1;
-		rLoc = 328;
+		rLoc = 371;
 		rType = 1;
 	};
 	55C0D25113112C5700D24B89 /* PBXTextBookmark */ = {
@@ -5077,7 +5160,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 329";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 12617;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 10568;
@@ -5097,7 +5180,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 329";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 12617;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 10568;
@@ -5117,7 +5200,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 329";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 12617;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 10568;
@@ -5167,7 +5250,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 329";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 12617;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 10568;
@@ -5275,7 +5358,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 233";
 		rLen = 0;
-		rLoc = 7479;
+		rLoc = 7521;
 		rType = 0;
 		vrLen = 2028;
 		vrLoc = 6402;
@@ -5295,7 +5378,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 64";
 		rLen = 0;
-		rLoc = 1187;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1509;
 		vrLoc = 1281;
@@ -5305,7 +5388,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 111";
 		rLen = 0;
-		rLoc = 2419;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 2222;
@@ -5315,7 +5398,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 111";
 		rLen = 0;
-		rLoc = 2419;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1653;
 		vrLoc = 2222;
@@ -5325,7 +5408,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 111";
 		rLen = 0;
-		rLoc = 2419;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1653;
 		vrLoc = 2222;
@@ -5355,7 +5438,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 141";
 		rLen = 0;
-		rLoc = 3481;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 2222;
@@ -5365,7 +5448,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 141";
 		rLen = 0;
-		rLoc = 3478;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 2220;
@@ -5375,7 +5458,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 117";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 2220;
@@ -5385,7 +5468,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 111";
 		rLen = 0;
-		rLoc = 2401;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 1546;
 		vrLoc = 3583;
@@ -5395,7 +5478,7 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 233";
 		rLen = 0;
-		rLoc = 7479;
+		rLoc = 7521;
 		rType = 0;
 		vrLen = 2028;
 		vrLoc = 6402;
@@ -5425,7 +5508,7 @@
 		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
 		name = "ButtonGridView.m: 58";
 		rLen = 0;
-		rLoc = 963;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 461;
@@ -5455,10 +5538,784 @@
 		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
 		name = "MainViewController.m: 197";
 		rLen = 0;
-		rLoc = 5622;
+		rLoc = 5664;
 		rType = 0;
 		vrLen = 2171;
 		vrLoc = 4770;
+	};
+	55C0D31513113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D28413112E6600D24B89 /* get-receipt-button.png */;
+	};
+	55C0D31613113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D27B13112E6600D24B89 /* category-button-blue-pressed.png */;
+	};
+	55C0D31713113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D27C13112E6600D24B89 /* category-button-blue.png */;
+	};
+	55C0D31813113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D27D13112E6600D24B89 /* category-button-green-pressed.png */;
+	};
+	55C0D31913113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D27E13112E6600D24B89 /* category-button-green.png */;
+	};
+	55C0D31A13113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D27F13112E6600D24B89 /* category-button-lightblue-pressed.png */;
+	};
+	55C0D31B13113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D28013112E6600D24B89 /* category-button-lightblue.png */;
+	};
+	55C0D31C13113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D28113112E6600D24B89 /* category-button-red-pressed.png */;
+	};
+	55C0D31D13113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D28313112E6600D24B89 /* empty-receipt.png */;
+	};
+	55C0D31E13113E8800D24B89 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 55C0D28213112E6600D24B89 /* category-button-red.png */;
+	};
+	55C0D31F13113E8800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
+		name = "MainViewController.h: 27";
+		rLen = 0;
+		rLoc = 843;
+		rType = 0;
+		vrLen = 1140;
+		vrLoc = 0;
+	};
+	55C0D32013113E8800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 197";
+		rLen = 0;
+		rLoc = 5664;
+		rType = 0;
+		vrLen = 2171;
+		vrLoc = 4770;
+	};
+	55C0D32113113E8800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 333";
+		rLen = 0;
+		rLoc = 12285;
+		rType = 0;
+		vrLen = 1389;
+		vrLoc = 9631;
+	};
+	55C0D32613113EAA00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 332";
+		rLen = 0;
+		rLoc = 12230;
+		rType = 0;
+		vrLen = 1465;
+		vrLoc = 9631;
+	};
+	55C0D32A13113F6800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 337";
+		rLen = 0;
+		rLoc = 11808;
+		rType = 0;
+		vrLen = 2165;
+		vrLoc = 9631;
+	};
+	55C0D32E13113F8E00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 337";
+		rLen = 0;
+		rLoc = 11808;
+		rType = 0;
+		vrLen = 2168;
+		vrLoc = 9629;
+	};
+	55C0D32F13113F8E00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4C13105D1C00D24B89 /* ScrollingView.m */;
+		name = "ScrollingView.m: 27";
+		rLen = 0;
+		rLoc = 580;
+		rType = 0;
+		vrLen = 897;
+		vrLoc = 0;
+	};
+	55C0D33013113F8E00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 64";
+		rLen = 0;
+		rLoc = 565;
+		rType = 0;
+		vrLen = 847;
+		vrLoc = 571;
+	};
+	55C0D3391311406700D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 64";
+		rLen = 0;
+		rLoc = 565;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 571;
+	};
+	55C0D33A1311406700D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	55C0D33B1311406700D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	55C0D366131142B300D24B89 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ';' before '.' token";
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 29;
+		rType = 1;
+	};
+	55C0D367131142B300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 29";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 315;
+		vrLoc = 365;
+	};
+	55C0D368131142B700D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4C13105D1C00D24B89 /* ScrollingView.m */;
+		name = "ScrollingView.m: 27";
+		rLen = 0;
+		rLoc = 580;
+		rType = 0;
+		vrLen = 897;
+		vrLoc = 0;
+	};
+	55C0D369131142B700D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 201";
+		rLen = 0;
+		rLoc = 5550;
+		rType = 0;
+		vrLen = 1609;
+		vrLoc = 2278;
+	};
+	55C0D36E1311433500D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 139";
+		rLen = 0;
+		rLoc = 3537;
+		rType = 0;
+		vrLen = 1602;
+		vrLoc = 2278;
+	};
+	55C0D371131143E500D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 139";
+		rLen = 0;
+		rLoc = 3537;
+		rType = 0;
+		vrLen = 1602;
+		vrLoc = 2278;
+	};
+	55C0D372131143E500D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 55C0D19513111A2E00D24B89 /* Products.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rits/Desktop/cashpad/ipad/Products.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	55C0D373131143E500D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	55C0D374131143E500D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	55C0D376131143F500D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 29";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 315;
+		vrLoc = 365;
+	};
+	55C0D3791311440500D24B89 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* CashRegister-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/rits/Desktop/cashpad/ipad/CashRegister-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	55C0D37A1311440500D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1148;
+		rType = 0;
+		vrLen = 1759;
+		vrLoc = 559;
+	};
+	55C0D37C1311441400D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 29";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 315;
+		vrLoc = 365;
+	};
+	55C0D37D1311441500D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1148;
+		rType = 0;
+		vrLen = 1907;
+		vrLoc = 559;
+	};
+	55C0D3801311448C00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 29";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 315;
+		vrLoc = 365;
+	};
+	55C0D3831311451D00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 29";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 315;
+		vrLoc = 365;
+	};
+	55C0D3841311452600D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 29";
+		rLen = 0;
+		rLoc = 597;
+		rType = 0;
+		vrLen = 315;
+		vrLoc = 365;
+	};
+	55C0D3851311452600D24B89 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incompatible Objective-C types assigning 'struct MainViewController *', expected 'struct UINavigationController *'";
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 39;
+		rType = 1;
+	};
+	55C0D3861311452600D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 754;
+		vrLoc = 1042;
+	};
+	55C0D38B1311457000D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* CashRegisterAppDelegate.h */;
+		name = "CashRegisterAppDelegate.h: 15";
+		rLen = 0;
+		rLoc = 324;
+		rType = 0;
+		vrLen = 558;
+		vrLoc = 0;
+	};
+	55C0D38C1311457000D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1148;
+		rType = 0;
+		vrLen = 1733;
+		vrLoc = 265;
+	};
+	55C0D38D1311457000D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 191";
+		rLen = 0;
+		rLoc = 5321;
+		rType = 0;
+		vrLen = 1878;
+		vrLoc = 4810;
+	};
+	55C0D38E1311457000D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 256";
+		rLen = 180;
+		rLoc = 8184;
+		rType = 0;
+		vrLen = 1790;
+		vrLoc = 7565;
+	};
+	55C0D3901311458700D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D393131145A800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 256";
+		rLen = 180;
+		rLoc = 8184;
+		rType = 0;
+		vrLen = 1806;
+		vrLoc = 7565;
+	};
+	55C0D394131145A800D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 191";
+		rLen = 0;
+		rLoc = 5257;
+		rType = 0;
+		vrLen = 1779;
+		vrLoc = 4414;
+	};
+	55C0D396131145B300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D397131145BA00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 191";
+		rLen = 0;
+		rLoc = 5257;
+		rType = 0;
+		vrLen = 1997;
+		vrLoc = 4414;
+	};
+	55C0D398131145BA00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 191";
+		rLen = 0;
+		rLoc = 5257;
+		rType = 0;
+		vrLen = 1997;
+		vrLoc = 4414;
+	};
+	55C0D39D131146D900D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D39E131146DA00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 191";
+		rLen = 0;
+		rLoc = 5257;
+		rType = 0;
+		vrLen = 2160;
+		vrLoc = 4457;
+	};
+	55C0D3A1131147D300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
+		name = "MainViewController.h: 40";
+		rLen = 0;
+		rLoc = 1227;
+		rType = 0;
+		vrLen = 1234;
+		vrLoc = 0;
+	};
+	55C0D3A2131147D300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4313105AE000D24B89 /* ButtonGridView.h */;
+		name = "ButtonGridView.h: 28";
+		rLen = 0;
+		rLoc = 897;
+		rType = 0;
+		vrLen = 844;
+		vrLoc = 0;
+	};
+	55C0D3A3131147D300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 152";
+		rLen = 0;
+		rLoc = 3901;
+		rType = 0;
+		vrLen = 1515;
+		vrLoc = 2931;
+	};
+	55C0D3A4131147D300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 231";
+		rLen = 0;
+		rLoc = 7118;
+		rType = 0;
+		vrLen = 1669;
+		vrLoc = 7996;
+	};
+	55C0D3A5131147D300D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 349";
+		rLen = 0;
+		rLoc = 11915;
+		rType = 0;
+		vrLen = 1720;
+		vrLoc = 10328;
+	};
+	55C0D3A7131147DC00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D3A8131147DD00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 349";
+		rLen = 0;
+		rLoc = 11915;
+		rType = 0;
+		vrLen = 1723;
+		vrLoc = 10328;
+	};
+	55C0D3A91311480B00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 347";
+		rLen = 0;
+		rLoc = 11844;
+		rType = 0;
+		vrLen = 1691;
+		vrLoc = 10328;
+	};
+	55C0D3AC1311482B00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D3AF1311485A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 342";
+		rLen = 0;
+		rLoc = 11626;
+		rType = 0;
+		vrLen = 1743;
+		vrLoc = 10242;
+	};
+	55C0D3B01311485A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4313105AE000D24B89 /* ButtonGridView.h */;
+		name = "ButtonGridView.h: 29";
+		rLen = 0;
+		rLoc = 897;
+		rType = 0;
+		vrLen = 904;
+		vrLoc = 0;
+	};
+	55C0D3B11311485A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 152";
+		rLen = 0;
+		rLoc = 3901;
+		rType = 0;
+		vrLen = 1515;
+		vrLoc = 2931;
+	};
+	55C0D3B21311485A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 157";
+		rLen = 0;
+		rLoc = 3901;
+		rType = 0;
+		vrLen = 1422;
+		vrLoc = 3016;
+	};
+	55C0D3B41311485F00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D3B71311488200D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 157";
+		rLen = 0;
+		rLoc = 3901;
+		rType = 0;
+		vrLen = 1429;
+		vrLoc = 3016;
+	};
+	55C0D3B81311488200D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 342";
+		rLen = 0;
+		rLoc = 11626;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 10273;
+	};
+	55C0D3B91311488200D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 350";
+		rLen = 0;
+		rLoc = 11915;
+		rType = 0;
+		vrLen = 1712;
+		vrLoc = 10328;
+	};
+	55C0D3BB1311488C00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D3BE131148AB00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 349";
+		rLen = 0;
+		rLoc = 11915;
+		rType = 0;
+		vrLen = 1769;
+		vrLoc = 10329;
+	};
+	55C0D3C0131148BA00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D3C3131148CA00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 354";
+		rLen = 0;
+		rLoc = 12024;
+		rType = 0;
+		vrLen = 1771;
+		vrLoc = 10377;
+	};
+	55C0D3C5131148DE00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 1042;
+	};
+	55C0D3CA13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4A13105B2F00D24B89 /* ButtonGridViewDelegate.h */;
+		name = "ButtonGridViewDelegate.h: 15";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	55C0D3CB13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */;
+		name = "ButtonGridView.m: 157";
+		rLen = 0;
+		rLoc = 3901;
+		rType = 0;
+		vrLen = 1429;
+		vrLoc = 3016;
+	};
+	55C0D3CC13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CE4313105AE000D24B89 /* ButtonGridView.h */;
+		name = "ButtonGridView.h: 29";
+		rLen = 0;
+		rLoc = 897;
+		rType = 0;
+		vrLen = 904;
+		vrLoc = 0;
+	};
+	55C0D3CD13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0C130FD2C700D24B89 /* MainViewController.h */;
+		name = "MainViewController.h: 40";
+		rLen = 0;
+		rLoc = 1227;
+		rType = 0;
+		vrLen = 1234;
+		vrLoc = 0;
+	};
+	55C0D3CE13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 68";
+		rLen = 0;
+		rLoc = 1722;
+		rType = 0;
+		vrLen = 1442;
+		vrLoc = 636;
+	};
+	55C0D3CF13114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 42";
+		rLen = 0;
+		rLoc = 1148;
+		rType = 0;
+		vrLen = 1733;
+		vrLoc = 265;
+	};
+	55C0D3D013114B3A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 1149;
+		rType = 0;
+		vrLen = 1760;
+		vrLoc = 284;
+	};
+	55C0D3D213114B6000D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 1120;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 1112;
+	};
+	55C0D3D313114B6A00D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CashRegisterAppDelegate.m */;
+		name = "CashRegisterAppDelegate.m: 40";
+		rLen = 0;
+		rLoc = 1149;
+		rType = 0;
+		vrLen = 1805;
+		vrLoc = 284;
 	};
 	A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {
 		uiCtxt = {
