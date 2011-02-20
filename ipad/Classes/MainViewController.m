@@ -121,7 +121,6 @@
 	[alert release];
 }
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -177,7 +176,6 @@
 	return products;
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
@@ -279,6 +277,8 @@
     
     receiptView.productTableView.delegate = self;
     receiptView.productTableView.dataSource = self;
+    
+    [receiptView.payButton addTarget:self action:@selector(pay:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (ProductCategory *)selectedCategory
