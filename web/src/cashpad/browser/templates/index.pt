@@ -38,7 +38,7 @@
           <ul>
             <li tal:repeat="usert context/user/values">
               <a tal:attributes="href python:view.url(usert)"
-                 tal:content="usert" />
+                 tal:content="usert/__name__" />
             </li>
           </ul>
         </div>    <!-- .block_content ends -->
