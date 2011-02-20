@@ -38,6 +38,7 @@
 	self.HTTPRequest = request;
 	[request release];
 	
+	[HTTPRequest addRequestHeader:@"Content-Type" value:@"application/json; charset=utf-8"]; 
 	HTTPRequest.delegate = self;
 	HTTPRequest.requestMethod = @"PUT";
 	[HTTPRequest startAsynchronous];
