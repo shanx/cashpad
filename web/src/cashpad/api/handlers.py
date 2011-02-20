@@ -8,14 +8,14 @@ from zope.formlib.form import applyData
 from zope.publisher.interfaces import BadRequest
 
 from cashpad.interfaces import IOrder, IItem
-from cashpad.models import Orders, Order, Users, User, Item
+from cashpad.models import OrderContainer, Order, UserContainer, User, Item
 
 class APILayer(grok.IRESTLayer):
     grok.restskin('api')
 
 # XXX PUT requests in grok don't work like you would expect them to?
-class UsersTraverser(grok.Traverser):
-    grok.context(Users)
+class UserContainerTraverser(grok.Traverser):
+    grok.context(UserContainer)
     grok.layer(APILayer)
 
     def traverse(self, name):
@@ -32,16 +32,16 @@ class UsersTraverser(grok.Traverser):
             location = located(self.context, self.context.__parent__, self.context.__name__)
             return location
 
-class UsersREST(grok.REST):
-    grok.context(Users)
+class UserContainerHandler(grok.REST):
+    grok.context(UserContainer)
     grok.layer(APILayer)
 
     def PUT(self):
         # XXX We/grok should set the location here.
         return ''
 
-class OrdersREST(grok.REST):
-    grok.context(Orders)
+class OrderContainerHandler(grok.REST):
+    grok.context(OrderContainer)
     grok.layer(APILayer)
 
     def validate_proper_contenttype(self):

@@ -3,15 +3,15 @@ from zope.schema.fieldproperty import FieldProperty
 
 from cashpad.interfaces import IOrder, IItem
 
-class Users(grok.Container):
+class UserContainer(grok.Container):
     pass
 
 class App(grok.Application, grok.Container):
     def __init__(self):
         super(App, self).__init__()
-        self['user'] = Users()
+        self['user'] = UserContainer()
 
-class Orders(grok.Container):
+class OrderContainer(grok.Container):
     def add(self, order):
         # FIXME: this is not very elegant
         key = len(self) and max([int(c) for c in self]) + 1 or 1
@@ -22,7 +22,7 @@ class Orders(grok.Container):
 class User(grok.Container, grok.Model):
     def __init__(self):
         super(User, self).__init__()
-        self['order'] = Orders()
+        self['order'] = OrderContainer()
 
 class Item(grok.Model):
     grok.implements(IItem)

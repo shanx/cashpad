@@ -1,10 +1,10 @@
 import unittest
 
-from cashpad.models import Orders, Order
+from cashpad.models import OrderContainer, Order
 
 class OrderTests(unittest.TestCase):
     def test_add_order_to_orders_container(self):
-        container = Orders()
+        container = OrderContainer()
         order = Order()
         
         # To start the container should be empty
