@@ -229,6 +229,8 @@
 	productsGridView.columnCount = 3;
 	productsGridView.titles = [self productTitles];
 	productsGridView.buttonSize = CGSizeMake(200.0, 100.0);
+	productsGridView.buttonImage = [UIImage imageNamed:@"button-big"];
+	productsGridView.highlightedButtonImage = [UIImage imageNamed:@"button-big-pressed"];
 	
     productsGridView.layer.masksToBounds = YES;
     productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
