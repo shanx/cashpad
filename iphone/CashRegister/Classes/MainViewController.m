@@ -84,6 +84,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor darkGrayColor];
 	
 	GKPeerPickerController *controller = [[GKPeerPickerController alloc] init];
 	controller.delegate = self;
