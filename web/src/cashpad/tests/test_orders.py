@@ -1,6 +1,6 @@
 import unittest
 
-from cashpad.app import Orders, Order
+from cashpad.models import Orders, Order
 
 class OrderTests(unittest.TestCase):
     def test_add_order_to_orders_container(self):

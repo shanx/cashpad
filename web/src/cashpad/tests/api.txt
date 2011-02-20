@@ -3,7 +3,7 @@ User
 
 Let's first create an instance at the top level:
 
-    >>> from cashpad.app import App
+    >>> from cashpad.models import App
     >>> root = getRootFolder()
     >>> app = root['app'] = App()
 

@@ -5,34 +5,13 @@ import datetime
 import grok
 from zope.location.location import located
 from zope.formlib.form import applyData
-from zope.schema.fieldproperty import FieldProperty
 from zope.publisher.interfaces import BadRequest
 
 from cashpad.interfaces import IOrder, IItem
+from cashpad.models import Orders, Order, Users, User, Item
 
 class APILayer(grok.IRESTLayer):
     grok.restskin('api')
-
-class Users(grok.Container):
-    pass
-
-class App(grok.Application, grok.Container):
-    def __init__(self):
-        super(App, self).__init__()
-        self['user'] = Users()
-
-class Orders(grok.Container):
-    def add(self, order):
-        # FIXME: this is not very elegant
-        key = len(self) and max([int(c) for c in self]) + 1 or 1
-
-        self[str(key)] = order
-
-
-class User(grok.Container, grok.Model):
-    def __init__(self):
-        super(User, self).__init__()
-        self['order'] = Orders()
 
 # XXX PUT requests in grok don't work like you would expect them to?
 class UsersTraverser(grok.Traverser):
@@ -53,7 +32,6 @@ class UsersTraverser(grok.Traverser):
             location = located(self.context, self.context.__parent__, self.context.__name__)
             return location
 
-
 class UsersREST(grok.REST):
     grok.context(Users)
     grok.layer(APILayer)
@@ -62,20 +40,6 @@ class UsersREST(grok.REST):
         # XXX We/grok should set the location here.
         return ''
 
-class Item(grok.Model):
-    grok.implements(IItem)
-    product_id = FieldProperty(IItem['product_id'])
-    product_name = FieldProperty(IItem['product_name'])
-    amount = FieldProperty(IItem['amount'])
-    unit_price = FieldProperty(IItem['unit_price'])
-
-
-class Order(grok.Model):
-    grok.implements(IOrder)
-    created_on = FieldProperty(IOrder['created_on'])
-    total_price = FieldProperty(IOrder['total_price'])
-    item_list = FieldProperty(IOrder['item_list'])
-    
 class OrdersREST(grok.REST):
     grok.context(Orders)
     grok.layer(APILayer)
