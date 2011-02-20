@@ -65,7 +65,7 @@
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
 	DLog(@"request failed, response status code: %d", request.responseStatusCode);
-	self.completionHandler([NSError errorWithDomain:nil code:0 userInfo:nil]);
+	self.completionHandler([NSError errorWithDomain:@"Customer" code:0 userInfo:nil]);
 }
 
 @end

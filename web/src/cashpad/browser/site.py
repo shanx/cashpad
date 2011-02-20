@@ -4,7 +4,7 @@ import dateutil.rrule
 import datetime
 
 import grok
-from cashpad.app import App, User
+from cashpad.models import App, User
 from cashpad.browser import resource
 
 grok.templatedir('templates')

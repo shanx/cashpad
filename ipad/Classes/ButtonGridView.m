@@ -14,6 +14,7 @@
 
 - (void)setUp;
 - (void)setUpScrollingViews;
+- (CGRect)rectForButtonAtIndex:(NSInteger)index;
 
 @end
 
@@ -24,6 +25,9 @@
 @synthesize rowCount;
 @synthesize columnCount;
 @synthesize buttonImage;
+@synthesize highlightedButtonImage;
+@synthesize buttonSize;
+@synthesize numberOfPages;
 
 - (id)initWithFrame:(CGRect)frame
 {    
@@ -52,10 +56,13 @@
 - (void)setUp
 {
 	DLog(@"");
+	highlightedIndex = NSNotFound;
+	self.delaysContentTouches = NO;
 	self.pagingEnabled = YES;
 	self.showsVerticalScrollIndicator = NO;
 	self.showsHorizontalScrollIndicator = NO;
 	self.alwaysBounceHorizontal = YES;
+	self.backgroundColor = [UIColor clearColor];
 	scrollingViews = [[NSMutableArray alloc] init];
 }
 
@@ -74,7 +81,6 @@
 
 - (void)setUpScrollingViews
 {
-	DLog(@"");
 	for (ScrollingView *scrollingView in scrollingViews) {
 		[scrollingView removeFromSuperview];
 	}
@@ -82,18 +88,16 @@
 	
 	NSInteger buttonCount = [titles count];
 	NSInteger buttonsPerPage = rowCount * columnCount;
-	NSInteger numberOfPages = ceil((float) buttonCount / buttonsPerPage);
-	
-	DLog(@"buttonCount:%d buttonsPerPage:%d numberOfPages:%d", buttonCount, buttonsPerPage, numberOfPages);
+	numberOfPages = ceil((float) buttonCount / buttonsPerPage);
 	
 	for (NSInteger i = 0; i < numberOfPages; i++) {
-		DLog(@"creating scrolling view");
 		CGFloat x = i * self.bounds.size.width;
 		CGFloat y = 0.0;
 		CGFloat width = self.bounds.size.width;
 		CGFloat height = self.bounds.size.height;
 		CGRect frame = CGRectMake(x, y, width, height);
 		ScrollingView *scrollingView = [[ScrollingView alloc] initWithFrame:frame];
+		scrollingView.backgroundColor = [UIColor clearColor];
 		scrollingView.delegate = self;
 		
 		[scrollingViews addObject:scrollingView];
@@ -106,49 +110,102 @@
 
 - (void)scrollingView:(ScrollingView *)aScrollingView drawRect:(CGRect)rect
 {
-	[[UIColor whiteColor] set];
-	UIRectFill(rect);
-	DLog(@"rect: %d", [NSValue valueWithCGRect:rect]);
-	NSInteger index = [scrollingViews indexOfObject:aScrollingView];
+	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
+
 	
-	DLog(@"drawing scrollview %d", index);
-	
-	UIFont *titleFont = [UIFont boldSystemFontOfSize:16];
+	UIFont *titleFont = [UIFont boldSystemFontOfSize:22];
 	
 	CGFloat horizontalMargin = (self.bounds.size.width - buttonImage.size.width * columnCount) / (columnCount + 1);
 	CGFloat verticalMargin = (self.bounds.size.height - buttonImage.size.height * rowCount) / (rowCount + 1);
 	
-	DLog(@"horizontalMargin:%f verticalMargin:%f", horizontalMargin, verticalMargin);
-	
 	NSInteger buttonsPerPage = rowCount * columnCount;
 	
 	for (NSInteger i = 0; i < buttonsPerPage; i++) {
-		DLog(@"drawing button %d", i);
-		if (i + index * buttonsPerPage >= [titles count]) {
-			DLog(@"skipping button %d", i);
+		NSInteger index = i + pageIndex * buttonsPerPage;
+		if (index >= [titles count]) {
 			break;
 		}
 		
-		NSString *title = [titles objectAtIndex:i];
+		NSString *title = [titles objectAtIndex:index];
 		
 		CGSize titleSize = [title sizeWithFont:titleFont];
 		
 		NSInteger row = floor(i / columnCount);
 		NSInteger column = i % columnCount;
 		
-		CGFloat x = (column + 1) * horizontalMargin + (column + 0.5) * buttonImage.size.width - titleSize.width / 2.0;
-		CGFloat y = (row + 1) * verticalMargin + (row + 0.5) * buttonImage.size.height - titleSize.height / 2.0;
+		CGFloat x = (column + 1) * horizontalMargin + column * buttonImage.size.width;
+		CGFloat y = (row + 1) * verticalMargin + row * buttonImage.size.height;
+		
+		CGFloat titleX = x + 0.5 * buttonImage.size.width - titleSize.width / 2.0;
+		CGFloat titleY = y + 0.5 * buttonImage.size.height - titleSize.height / 2.0;
+		
+		
+		if (index == highlightedIndex) {
+			[highlightedButtonImage drawAtPoint:CGPointMake(x, y)];
+		} else {
+			[buttonImage drawAtPoint:CGPointMake(x, y)];
+		}
 		
 		[[UIColor blackColor] set];
-		[title drawAtPoint:CGPointMake(x, y) withFont:titleFont];		
+		[title drawAtPoint:CGPointMake(titleX, titleY) withFont:titleFont];		
 	}
 }
 
-- (void)scrollingView:(ScrollingView *)aScrollingView pointTapped:(CGPoint)point
+- (NSInteger)currentPageIndex
 {
-	DLog(@"%f, %f", point.x, point.y);
+	return self.contentOffset.x / self.bounds.size.width;
 }
 
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesBegan:(NSSet *)touches
+{
+	UITouch *touch = [touches anyObject];
+	CGPoint locationOfTouch = [touch locationInView:aScrollingView];
+	
+	for (NSInteger i = 0; i < rowCount * columnCount; i++) {
+		if (CGRectContainsPoint([self rectForButtonAtIndex:i], locationOfTouch)) {
+			NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
+			highlightedIndex = pageIndex * rowCount * columnCount + i;
+			[aScrollingView setNeedsDisplay];
+			DLog(@"index: %d", i);
+			break;
+		}
+	}
+}
+
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesCancelled:(NSSet *)touches
+{
+	highlightedIndex = NSNotFound;
+	[aScrollingView setNeedsDisplay];
+}
+
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesMoved:(NSSet *)touches
+{
+	
+}
+
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesEnded:(NSSet *)touches
+{
+	if (highlightedIndex != NSNotFound) {
+		[delegate buttonGridView:self buttonTappedAtIndex:highlightedIndex];
+	}
+	
+	highlightedIndex = NSNotFound;
+	[aScrollingView setNeedsDisplay];
+}
+
+- (CGRect)rectForButtonAtIndex:(NSInteger)index
+{
+	CGFloat horizontalMargin = (self.bounds.size.width - buttonImage.size.width * columnCount) / (columnCount + 1);
+	CGFloat verticalMargin = (self.bounds.size.height - buttonImage.size.height * rowCount) / (rowCount + 1);
+	
+	NSInteger row = floor(index / columnCount);
+	NSInteger column = index % columnCount;
+	
+	CGFloat x = (column + 1) * horizontalMargin + column * buttonImage.size.width;
+	CGFloat y = (row + 1) * verticalMargin + row * buttonImage.size.height;
+	
+	return CGRectMake(x, y, buttonImage.size.width, buttonImage.size.height);
+}
 
 
 - (void)dealloc {

@@ -9,6 +9,7 @@
 #import <CoreData/CoreData.h>
 
 @class Order;
+@class ProductCategory;
 
 @interface Product :  NSManagedObject  
 {
@@ -18,6 +19,7 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * price;
 @property (nonatomic, retain) NSSet* orders;
+@property (nonatomic, retain) ProductCategory *category;
 
 @end
 

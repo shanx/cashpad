@@ -14,6 +14,8 @@
 @interface ButtonGridView : UIScrollView <ScrollingViewDelegate>
 {
 	NSMutableArray *scrollingViews;
+	CGSize buttonSize;
+	NSInteger highlightedIndex;
 }
 
 @property (nonatomic, assign) IBOutlet id <ButtonGridViewDelegate> delegate;
@@ -21,5 +23,9 @@
 @property (nonatomic, assign) NSInteger rowCount;
 @property (nonatomic, assign) NSInteger columnCount;
 @property (nonatomic, retain) UIImage *buttonImage;
+@property (nonatomic, retain) UIImage *highlightedButtonImage;
+@property (nonatomic, assign) CGSize buttonSize;
+@property (nonatomic, assign) NSInteger numberOfPages;
+@property (nonatomic, readonly) NSInteger currentPageIndex;
 
 @end

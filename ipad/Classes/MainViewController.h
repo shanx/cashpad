@@ -18,17 +18,25 @@
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate, ButtonGridViewDelegate>
 {
-	IBOutlet UITableView *receiptTableView;
+	IBOutlet UIPageControl *productsPageControl;
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
-	NSMutableArray *products;
+	IBOutlet UIButton *category1;
+	IBOutlet UIButton *category2;
+	IBOutlet UIButton *category3;
+	IBOutlet UIButton *category4;
+	NSMutableArray *categories;
 	PaymentSession *paymentSession;
+	NSInteger selectedCategoryIndex;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) ReceiptView* receiptView;
 
 - (IBAction)sendPaymentRequest:(id)sender;
+- (IBAction)pay:(id)sender;
+- (IBAction)category:(id)sender;
+- (IBAction)pageControlValueChanged:(id)sender;
 
 @end

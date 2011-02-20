@@ -9,45 +9,24 @@
 #import "ReceiptView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ReceiptTotalView.h"
+#import "ReceiptTitleView.h"
 
 @implementation ReceiptView
 
+@synthesize getReceiptButton;
 @synthesize productTableView;
 @synthesize receiptTotalView;
-
-#define TOTAL_VIEW_HEIGHT 100.0
+@synthesize receiptTitleView;
+@synthesize payButton;
+@synthesize onNameButton;
 
 -(void)initCommon
 {
     self.layer.masksToBounds = YES;
     self.layer.borderColor = [UIColor grayColor].CGColor;
     self.layer.borderWidth = 1.0;
-    self.backgroundColor = [UIColor lightGrayColor];
+    // self.backgroundColor = [UIColor redColor];
     
-    CGRect ownBounds = self.bounds;
-    CGRect totalViewFrame = CGRectMake(0.0, ownBounds.size.height - TOTAL_VIEW_HEIGHT, ownBounds.size.width, TOTAL_VIEW_HEIGHT);
-    
-    receiptTotalView = [[UIView alloc] initWithFrame:totalViewFrame];
-    receiptTotalView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-
-    receiptTotalView.layer.masksToBounds = YES;
-    receiptTotalView.layer.borderColor = [UIColor blueColor].CGColor;
-    receiptTotalView.layer.borderWidth = 1.0;
-    receiptTotalView.backgroundColor = [UIColor greenColor];
-    
-    
-    [self addSubview:receiptTotalView];
-    
-    productTableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0, 0.0, ownBounds.size.width, 
-                         ownBounds.size.height - TOTAL_VIEW_HEIGHT) style:UITableViewStylePlain];
-    
-    productTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
-    
-    productTableView.layer.masksToBounds = YES;
-    productTableView.layer.borderColor = [UIColor redColor].CGColor;
-    productTableView.layer.borderWidth = 1.0;
-    
-    [self addSubview:productTableView];
 }
 
 -(void)awakeFromNib
@@ -56,7 +35,7 @@
 }
 
 // must specify style at creation. -initWithFrame: calls this with UITableViewStylePlain
-- (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style; 
+- (id)initWithFrame:(CGRect)frame; 
 {
     self = [super initWithFrame:frame];
     if (self) 
@@ -69,8 +48,12 @@
 
 - (void)dealloc 
 {
+    [getReceiptButton release];
     [receiptTotalView release];
     [productTableView release];
+    [receiptTitleView release];
+    [payButton release];
+    [onNameButton release];
     
     [super dealloc];
 }

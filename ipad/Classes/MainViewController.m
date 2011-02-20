@@ -7,28 +7,61 @@
 //
 
 #import "MainViewController.h"
+#import "CheckoutViewController.h"
 #import "ProductTableViewCell.h"
 #import "Product.h"
+#import "ProductCategory.h"
 #import "PaymentSession.h"
 #import "PaymentRequest.h"
 #import "ButtonGridView.h"
 #import "ReceiptTotalView.h"
 #import "ReceiptView.h"
+#import "Customer.h"
+#import "Order.h"
+
+#import <QuartzCore/QuartzCore.h>
+
+@interface MainViewController ()
+
+@property (nonatomic, retain) Customer *customer;
+@property (nonatomic, retain) Order *order;
+@property (nonatomic, retain) NSArray *productGroupDictionaries;
+
+- (NSArray *)categoryTitles;
+- (NSArray *)productTitles;
+- (ProductCategory *)selectedCategory;
+- (NSArray *)productsInSelectedCategory;
+
+@end
 
 @implementation MainViewController
 
 @synthesize managedObjectContext;
 @synthesize receiptView;
+@synthesize customer;
+@synthesize order;
+@synthesize productGroupDictionaries;
 
 - (id)init
 {
 	self = [super initWithNibName:@"MainView" bundle:nil];
 	
 	if (self) {
-		products = [[NSMutableArray alloc] init];
+		selectedCategoryIndex = 0;
+		categories = [[NSMutableArray alloc] init];
 	}
 	
 	return self;
+}
+
+- (IBAction)pay:(id)sender
+{
+	CheckoutViewController *controller = [[CheckoutViewController alloc] init];
+	UINavigationController *tempNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+	tempNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+	[self presentModalViewController:tempNavigationController animated:YES];
+	[controller release];
+	[tempNavigationController release];
 }
 
 - (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker
@@ -88,7 +121,6 @@
 	[alert release];
 }
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -107,35 +139,133 @@
 	[controller show];
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (NSArray *)categoryTitles
+{
+	NSMutableArray *categoryTitles = [NSMutableArray array];
+	
+	for (ProductCategory *category in categories) {
+		[categoryTitles addObject:category.name];
+	}
+	
+	return categoryTitles;
+}
+
+- (NSArray *)productTitles
+{
+	NSMutableArray *productTitles = [NSMutableArray array];
+	
+	for (Product *product in [self productsInSelectedCategory]) {
+		[productTitles addObject:product.name];
+	}
+	
+	return productTitles;
+}
+
+- (NSArray *)productsInSelectedCategory
+{
+	NSMutableArray *products = [NSMutableArray array];
+	
+	for (Product *product in [self selectedCategory].products) {
+		[products addObject:product];
+	}
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+	[products sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
+	
+	return products;
+}
+
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
 	
-	NSArray *productTitles = [NSArray arrayWithObjects:
-							  @"Bier",
-							  @"7up",
-							  @"Coca Cola",
-							  @"Tonic",
-							  @"Cassis",
-							  @"Fanta",
-							  @"Spa Rood",
-							  @"Spa Blauw",
-							  @"Wijn",
-							  @"Whisky",
-							  @"Likeur",
-							  @"Pepsi", nil];
+	self.title = @"Jelle Prins - iPad Kassasysteem";
+    
+    // Load receipt view.
+    [[NSBundle mainBundle] loadNibNamed:@"ReceiptView" owner:self options:nil];
+    
+    CGRect ownBounds = self.view.bounds;
+    CGRect receiptViewFrame = receiptView.frame;
+    receiptViewFrame.origin.x = ownBounds.size.width - receiptViewFrame.size.width;
+	receiptViewFrame.origin.y = 44.0;
+    receiptViewFrame.size.height = ownBounds.size.height - 44.0;
+    receiptView.frame = receiptViewFrame;
+    
+	[self.view addSubview:receiptView];
+	
+	NSInteger productID = 0;
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"Products" ofType:@"plist"];
+	NSArray *categoryDictionaries = [[NSArray alloc] initWithContentsOfFile:path];
+	NSEntityDescription *categoryEntity = [NSEntityDescription entityForName:@"ProductCategory" inManagedObjectContext:self.managedObjectContext];
+	NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+	for (NSDictionary *categoryDictionary in categoryDictionaries) {
+		ProductCategory *category = [[ProductCategory alloc] initWithEntity:categoryEntity insertIntoManagedObjectContext:self.managedObjectContext];
+		category.name = [categoryDictionary objectForKey:@"name"];
+		
+		[categories addObject:category];
+		
+		for (NSDictionary *productDictionary in [categoryDictionary objectForKey:@"products"]) {
+			Product *product = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
+			product.category = category;
+			product.name = [productDictionary objectForKey:@"name"];
+			product.price = [productDictionary objectForKey:@"price"];
+			product.id = [NSNumber numberWithInt:productID];
+			productID++;
+			
+			//[products addObject:product];
+			
+			[product release];
+		}
+		
+		[category release];
+	}
+			
+	
+	NSEntityDescription *customerEntity = [NSEntityDescription entityForName:@"Customer" inManagedObjectContext:self.managedObjectContext];
+	Customer *tempCustomer = [[Customer alloc] initWithEntity:customerEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	self.customer = tempCustomer;
+	[tempCustomer release];
+	
+	customer.name = @"Rits";
+	customer.identifier = [[UIDevice currentDevice] uniqueIdentifier];
+	
+	NSEntityDescription *orderEntity = [NSEntityDescription entityForName:@"Order" inManagedObjectContext:self.managedObjectContext];
+	Order *tempOrder = [[Order alloc] initWithEntity:orderEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	self.order = tempOrder;
+	[tempOrder release];
+	
+	order.customer = customer;
+	
 	productsGridView.rowCount = 3;
 	productsGridView.columnCount = 3;
-	productsGridView.titles = productTitles;
+	productsGridView.titles = [self productTitles];
+	productsGridView.buttonSize = CGSizeMake(200.0, 100.0);
+	productsGridView.buttonImage = [UIImage imageNamed:@"button-big"];
+	productsGridView.highlightedButtonImage = [UIImage imageNamed:@"button-big-pressed"];
 	
+//    productsGridView.layer.masksToBounds = YES;
+//    productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    productsGridView.layer.borderWidth = 1.0;
+	
+	categoriesGridView.rowCount = 1;
+	categoriesGridView.columnCount = 4;
+	categoriesGridView.titles = [self categoryTitles];
+	categoriesGridView.buttonSize = CGSizeMake(150.0, 100.0);
+	
+	
+//    categoriesGridView.layer.masksToBounds = YES;
+//    categoriesGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    categoriesGridView.layer.borderWidth = 1.0;
+    
+    
 	DLog(@"%@", self.managedObjectContext);
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
 	product.name = @"Bier";
 	DLog(@"%@", product);
-	[products addObject:product];
+	//[products addObject:product];
 	[product release];
 
 	UIBarButtonItem* connectItem = [[UIBarButtonItem alloc] initWithTitle:@"Connect" 
@@ -148,6 +278,13 @@
     
     receiptView.productTableView.delegate = self;
     receiptView.productTableView.dataSource = self;
+    
+    [receiptView.payButton addTarget:self action:@selector(pay:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (ProductCategory *)selectedCategory
+{
+	return [categories objectAtIndex:selectedCategoryIndex];
 }
 
 #pragma mark -
@@ -155,7 +292,72 @@
 
 - (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
 {
-	DLog(@"index: %d", index);
+	if (aButtonGridView == productsGridView) {
+		NSArray *productsInSelectedCategory = [self productsInSelectedCategory];
+		if (index >= [productsInSelectedCategory count]) {
+			return;
+		}
+		Product *product = [productsInSelectedCategory objectAtIndex:index];
+		
+		NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+		Product *newProduct = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
+		newProduct.id = product.id;
+		newProduct.name = product.name;
+		newProduct.price = product.price;
+		
+		[order addProductsObject:newProduct];
+		[newProduct release];
+		
+		DLog(@"%@", order.products);
+		
+		self.productGroupDictionaries = [order itemList];
+
+		[receiptView.productTableView reloadData];
+		
+		receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %@", 0x20ac, [order totalPrice]];
+	} else {
+		selectedCategoryIndex = index;
+		productsGridView.titles = [self productTitles];
+	}
+
+}
+
+- (IBAction)category:(id)sender
+{
+	[category1 setImage:[UIImage imageNamed:@"category-button-red"] forState:UIControlStateNormal];
+	[category2 setImage:[UIImage imageNamed:@"category-button-green"] forState:UIControlStateNormal];
+	[category3 setImage:[UIImage imageNamed:@"category-button-blue"] forState:UIControlStateNormal];
+	[category4 setImage:[UIImage imageNamed:@"category-button-lightblue"] forState:UIControlStateNormal];
+	if (sender == category1) {
+		selectedCategoryIndex = 0;
+		[category1 setImage:[UIImage imageNamed:@"category-button-red-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category2) {
+		selectedCategoryIndex = 1;
+		[category2 setImage:[UIImage imageNamed:@"category-button-green-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category3) {
+		selectedCategoryIndex = 2;
+		[category3 setImage:[UIImage imageNamed:@"category-button-blue-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category4) {
+		selectedCategoryIndex = 3;
+		[category4 setImage:[UIImage imageNamed:@"category-button-lightblue-pressed"] forState:UIControlStateNormal];
+	}
+	
+	selectedCategoryIndex = MIN(selectedCategoryIndex, [categories count] - 1);
+	
+	productsGridView.titles = [self productTitles];
+	
+	productsPageControl.numberOfPages = productsGridView.numberOfPages;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	DLog(@"%d", productsGridView.currentPageIndex);
+	productsPageControl.currentPage = productsGridView.currentPageIndex;
+}
+
+- (void)pageControlValueChanged:(id)sender
+{
+	
 }
 
 
@@ -169,19 +371,24 @@
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
 {
-	return [products count];
+	return [productGroupDictionaries count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString *CellIdentifier = @"cell";
 	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptView.productTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	Product *product = [products objectAtIndex:indexPath.row];
+	NSDictionary *dictionary = [productGroupDictionaries objectAtIndex:indexPath.row];
 	if (cell == nil) {
-		cell = [[[ProductTableViewCell alloc] initWithProduct:product reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[ProductTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
+                                            reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-	cell.product = product;
+#warning "Set product fields!!!" 
+	cell.priceLabel.text = [[dictionary objectForKey:@"product_price"] stringValue];
+	cell.nameLabel.text = [dictionary objectForKey:@"product_name"];
+	cell.amountLabel.text = [[dictionary objectForKey:@"amount"] stringValue];
+	//cell.product = product;
 	
 	return cell;
 }
@@ -192,7 +399,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
     // Return YES for supported orientations.
-    return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+    return interfaceOrientation == UIInterfaceOrientationLandscapeLeft;
 }
 
 
@@ -216,7 +423,6 @@
 - (void)dealloc 
 {
     [receiptView release];
-    [products release];
     [super dealloc];
 }
 
