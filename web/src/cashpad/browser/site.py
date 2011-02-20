@@ -1,5 +1,5 @@
 import grok
-from cashpad.app import App
+from cashpad.models import App
 
 grok.templatedir('templates')
 class Index(grok.View):

@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "CheckoutViewController.h"
 #import "ProductTableViewCell.h"
 #import "Product.h"
 #import "PaymentSession.h"
@@ -31,6 +32,16 @@
 	}
 	
 	return self;
+}
+
+- (IBAction)pay:(id)sender
+{
+	CheckoutViewController *controller = [[CheckoutViewController alloc] init];
+	UINavigationController *tempNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+	tempNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+	[self presentModalViewController:tempNavigationController animated:YES];
+	[controller release];
+	[tempNavigationController release];
 }
 
 - (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker

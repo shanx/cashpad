@@ -26,6 +26,8 @@
 		55C0CE3E13105A0D00D24B89 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CE3D13105A0D00D24B89 /* ProductCategory.m */; };
 		55C0CE4513105AE000D24B89 /* ButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CE4413105AE000D24B89 /* ButtonGridView.m */; };
 		55C0CE4E13105D1C00D24B89 /* ScrollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0CE4C13105D1C00D24B89 /* ScrollingView.m */; };
+		55C0D1491310963200D24B89 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0D1471310963200D24B89 /* CheckoutViewController.m */; };
+		55C0D1571310988A00D24B89 /* CheckoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C0D1561310988A00D24B89 /* CheckoutView.xib */; };
 		A55772E9131016030009D6EB /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A55772D8131016030009D6EB /* ASIHTTPRequest.m */; };
 		A55772EA131016030009D6EB /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A55772DA131016030009D6EB /* ASIFormDataRequest.m */; };
 		A55772EB131016030009D6EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A55772DC131016030009D6EB /* Reachability.m */; };
@@ -84,6 +86,9 @@
 		55C0CE4B13105D1C00D24B89 /* ScrollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingView.h; sourceTree = "<group>"; };
 		55C0CE4C13105D1C00D24B89 /* ScrollingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingView.m; sourceTree = "<group>"; };
 		55C0CE4D13105D1C00D24B89 /* ScrollingViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingViewDelegate.h; sourceTree = "<group>"; };
+		55C0D1461310963200D24B89 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		55C0D1471310963200D24B89 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		55C0D1561310988A00D24B89 /* CheckoutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CashRegister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CashRegister-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
 		A55772D8131016030009D6EB /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				55C0D1561310988A00D24B89 /* CheckoutView.xib */,
 				8D1107310486CEB800E47090 /* CashRegister-Info.plist */,
 				55C0CBAF13100CC300D24B89 /* MainView.xib */,
 				55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */,
@@ -271,6 +277,8 @@
 		55C0CBFD1310131200D24B89 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				55C0D1461310963200D24B89 /* CheckoutViewController.h */,
+				55C0D1471310963200D24B89 /* CheckoutViewController.m */,
 				55C0CB0C130FD2C700D24B89 /* MainViewController.h */,
 				55C0CB0D130FD2C700D24B89 /* MainViewController.m */,
 			);
@@ -395,6 +403,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				55C0CBB013100CC300D24B89 /* MainView.xib in Resources */,
+				55C0D1571310988A00D24B89 /* CheckoutView.xib in Resources */,
 				A58F5B34131104E400808AB0 /* ProductTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +443,7 @@
 				55C0CE4E13105D1C00D24B89 /* ScrollingView.m in Sources */,
 				A557752213106AA10009D6EB /* ReceiptTotalView.m in Sources */,
 				A557760C13108B3C0009D6EB /* ReceiptTitleView.m in Sources */,
+				55C0D1491310963200D24B89 /* CheckoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
