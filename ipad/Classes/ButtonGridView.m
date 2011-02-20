@@ -25,6 +25,7 @@
 @synthesize rowCount;
 @synthesize columnCount;
 @synthesize buttonImage;
+@synthesize highlightedButtonImage;
 @synthesize buttonSize;
 
 - (id)initWithFrame:(CGRect)frame
@@ -60,6 +61,7 @@
 	self.showsVerticalScrollIndicator = NO;
 	self.showsHorizontalScrollIndicator = NO;
 	self.alwaysBounceHorizontal = YES;
+	self.backgroundColor = [UIColor redColor];
 	scrollingViews = [[NSMutableArray alloc] init];
 }
 
@@ -78,7 +80,6 @@
 
 - (void)setUpScrollingViews
 {
-	DLog(@"");
 	for (ScrollingView *scrollingView in scrollingViews) {
 		[scrollingView removeFromSuperview];
 	}
@@ -88,10 +89,7 @@
 	NSInteger buttonsPerPage = rowCount * columnCount;
 	NSInteger numberOfPages = ceil((float) buttonCount / buttonsPerPage);
 	
-	DLog(@"buttonCount:%d buttonsPerPage:%d numberOfPages:%d", buttonCount, buttonsPerPage, numberOfPages);
-	
 	for (NSInteger i = 0; i < numberOfPages; i++) {
-		DLog(@"creating scrolling view");
 		CGFloat x = i * self.bounds.size.width;
 		CGFloat y = 0.0;
 		CGFloat width = self.bounds.size.width;
@@ -110,23 +108,18 @@
 
 - (void)scrollingView:(ScrollingView *)aScrollingView drawRect:(CGRect)rect
 {
-	[[UIColor whiteColor] set];
+	[[UIColor redColor] set];
 	UIRectFill(rect);
-	DLog(@"rect: %d", [NSValue valueWithCGRect:rect]);
+	
 	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
+
 	
-	DLog(@"drawing scrollview %d", index);
-	
-	UIFont *titleFont = [UIFont boldSystemFontOfSize:16];
+	UIFont *titleFont = [UIFont boldSystemFontOfSize:22];
 	
 	CGFloat horizontalMargin = (self.bounds.size.width - buttonSize.width * columnCount) / (columnCount + 1);
 	CGFloat verticalMargin = (self.bounds.size.height - buttonSize.height * rowCount) / (rowCount + 1);
 	
-	DLog(@"horizontalMargin:%f verticalMargin:%f", horizontalMargin, verticalMargin);
-	
 	NSInteger buttonsPerPage = rowCount * columnCount;
-	
-	DLog(@"buttonsPerPage:%d", buttonsPerPage);
 	
 	for (NSInteger i = 0; i < buttonsPerPage; i++) {
 		NSInteger index = i + pageIndex * buttonsPerPage;
@@ -134,26 +127,28 @@
 			break;
 		}
 		
-		DLog(@"i:%d highlightedIndex:%d", i, highlightedIndex);
-		
-		if (index == highlightedIndex) {
-			
-			[[UIColor redColor] set];
-			UIRectFill([self rectForButtonAtIndex:i]);
-		}
-		
-		NSString *title = [titles objectAtIndex:i];
+		NSString *title = [titles objectAtIndex:index];
 		
 		CGSize titleSize = [title sizeWithFont:titleFont];
 		
 		NSInteger row = floor(i / columnCount);
 		NSInteger column = i % columnCount;
 		
-		CGFloat x = (column + 1) * horizontalMargin + (column + 0.5) * buttonSize.width - titleSize.width / 2.0;
-		CGFloat y = (row + 1) * verticalMargin + (row + 0.5) * buttonSize.height - titleSize.height / 2.0;
+		CGFloat x = (column + 1) * horizontalMargin + column * buttonSize.width;
+		CGFloat y = (row + 1) * verticalMargin + row * buttonSize.height;
+		
+		CGFloat titleX = x + 0.5 * buttonSize.width - titleSize.width / 2.0;
+		CGFloat titleY = y + 0.5 * buttonSize.height - titleSize.height / 2.0 + 20.0;
+		
+		
+		if (index == highlightedIndex) {
+			[highlightedButtonImage drawAtPoint:CGPointMake(x, y)];
+		} else {
+			[buttonImage drawAtPoint:CGPointMake(x, y)];
+		}
 		
 		[[UIColor blackColor] set];
-		[title drawAtPoint:CGPointMake(x, y) withFont:titleFont];		
+		[title drawAtPoint:CGPointMake(titleX, titleY) withFont:titleFont];		
 	}
 }
 

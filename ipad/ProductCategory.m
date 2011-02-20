@@ -13,5 +13,6 @@
 @implementation ProductCategory 
 
 @dynamic products;
+@dynamic name;
 
 @end

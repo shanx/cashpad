@@ -18,14 +18,18 @@
 
 -(void)initCommon
 {
-    self.contentView.layer.masksToBounds = YES;
-    self.contentView.layer.borderColor = [UIColor redColor].CGColor;
-    self.contentView.layer.borderWidth = 1.0;
+    //self.contentView.layer.masksToBounds = YES;
+    //self.contentView.layer.borderColor = [UIColor redColor].CGColor;
+    //self.contentView.layer.borderWidth = 1.0;
     
-    self.cellView.layer.masksToBounds = YES;
-    self.cellView.layer.borderColor = [UIColor blueColor].CGColor;
-    self.cellView.layer.borderWidth = 1.0;
+    //self.cellView.layer.masksToBounds = YES;
+    //self.cellView.layer.borderColor = [UIColor blueColor].CGColor;
+    //self.cellView.layer.borderWidth = 1.0;
     
+    amountLabel.layer.masksToBounds = YES;
+    amountLabel.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    amountLabel.layer.borderWidth = 2.0;
+    amountLabel.layer.cornerRadius = 5.0;
 }
 
 -(void)awakeFromNib
@@ -41,7 +45,7 @@
     {
         [[NSBundle mainBundle] loadNibNamed:@"ProductTableViewCell" owner:self options:nil];
         CGRect contentViewBounds = self.contentView.bounds;
-        cellView.bounds = contentViewBounds;
+        cellView.frame = contentViewBounds;
         self.contentView.clipsToBounds = YES;
         [self.contentView addSubview:cellView];
         

@@ -18,12 +18,12 @@
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate, ButtonGridViewDelegate>
 {
-	IBOutlet UITableView *receiptTableView;
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
-	NSMutableArray *products;
+	NSMutableArray *categories;
 	PaymentSession *paymentSession;
+	NSInteger selectedCategoryIndex;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

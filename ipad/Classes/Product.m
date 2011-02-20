@@ -7,7 +7,7 @@
 //
 
 #import "Product.h"
-
+#import "ProductCategory.h"
 #import "Order.h"
 
 @implementation Product 
@@ -16,5 +16,6 @@
 @dynamic name;
 @dynamic price;
 @dynamic orders;
+@dynamic category;
 
 @end

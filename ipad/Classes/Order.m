@@ -17,7 +17,6 @@
 
 @property (nonatomic, copy) OrderCompletionHandler completionHandler;
 
-- (NSArray *)itemList;
 - (NSInteger)numberOfProductsWithID:(NSNumber *)id;
 
 @end
@@ -122,6 +121,17 @@
 	}
 	
 	return [dictionary allValues];
+}
+
+- (NSNumber *)totalPrice
+{
+	float totalPrice = 0.0;
+	
+	for (Product *product in self.products) {
+		totalPrice += [product.price floatValue];
+	}
+	
+	return [NSNumber numberWithFloat:totalPrice];
 }
 		
 
