@@ -384,7 +384,6 @@
                                             reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-#warning "Set product fields!!!" 
 	cell.priceLabel.text = [[dictionary objectForKey:@"product_price"] stringValue];
 	cell.nameLabel.text = [dictionary objectForKey:@"product_name"];
 	cell.amountLabel.text = [[dictionary objectForKey:@"amount"] stringValue];
