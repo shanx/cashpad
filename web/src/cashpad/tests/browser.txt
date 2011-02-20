@@ -1,6 +1,6 @@
 Let's first create an instance at the top level:
 
-    >>> from cashpad.app import App
+    >>> from cashpad.models import App
     >>> root = getRootFolder()
     >>> app = root['app'] = App()
 
@@ -18,7 +18,7 @@ Let's first create an instance at the top level:
     </body>
     </html>
 
-    >>> from cashpad.app import User, Order
+    >>> from cashpad.models import User, Order
     >>> user1 = app['user']['user1'] = User()
     >>> order1 = user1['order']['1'] = Order()
     >>> browser.reload()

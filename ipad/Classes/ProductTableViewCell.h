@@ -12,12 +12,20 @@
 
 @interface ProductTableViewCell : UITableViewCell
 {
-
+    IBOutlet UIView*  cellView;
+    IBOutlet UILabel* amountLabel;
+    IBOutlet UILabel* nameLabel;
+    IBOutlet UILabel* priceLabel;
 }
 
-@property (nonatomic, retain) Product *product;
+@property (nonatomic, retain) UIView*  cellView;
+@property (nonatomic, retain) UILabel* amountLabel;
+@property (nonatomic, retain) UILabel* nameLabel;
+@property (nonatomic, retain) UILabel* priceLabel;
 
-- (id)initWithProduct:(Product *)aProduct reuseIdentifier:(NSString *)identifier;
+
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 
 
 @end

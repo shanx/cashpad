@@ -74,7 +74,7 @@
 					<object class="IBUIView" id="201680862">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{745, 216}</string>
+						<string key="NSFrameSize">{724, 216}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="17646590"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -82,7 +82,7 @@
 					<object class="IBUIView" id="651129218">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 224}, {745, 524}}</string>
+						<string key="NSFrame">{{0, 224}, {724, 524}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -96,7 +96,7 @@
 					<object class="IBUIView" id="483779680">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">289</int>
-						<string key="NSFrame">{{753, 88}, {259, 369}}</string>
+						<string key="NSFrame">{{724, 88}, {300, 369}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="17646590"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -288,12 +288,16 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>MainViewController</string>
 					<string>UIResponder</string>
+<<<<<<< HEAD
 					<string>{{-51, 89}, {1039, 767}}</string>
+=======
+					<string>{{349, -73}, {1039, 756}}</string>
+>>>>>>> ef7e4edbf41cc5ba6f62754c55039852e4ebf6aa
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>ReceiptView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">AUQ8QABCsAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABEMoAAw+OAAA</bytes>
 					</object>
 					<string>ButtonGridView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
