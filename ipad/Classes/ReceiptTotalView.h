@@ -11,10 +11,12 @@
 
 @interface ReceiptTotalView : UIView 
 {
-
+    UILabel* paymentTextLabel;
+    UILabel* paymentTotalLabel;
 }
 
-@property(nonatomic, assign) CGFloat total;
+@property(nonatomic, retain) UILabel* paymentTextLabel;
+@property(nonatomic, retain) UILabel* paymentTotalLabel;
 
 
 @end
