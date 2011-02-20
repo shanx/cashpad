@@ -38,6 +38,10 @@ class UserContainerTraverser(grok.Traverser):
 
     def traverse(self, device_id):
         if self.request.method == 'PUT':
+            validate_proper_contenttype(self.request)
+            body = self.request.bodyStream.read()
+            user_data = parse_json(body)
+
             response = self.request.response
             user = self.context.get(device_id)
             if user is None:
