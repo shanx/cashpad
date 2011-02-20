@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <GameKit/GameKit.h>
-#import "PaymentSessionDelegate.h"
 #import "ButtonGridViewDelegate.h"
+#import "CheckoutViewControllerDelegate.h"
 
-@class PaymentSession;
 @class ButtonGridView;
 @class ReceiptView;
+@class PaymentSession;
 
-@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate, ButtonGridViewDelegate>
+@interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, ButtonGridViewDelegate, CheckoutViewControllerDelegate>
 {
 	IBOutlet UIPageControl *productsPageControl;
 	IBOutlet ButtonGridView *categoriesGridView;
@@ -27,8 +27,8 @@
 	IBOutlet UIButton *category3;
 	IBOutlet UIButton *category4;
 	NSMutableArray *categories;
-	PaymentSession *paymentSession;
 	NSInteger selectedCategoryIndex;
+	PaymentSession *paymentSession;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
@@ -38,5 +38,6 @@
 - (IBAction)pay:(id)sender;
 - (IBAction)category:(id)sender;
 - (IBAction)pageControlValueChanged:(id)sender;
+- (IBAction)connect:(id)sender;
 
 @end

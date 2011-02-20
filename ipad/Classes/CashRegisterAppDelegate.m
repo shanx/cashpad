@@ -44,41 +44,6 @@
     // Override point for customization after application launch.
     
     [self.window makeKeyAndVisible];
-	
-	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Customer" inManagedObjectContext:self.managedObjectContext];
-	Customer *newCustomer = [[Customer alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
-	
-	[newCustomer saveWithCompletionHandler:^(NSError *error) {
-		if (error) {
-			DLog(@"failed saving customer: %@", [error localizedDescription]);
-		} else {
-			DLog(@"succesfully saved customer");
-			
-			NSEntityDescription *entity = [NSEntityDescription entityForName:@"Order" inManagedObjectContext:self.managedObjectContext];
-			Order *order = [[Order alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
-			order.customer = newCustomer;
-			//order.creationDate = [NSDate date];
-			
-			entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
-			for (NSInteger i = 0; i < 1; i++) {
-				Product *product = [[Product alloc]	initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
-				product.id = [NSNumber numberWithInt:i];
-				product.name = @"Biertje";
-				product.price = [NSNumber numberWithFloat:200.0];
-				[order addProductsObject:product];
-				order.totalPrice = [NSNumber numberWithFloat:[order.totalPrice floatValue] + [product.price floatValue]];
-				[product release];
-			}
-			
-			[order saveWithCompletionHandler:^(NSError *error) {
-				if (error) {
-					DLog(@"failed saving order: %@", [error localizedDescription]);
-				} else {
-					DLog(@"successfully saved order");
-				}
-			}];
-		}
-	}];
     
     return YES;
 }
