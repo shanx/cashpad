@@ -2,7 +2,7 @@ User
 ====
 
 .. note::
-    
+
     Having multiple clients generate global unique id's is of course **quite crazy** but for the first prototype
     these unnecessary levels of abstraction have been left out.
 
@@ -14,7 +14,7 @@ A user is a unique instance of the CashPad application. Clients are responsible 
     Create or update a new User resource that can be addressed by ``user_id``.
 
 .. note::
-    
+
     Our advice for creating the ``user_id`` locally is to hash the unique device id with a local pre-generated key.
 
 
@@ -36,7 +36,7 @@ The request can contain the following fields:
 
 ``400 Bad Request``
     If the request data could not be parsed.
-    
+
 Examples
 --------
 
@@ -71,7 +71,7 @@ Create a user::
     >>> user = {
     ...     'name': 'mobile user'
     ... }
-    >>> user_data = data=simplejson.dumps(user)
+    >>> user_data = simplejson.dumps(user)
     >>> response = http_call('PUT', 'http://localhost/++rest++api/app/user/123', data=user_data,
     ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
     >>> response.getStatus()
@@ -85,7 +85,7 @@ User already exists, but name should be updated::
     >>> user = {
     ...     'name': 'new mobile user'
     ... }
-    >>> user_data = data=simplejson.dumps(user)
+    >>> user_data = simplejson.dumps(user)
     >>> response = http_call('PUT', 'http://localhost/++rest++api/app/user/123', data=user_data,
     ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
     >>> response.getStatus()

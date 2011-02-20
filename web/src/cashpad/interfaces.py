@@ -2,6 +2,7 @@ from zope import interface, schema
 
 class IUser(interface.Interface):
     name = schema.ASCIILine(title=u'Name of the user', required=True)
+    device_id = schema.ASCIILine(title=u'Device ID', required=True)
 
 
 class IItem(interface.Interface):
