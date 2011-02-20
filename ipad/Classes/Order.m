@@ -120,7 +120,12 @@
 		[item setObject:[NSNumber numberWithInt:amount + 1] forKey:@"amount"];
 	}
 	
-	return [dictionary allValues];
+	NSMutableArray *items = [[[dictionary allValues] mutableCopy] autorelease];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"amount" ascending:NO];
+	[items sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
+	
+	return items;
 }
 
 - (NSNumber *)totalPrice
