@@ -93,14 +93,6 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
-					<object class="IBUIView" id="483779680">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">289</int>
-						<string key="NSFrame">{{724, 88}, {300, 369}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="IBUIBackgroundColor" ref="17646590"/>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-					</object>
 					<object class="IBUIButton" id="75814420">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
@@ -156,14 +148,6 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">10</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">receiptView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="483779680"/>
-					</object>
-					<int key="connectionID">12</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -223,7 +207,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="201680862"/>
 							<reference ref="465140006"/>
-							<reference ref="483779680"/>
 							<reference ref="75814420"/>
 							<reference ref="651129218"/>
 						</object>
@@ -243,11 +226,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
 						<reference key="object" ref="465140006"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="483779680"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -277,9 +255,6 @@
 					<string>-2.CustomClassName</string>
 					<string>1.IBEditorWindowLastContentRect</string>
 					<string>1.IBPluginDependency</string>
-					<string>11.CustomClassName</string>
-					<string>11.IBPluginDependency</string>
-					<string>11.IBViewBoundsToFrameTransform</string>
 					<string>13.CustomClassName</string>
 					<string>13.IBPluginDependency</string>
 					<string>14.CustomClassName</string>
@@ -293,13 +268,8 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>MainViewController</string>
 					<string>UIResponder</string>
-					<string>{{401, 89}, {1039, 767}}</string>
+					<string>{{241, 0}, {1039, 756}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>ReceiptView</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABEMoAAw+OAAA</bytes>
-					</object>
 					<string>ButtonGridView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>ButtonGridView</string>
@@ -395,14 +365,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>categoriesGridView</string>
 							<string>productsGridView</string>
-							<string>receiptTableView</string>
 							<string>receiptView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>ButtonGridView</string>
 							<string>ButtonGridView</string>
-							<string>UITableView</string>
 							<string>ReceiptView</string>
 						</object>
 					</object>
@@ -412,7 +380,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>categoriesGridView</string>
 							<string>productsGridView</string>
-							<string>receiptTableView</string>
 							<string>receiptView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -424,10 +391,6 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">productsGridView</string>
 								<string key="candidateClassName">ButtonGridView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">receiptTableView</string>
-								<string key="candidateClassName">UITableView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">receiptView</string>

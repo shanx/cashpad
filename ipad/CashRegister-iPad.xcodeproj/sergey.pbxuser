@@ -30,8 +30,6 @@
 		);
 		breakpoints = (
 			A55773C4131021630009D6EB /* objc_exception_throw */,
-			A58F5C9B1311371E00808AB0 /* ReceiptTitleView.m:39 */,
-			A58F5C9D1311372300808AB0 /* ReceiptTotalView.m:73 */,
 		);
 		codeSenseManager = A51F1C10130FD63900588C1F /* Code sense */;
 		executables = (
@@ -213,6 +211,164 @@
 			sepNavVisRange = "{722, 956}";
 		};
 	};
+	55C0CBE113100F6000D24B89 /* CashRegister.xcdatamodel */ = {
+		uiCtxt = {
+			"Xdesign Model Editor Bookmark Key" = {
+				UIContextForDetailArea = {
+					_indexOfSelectedPane = 0;
+					_indexOfSelectedView = 1;
+				};
+				UIContextForEntityArea = {
+					_indexOfSelectedView = 0;
+					chosenTableColumnns = (
+						"ET Entity",
+						"ET Abstract",
+						"ET Class",
+					);
+					chosenTableColumnns_sortDirections = (
+						YES,
+					);
+					chosenTableColumnns_sortKeys = (
+						name,
+					);
+					chosenTableColumnns_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableWidths = (
+						103.000000,
+						22.000000,
+						34.080078,
+					);
+				};
+				UIContextForLayoutManager = {
+					detailSplitGeometry = {
+						_collapsingFrameDimension = 0;
+						_indexOfCollapsedView = 0;
+						_percentageOfCollapsedView = 0;
+						isCollapsed = yes;
+						sizes = (
+							"{{0, 0}, {568, 218}}",
+							"{{573, 0}, {299, 218}}",
+						);
+					};
+					diagramSplitGeometry = {
+						_collapsingFrameDimension = 0;
+						_indexOfCollapsedView = 0;
+						_percentageOfCollapsedView = 0;
+						isCollapsed = yes;
+						sizes = (
+							"{{0, 0}, {872, 220}}",
+							"{{0, 225}, {872, 347}}",
+						);
+					};
+					tableSplitGeometry = {
+						_collapsingFrameDimension = 0;
+						_indexOfCollapsedView = 0;
+						_percentageOfCollapsedView = 0;
+						isCollapsed = yes;
+						sizes = (
+							"{{0, 0}, {184, 218}}",
+							"{{189, 0}, {377, 218}}",
+						);
+					};
+				};
+				UIContextForPropertyArea = {
+					_indexOfSelectedView = 0;
+					chosenTableColumnnFRTs = (
+						"FT Fetch Request",
+						"FT Predicate",
+					);
+					chosenTableColumnnFRTs_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnFRTs_sortKeys = (
+						name,
+					);
+					chosenTableColumnnFRTs_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsAT = (
+						"AT Attribute",
+						"AT Type",
+					);
+					chosenTableColumnnsAT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsAT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsAT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsFPT = (
+						"FP FetchedProperty",
+						"FP Destination",
+						"FP Predicate",
+					);
+					chosenTableColumnnsFPT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsFPT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsFPT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsPT = (
+						"PT Property",
+						"PT Kind",
+						"PT SharedKeyOne",
+					);
+					chosenTableColumnnsPT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsPT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsPT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsRT = (
+						"RT Relationship",
+						"RT Destination",
+					);
+					chosenTableColumnnsRT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsRT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsRT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableWidthsAT = (
+						128.000000,
+						64.000000,
+					);
+					chosenTableWidthsFPT = (
+						128.000000,
+						64.000000,
+						144.764160,
+					);
+					chosenTableWidthsFRT = (
+						128.000000,
+						249.764160,
+					);
+					chosenTableWidthsPT = (
+						128.000000,
+						108.110840,
+						114.570801,
+					);
+					chosenTableWidthsRT = (
+						128.000000,
+						64.000000,
+					);
+				};
+				"xdesign model browser state key - shown/hidden" = 1;
+				"xdesign model diagram view visible rect key" = "{{-80, 59}, {857, 332}}";
+			};
+		};
+	};
 	55C0CE3D13105A0D00D24B89 /* ProductCategory.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {476, 511}}";
@@ -301,7 +457,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		location = libobjc.A.dylib;
-		modificationTime = 319895365.700426;
+		modificationTime = 319896008.336867;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 		symbolName = objc_exception_throw;
@@ -397,8 +553,8 @@
 	A557752113106AA10009D6EB /* ReceiptTotalView.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {813, 1536}}";
-			sepNavSelRange = "{2475, 0}";
-			sepNavVisRange = "{1522, 1101}";
+			sepNavSelRange = "{132, 0}";
+			sepNavVisRange = "{0, 1065}";
 		};
 	};
 	A55775C0131082A90009D6EB /* PBXTextBookmark */ = {
@@ -460,8 +616,8 @@
 	};
 	A557760B13108B3C0009D6EB /* ReceiptTitleView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {813, 912}}";
-			sepNavSelRange = "{1152, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {813, 960}}";
+			sepNavSelRange = "{1130, 0}";
 			sepNavVisRange = "{249, 1052}";
 		};
 	};
@@ -1002,42 +1158,6 @@
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 4459;
-	};
-	A58F5C9B1311371E00808AB0 /* ReceiptTitleView.m:39 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = A557760B13108B3C0009D6EB /* ReceiptTitleView.m */;
-		functionName = "-awakeFromNib";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 39;
-		location = CashRegister;
-		modificationTime = 319895371.344368;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	A58F5C9D1311372300808AB0 /* ReceiptTotalView.m:73 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = A557752113106AA10009D6EB /* ReceiptTotalView.m */;
-		functionName = "-awakeFromNib";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 73;
-		location = CashRegister;
-		modificationTime = 319895365.641776;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	A5BB6747130FF00700C813B2 /* PaymentRequest.h */ = {
 		uiCtxt = {
