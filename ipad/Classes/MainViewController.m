@@ -10,24 +10,42 @@
 #import "CheckoutViewController.h"
 #import "ProductTableViewCell.h"
 #import "Product.h"
+#import "ProductCategory.h"
 #import "PaymentSession.h"
 #import "PaymentRequest.h"
 #import "ButtonGridView.h"
 #import "ReceiptTotalView.h"
 #import "ReceiptView.h"
+#import "Customer.h"
+#import "Order.h"
 
 #import <QuartzCore/QuartzCore.h>
+
+@interface MainViewController ()
+
+@property (nonatomic, retain) Customer *customer;
+@property (nonatomic, retain) Order *order;
+@property (nonatomic, retain) NSArray *productGroupDictionaries;
+
+- (NSArray *)categoryTitles;
+- (NSArray *)productTitles;
+
+@end
 
 @implementation MainViewController
 
 @synthesize managedObjectContext;
 @synthesize receiptView;
+@synthesize customer;
+@synthesize order;
+@synthesize productGroupDictionaries;
 
 - (id)init
 {
 	self = [super initWithNibName:@"MainView" bundle:nil];
 	
 	if (self) {
+		categories = [[NSMutableArray alloc] init];
 		products = [[NSMutableArray alloc] init];
 	}
 	
@@ -120,43 +138,88 @@
 	[controller show];
 }
 
+- (NSArray *)categoryTitles
+{
+	NSMutableArray *categoryTitles = [NSMutableArray array];
+	
+	for (ProductCategory *category in categories) {
+		[categoryTitles addObject:category.name];
+	}
+	
+	return categoryTitles;
+}
+
+- (NSArray *)productTitles
+{
+	NSMutableArray *productTitles = [NSMutableArray array];
+	
+	for (Product *product in products) {
+		[productTitles addObject:product.name];
+	}
+	
+	return productTitles;
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
 	
-	NSArray *productTitles = [NSArray arrayWithObjects:
-							  @"Bier",
-							  @"7up",
-							  @"Coca Cola",
-							  @"Tonic",
-							  @"Cassis",
-							  @"Fanta",
-							  @"Spa Rood",
-							  @"Spa Blauw",
-							  @"Wijn",
-							  @"Whisky",
-							  @"Likeur",
-							  @"Pepsi", nil];
+	NSInteger productID = 0;
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"Products" ofType:@"plist"];
+	NSArray *categoryDictionaries = [[NSArray alloc] initWithContentsOfFile:path];
+	NSEntityDescription *categoryEntity = [NSEntityDescription entityForName:@"ProductCategory" inManagedObjectContext:self.managedObjectContext];
+	NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+	for (NSDictionary *categoryDictionary in categoryDictionaries) {
+		ProductCategory *category = [[ProductCategory alloc] initWithEntity:categoryEntity insertIntoManagedObjectContext:self.managedObjectContext];
+		category.name = [categoryDictionary objectForKey:@"name"];
+		
+		[categories addObject:category];
+		
+		for (NSDictionary *productDictionary in [categoryDictionary objectForKey:@"products"]) {
+			Product *product = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
+			product.category = category;
+			product.name = [productDictionary objectForKey:@"name"];
+			product.price = [productDictionary objectForKey:@"price"];
+			product.id = [NSNumber numberWithInt:productID];
+			productID++;
+			
+			[products addObject:product];
+			
+			[product release];
+		}
+		
+		[category release];
+	}
+			
+	
+	NSEntityDescription *customerEntity = [NSEntityDescription entityForName:@"Customer" inManagedObjectContext:self.managedObjectContext];
+	Customer *tempCustomer = [[Customer alloc] initWithEntity:customerEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	self.customer = tempCustomer;
+	[tempCustomer release];
+	
+	customer.name = @"Rits";
+	customer.identifier = [[UIDevice currentDevice] uniqueIdentifier];
+	
+	NSEntityDescription *orderEntity = [NSEntityDescription entityForName:@"Order" inManagedObjectContext:self.managedObjectContext];
+	Order *tempOrder = [[Order alloc] initWithEntity:orderEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	self.order = tempOrder;
+	[tempOrder release];
+	
+	order.customer = customer;
 	
 	productsGridView.rowCount = 3;
 	productsGridView.columnCount = 3;
-	productsGridView.titles = productTitles;
+	productsGridView.titles = [self productTitles];
 	productsGridView.buttonSize = CGSizeMake(200.0, 100.0);
 	
     productsGridView.layer.masksToBounds = YES;
     productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     productsGridView.layer.borderWidth = 1.0;
-    
-	NSArray *categoryTitles = [NSArray arrayWithObjects:
-							   @"Koffie en thee",
-							   @"Alcoholische dranken",
-							   @"Frisdranken",
-							   @"Etenswaren", nil];
 	
 	categoriesGridView.rowCount = 1;
 	categoriesGridView.columnCount = 4;
-	categoriesGridView.titles = categoryTitles;
+	categoriesGridView.titles = [self categoryTitles];
 	categoriesGridView.buttonSize = CGSizeMake(150.0, 100.0);
 	
 	
@@ -191,9 +254,24 @@
 
 - (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
 {
-	DLog(@"index: %d", index);
+	
+	Product *product = [products objectAtIndex:index];
+	
+	NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+	Product *newProduct = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	newProduct.id = product.id;
+	newProduct.name = product.name;
+	newProduct.price = product.price;
+	
+	[order addProductsObject:newProduct];
+	[newProduct release];
+	
+	DLog(@"%@", order.products);
+	
+	self.productGroupDictionaries = [order itemList];
 	
 	
+	[receiptView.productTableView reloadData];
 }
 
 
@@ -207,20 +285,23 @@
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
 {
-	return [products count];
+	return [productGroupDictionaries count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString *CellIdentifier = @"cell";
 	ProductTableViewCell *cell = (ProductTableViewCell *) [receiptView.productTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	Product *product = [products objectAtIndex:indexPath.row];
+	NSDictionary *dictionary = [productGroupDictionaries objectAtIndex:indexPath.row];
 	if (cell == nil) {
 		cell = [[[ProductTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault 
                                             reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-#warning "Set product fields!!!"    
+#warning "Set product fields!!!" 
+	cell.priceLabel.text = [[dictionary objectForKey:@"product_price"] stringValue];
+	cell.nameLabel.text = [dictionary objectForKey:@"product_name"];
+	cell.amountLabel.text = [[dictionary objectForKey:@"amount"] stringValue];
 	//cell.product = product;
 	
 	return cell;

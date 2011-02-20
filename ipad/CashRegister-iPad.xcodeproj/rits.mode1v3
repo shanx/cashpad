@@ -351,8 +351,6 @@
 								<string>55C0CBCD13100F1400D24B89</string>
 								<string>55C0CBB813100D5100D24B89</string>
 								<string>A5BB6745130FEFF200C813B2</string>
-								<string>A5BB6725130FEFB900C813B2</string>
-								<string>A55772D6131016030009D6EB</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -361,14 +359,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>16</integer>
+									<integer>13</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 50}, {265, 673}}</string>
+							<string>{{0, 0}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -403,7 +401,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ReceiptView.h</string>
+								<string>Order.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -411,7 +409,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ReceiptView.h</string>
+										<string>Order.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>55C0D20A1311263100D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -420,26 +422,31 @@
 											<string>55C0CD7E131044CF00D24B89</string>
 											<string>55C0CD921310457300D24B89</string>
 											<string>55C0CD931310457300D24B89</string>
-											<string>55C0CF3A1310741200D24B89</string>
-											<string>55C0CF3B1310741200D24B89</string>
-											<string>55C0CF52131074F000D24B89</string>
 											<string>55C0CFB0131078A600D24B89</string>
 											<string>55C0CFC5131079E100D24B89</string>
-											<string>55C0CFFC13107F1800D24B89</string>
-											<string>55C0D080131087D800D24B89</string>
 											<string>55C0D0A913108DA600D24B89</string>
-											<string>55C0D0AA13108DA600D24B89</string>
 											<string>55C0D0DC1310912100D24B89</string>
 											<string>55C0D0DE1310912100D24B89</string>
 											<string>55C0D0DF1310912100D24B89</string>
 											<string>55C0D0FF131093A900D24B89</string>
 											<string>55C0D100131093A900D24B89</string>
-											<string>55C0D101131093A900D24B89</string>
 											<string>55C0D1591310988D00D24B89</string>
-											<string>55C0D15A1310988D00D24B89</string>
 											<string>55C0D15B1310988D00D24B89</string>
-											<string>55C0D15C1310988D00D24B89</string>
-											<string>55C0D15D1310988D00D24B89</string>
+											<string>55C0D1A813111FEA00D24B89</string>
+											<string>55C0D1AA13111FEA00D24B89</string>
+											<string>55C0D1AB13111FEA00D24B89</string>
+											<string>55C0D1AE13111FEA00D24B89</string>
+											<string>55C0D1AF13111FEA00D24B89</string>
+											<string>55C0D1C31311212100D24B89</string>
+											<string>55C0D1CB131121E800D24B89</string>
+											<string>55C0D1D81311233400D24B89</string>
+											<string>55C0D1DA1311233400D24B89</string>
+											<string>55C0D1DB1311233400D24B89</string>
+											<string>55C0D1F01311248200D24B89</string>
+											<string>55C0D1FC131125C900D24B89</string>
+											<string>55C0D1FD131125C900D24B89</string>
+											<string>55C0D2041311260500D24B89</string>
+											<string>55C0D2051311260500D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -620,7 +627,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319887329.38077801</real>
+	<real>319890993.70236999</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -637,12 +644,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>55C0D20B1311263100D24B89</string>
 		<string>55C0D185131117E100D24B89</string>
 		<string>55C0D186131117E100D24B89</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>55C0CAF4130FD27900D24B89</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
+		<string>55C0CAF4130FD27900D24B89</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -1018,7 +1026,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

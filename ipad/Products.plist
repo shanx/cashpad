@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Koffie en thee</string>
+		<key>products</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Koffie</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Thee</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Frisdranken</string>
+		<key>products</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Coca cola</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Fanta</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>7up</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Bitter lemon</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Cassis</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Spa blauw</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Spa rood</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Jus d&apos;Orange</string>
+				<key>price</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Fristi</string>
+				<key>price</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

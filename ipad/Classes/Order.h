@@ -25,6 +25,7 @@ typedef void(^OrderCompletionHandler)(NSError *error);
 @property (nonatomic, retain) NSDate *creationDate;
 
 - (void)saveWithCompletionHandler:(OrderCompletionHandler)completionHandler;
+- (NSArray *)itemList;
 
 @end
 
