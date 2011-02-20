@@ -70,6 +70,9 @@
 		A58F5B34131104E400808AB0 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58F5B33131104E400808AB0 /* ProductTableViewCell.xib */; };
 		A58F5C371311211700808AB0 /* ReceiptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58F5C361311211700808AB0 /* ReceiptView.xib */; };
 		A58F5CC313113C6600808AB0 /* dashed-line.png in Resources */ = {isa = PBXBuildFile; fileRef = A58F5CC213113C6600808AB0 /* dashed-line.png */; };
+		A58F5D2F13114CC500808AB0 /* pay-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A58F5D2E13114CC500808AB0 /* pay-button-pressed.png */; };
+		A58F5D3113114CD000808AB0 /* move-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A58F5D3013114CD000808AB0 /* move-button-pressed.png */; };
+		A58F5D7C1311521400808AB0 /* get-receipt-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A58F5D7B1311521400808AB0 /* get-receipt-button-pressed.png */; };
 		A5BB6740130FEFE300C813B2 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */; };
 		A5BB6741130FEFE300C813B2 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB6739130FEFE300C813B2 /* NSString+SBJSON.m */; };
 		A5BB6742130FEFE300C813B2 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB673B130FEFE300C813B2 /* SBJsonBase.m */; };
@@ -176,6 +179,9 @@
 		A58F5B33131104E400808AB0 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		A58F5C361311211700808AB0 /* ReceiptView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptView.xib; sourceTree = "<group>"; };
 		A58F5CC213113C6600808AB0 /* dashed-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dashed-line.png"; sourceTree = "<group>"; };
+		A58F5D2E13114CC500808AB0 /* pay-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pay-button-pressed.png"; sourceTree = "<group>"; };
+		A58F5D3013114CD000808AB0 /* move-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "move-button-pressed.png"; sourceTree = "<group>"; };
+		A58F5D7B1311521400808AB0 /* get-receipt-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "get-receipt-button-pressed.png"; sourceTree = "<group>"; };
 		A5BB6735130FEFE300C813B2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		A5BB6736130FEFE300C813B2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		A5BB6737130FEFE300C813B2 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -345,6 +351,7 @@
 		55C0D2A513112E7400D24B89 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A58F5D7B1311521400808AB0 /* get-receipt-button-pressed.png */,
 				55C0D36B1311431F00D24B89 /* background.png */,
 				A58F5CC213113C6600808AB0 /* dashed-line.png */,
 				55C0D27513112E6600D24B89 /* back.png */,
@@ -366,8 +373,10 @@
 				55C0D28513112E6600D24B89 /* loading.png */,
 				55C0D28613112E6600D24B89 /* minus.png */,
 				55C0D28713112E6600D24B89 /* move-button.png */,
+				A58F5D3013114CD000808AB0 /* move-button-pressed.png */,
 				55C0D28813112E6600D24B89 /* number.png */,
 				55C0D28913112E6600D24B89 /* pay-button.png */,
+				A58F5D2E13114CC500808AB0 /* pay-button-pressed.png */,
 				55C0D28A13112E6600D24B89 /* receipt-filled.png */,
 				55C0D28B13112E6600D24B89 /* receipt.png */,
 			);
@@ -521,6 +530,9 @@
 				55C0D2A213112E6600D24B89 /* receipt.png in Resources */,
 				A58F5CC313113C6600808AB0 /* dashed-line.png in Resources */,
 				55C0D36C1311431F00D24B89 /* background.png in Resources */,
+				A58F5D2F13114CC500808AB0 /* pay-button-pressed.png in Resources */,
+				A58F5D3113114CD000808AB0 /* move-button-pressed.png in Resources */,
+				A58F5D7C1311521400808AB0 /* get-receipt-button-pressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
