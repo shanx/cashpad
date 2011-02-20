@@ -14,8 +14,40 @@
         <h1><a href="#">iPad kassa</a></h1>
         <ul id="nav">
         </ul>
-        <p class="user">Hello, <a href="#">John</a> | <a tal:attributes="href python:view.url('logout')">Logout</a></p>
+        <p class="user"><a tal:attributes="href python:view.url('logout')">Logout</a></p>
       </div>    <!-- #header ends -->
+
+      <div class="block">
+        <div class="block_head">
+          <div class="bheadl"></div>
+          <div class="bheadr"></div>
+          <h2>Today's sales</h2>
+        </div>
+
+        <div class="block_content">
+          <table>
+           <tr>
+             <th>Time</th>
+             <th>Total</th>
+             <th>Items</th>
+           </tr>
+           <tr tal:repeat="order python:sorted(view.today, key=lambda x:x.created_on)">
+             <td style="vertical-align:top" tal:content="order/created_on"/>
+             <td style="vertical-align:top" tal:content="order/total_price"/>
+             <td style="vertical-align:top">
+               <ul>
+                 <li tal:repeat="item order/item_list">
+                   <tal:block replace="item/product_name"/> :
+                   <tal:block replace="item/amount"/> *
+                   <tal:block replace="item/unit_price"/> =
+                   <tal:block replace="python: item.amount * item.unit_price"/>
+                 </li>
+               <ul>
+             </td>
+           </tr>
+          </table>
+        </div>    <!-- .block_content ends -->
+      </div>    <!-- .block ends -->
 
       <div class="block">
         <div class="block_head">
