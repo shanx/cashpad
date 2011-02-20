@@ -16,9 +16,9 @@
           <li>
             <a tal:attributes="href view/application_url">Users</a>
             <ul>
-              <li tal:repeat="usert context/user/values">
-                <a tal:attributes="href python:view.url(usert)"
-                   tal:content="usert" />
+              <li tal:repeat="user context/user/values">
+                <a tal:attributes="href python:view.url(user)"
+                   tal:content="user/name" />
               </li>
             </ul>
           </li>
