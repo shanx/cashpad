@@ -11,7 +11,7 @@ browser_layer = ZopeFanstaticBrowserLayer(cashpad.tests)
 # NOTE: This is copied from grok core functional tests
 # Since adding headers is _not_ implemented correctly
 # using keyword arguments.
-def http_call(method, path, data=None, headers=None):
+def http_call(method, path, data=None, headers=None, handle_errors=False):
     """Function to help make RESTful calls.
 
     method - HTTP method to use
@@ -29,7 +29,7 @@ def http_call(method, path, data=None, headers=None):
     if data is not None:
         request_string += '\r\n'
         request_string += data
-    return http(request_string, handle_errors=False)
+    return http(request_string, handle_errors)
 
 
 def test_suite():
