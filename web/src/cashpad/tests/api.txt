@@ -29,7 +29,7 @@ Pushing no json should return 400 Bad request::
 Create a user::
 
     >>> user = {
-    ...     'name': 'test user'
+    ...     'name': 'mobile user'
     ... }
     >>> user_data = data=simplejson.dumps(user)
     >>> response = http_call('PUT', 'http://localhost/++rest++api/app/user/123', data=user_data,
@@ -37,12 +37,23 @@ Create a user::
     >>> response.getStatus()
     201
 
-User already exists::
+    >>> print app['user']['123'].name
+    mobile user
 
+User already exists, but name should be updated::
+
+    >>> user = {
+    ...     'name': 'new mobile user'
+    ... }
+    >>> user_data = data=simplejson.dumps(user)
     >>> response = http_call('PUT', 'http://localhost/++rest++api/app/user/123', data=user_data,
     ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
     >>> response.getStatus()
     204
+
+    >>> print app['user']['123'].name
+    new mobile user
+
 
 Order
 =====

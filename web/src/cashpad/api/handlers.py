@@ -45,9 +45,10 @@ class UserContainerTraverser(grok.Traverser):
             response = self.request.response
             user = self.context.get(device_id)
             if user is None:
-                user = self.context[device_id] = User(name='test')
+                user = self.context[device_id] = User(name=user_data['name'])
                 response.setStatus('201')
             else:
+                user.name = user_data['name']
                 response.setStatus('204')
 
             # FIXME: user should not be a hardcoded string like this
