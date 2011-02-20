@@ -289,7 +289,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 1162}, {287, 664}}</string>
+							<string>{{0, 996}, {287, 664}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -308,7 +308,7 @@
 							<real>287</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>541 55 1238 723 0 0 1280 778 </string>
+						<string>347 54 1238 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ReceiptView.m</string>
+								<string>get-receipt-button-pressed.png</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ReceiptView.m</string>
+										<string>get-receipt-button-pressed.png</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A58F5D641311501D00808AB0</string>
+										<string>A58F5D831311526500808AB0</string>
 										<key>history</key>
 										<array>
 											<string>A51F1CD7130FE74100588C1F</string>
@@ -380,9 +380,10 @@
 											<string>A58F5D4313114F2D00808AB0</string>
 											<string>A58F5D4413114F2D00808AB0</string>
 											<string>A58F5D4513114F2D00808AB0</string>
-											<string>A58F5D4E13114F5800808AB0</string>
-											<string>A58F5D621311501D00808AB0</string>
-											<string>A58F5D631311501D00808AB0</string>
+											<string>A58F5D721311513500808AB0</string>
+											<string>A58F5D801311526500808AB0</string>
+											<string>A58F5D811311526500808AB0</string>
+											<string>A58F5D821311526500808AB0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -396,7 +397,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {929, 483}}</string>
 								<key>RubberWindowFrame</key>
-								<string>541 55 1238 723 0 0 1280 778 </string>
+								<string>347 54 1238 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -416,7 +417,7 @@
 								<key>Frame</key>
 								<string>{{0, 488}, {929, 194}}</string>
 								<key>RubberWindowFrame</key>
-								<string>541 55 1238 723 0 0 1280 778 </string>
+								<string>347 54 1238 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -589,7 +590,7 @@
 		<string>/Users/sergey/Projects/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>541 55 1238 723 0 0 1280 778 </string>
+	<string>347 54 1238 723 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
