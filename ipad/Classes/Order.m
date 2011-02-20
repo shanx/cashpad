@@ -17,7 +17,6 @@
 
 @property (nonatomic, copy) OrderCompletionHandler completionHandler;
 
-- (NSArray *)itemList;
 - (NSInteger)numberOfProductsWithID:(NSNumber *)id;
 
 @end

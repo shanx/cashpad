@@ -15,6 +15,7 @@
 }
 
 @property (nonatomic, retain) NSSet* products;
+@property (nonatomic, retain) NSString *name;
 
 @end
 

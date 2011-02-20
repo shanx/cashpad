@@ -78,7 +78,6 @@
 
 - (void)setUpScrollingViews
 {
-	DLog(@"");
 	for (ScrollingView *scrollingView in scrollingViews) {
 		[scrollingView removeFromSuperview];
 	}
@@ -88,10 +87,7 @@
 	NSInteger buttonsPerPage = rowCount * columnCount;
 	NSInteger numberOfPages = ceil((float) buttonCount / buttonsPerPage);
 	
-	DLog(@"buttonCount:%d buttonsPerPage:%d numberOfPages:%d", buttonCount, buttonsPerPage, numberOfPages);
-	
 	for (NSInteger i = 0; i < numberOfPages; i++) {
-		DLog(@"creating scrolling view");
 		CGFloat x = i * self.bounds.size.width;
 		CGFloat y = 0.0;
 		CGFloat width = self.bounds.size.width;
@@ -112,21 +108,16 @@
 {
 	[[UIColor whiteColor] set];
 	UIRectFill(rect);
-	DLog(@"rect: %d", [NSValue valueWithCGRect:rect]);
-	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
 	
-	DLog(@"drawing scrollview %d", index);
+	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
+
 	
 	UIFont *titleFont = [UIFont boldSystemFontOfSize:16];
 	
 	CGFloat horizontalMargin = (self.bounds.size.width - buttonSize.width * columnCount) / (columnCount + 1);
 	CGFloat verticalMargin = (self.bounds.size.height - buttonSize.height * rowCount) / (rowCount + 1);
 	
-	DLog(@"horizontalMargin:%f verticalMargin:%f", horizontalMargin, verticalMargin);
-	
 	NSInteger buttonsPerPage = rowCount * columnCount;
-	
-	DLog(@"buttonsPerPage:%d", buttonsPerPage);
 	
 	for (NSInteger i = 0; i < buttonsPerPage; i++) {
 		NSInteger index = i + pageIndex * buttonsPerPage;
@@ -134,15 +125,13 @@
 			break;
 		}
 		
-		DLog(@"i:%d highlightedIndex:%d", i, highlightedIndex);
-		
 		if (index == highlightedIndex) {
 			
 			[[UIColor redColor] set];
 			UIRectFill([self rectForButtonAtIndex:i]);
 		}
 		
-		NSString *title = [titles objectAtIndex:i];
+		NSString *title = [titles objectAtIndex:index];
 		
 		CGSize titleSize = [title sizeWithFont:titleFont];
 		

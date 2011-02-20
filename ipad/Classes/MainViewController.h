@@ -22,6 +22,7 @@
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
+	NSMutableArray *categories;
 	NSMutableArray *products;
 	PaymentSession *paymentSession;
 }
