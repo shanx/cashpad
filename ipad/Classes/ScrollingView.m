@@ -13,11 +13,24 @@
 
 @synthesize delegate;
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[delegate scrollingView:self touchesBegan:touches];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[delegate scrollingView:self touchesMoved:touches];
+}
+
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	UITouch *touch = [touches anyObject];
-	CGPoint locationOfTouch = [touch locationInView:self];
-	[delegate scrollingView:self pointTapped:locationOfTouch];
+	[delegate scrollingView:self touchesEnded:touches];
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[delegate scrollingView:self touchesCancelled:touches];
 }
 
 - (void)drawRect:(CGRect)rect

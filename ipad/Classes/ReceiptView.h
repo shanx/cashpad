@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class ReceiptTotalView;
+@class ReceiptTitleView;
 
 @interface ReceiptView : UIView
 {
@@ -16,7 +17,7 @@
 
 @property(nonatomic, retain) UITableView*       productTableView;
 @property(nonatomic, retain) ReceiptTotalView*  receiptTotalView;
-
+@property(nonatomic, retain) ReceiptTitleView*  receiptTitleView;
 
 
 @end

@@ -13,6 +13,9 @@
 @protocol ScrollingViewDelegate <NSObject>
 
 - (void)scrollingView:(ScrollingView *)aScrollingView drawRect:(CGRect)rect;
-- (void)scrollingView:(ScrollingView *)aScrollingView pointTapped:(CGPoint)point;
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesBegan:(NSSet *)touches;
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesMoved:(NSSet *)touches;
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesEnded:(NSSet *)touches;
+- (void)scrollingView:(ScrollingView *)aScrollingView touchesCancelled:(NSSet *)touches;
 
 @end
