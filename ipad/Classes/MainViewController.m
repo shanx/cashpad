@@ -183,6 +183,17 @@
     [super viewDidLoad];
 	
 	self.title = @"Jelle Prins - iPad Kassasysteem";
+    
+    // Load receipt view.
+    [[NSBundle mainBundle] loadNibNamed:@"ReceiptView" owner:self options:nil];
+    
+    CGRect ownBounds = self.view.bounds;
+    CGRect receiptViewFrame = receiptView.frame;
+    receiptViewFrame.origin.x = ownBounds.size.width - receiptViewFrame.size.width;
+    receiptViewFrame.size.height = ownBounds.size.height;
+    receiptView.frame = receiptViewFrame;
+    
+	[self.view addSubview:receiptView];
 	
 	NSInteger productID = 0;
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"Products" ofType:@"plist"];
