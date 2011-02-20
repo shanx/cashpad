@@ -317,6 +317,31 @@
 
 }
 
+- (IBAction)category:(id)sender
+{
+	[category1 setImage:[UIImage imageNamed:@"category-button-red"] forState:UIControlStateNormal];
+	[category2 setImage:[UIImage imageNamed:@"category-button-green"] forState:UIControlStateNormal];
+	[category3 setImage:[UIImage imageNamed:@"category-button-blue"] forState:UIControlStateNormal];
+	[category4 setImage:[UIImage imageNamed:@"category-button-lightblue"] forState:UIControlStateNormal];
+	if (sender == category1) {
+		selectedCategoryIndex = 0;
+		[category1 setImage:[UIImage imageNamed:@"category-button-red-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category2) {
+		selectedCategoryIndex = 1;
+		[category2 setImage:[UIImage imageNamed:@"category-button-green-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category3) {
+		selectedCategoryIndex = 2;
+		[category3 setImage:[UIImage imageNamed:@"category-button-blue-pressed"] forState:UIControlStateNormal];
+	} else if (sender == category4) {
+		selectedCategoryIndex = 3;
+		[category4 setImage:[UIImage imageNamed:@"category-button-lightblue-pressed"] forState:UIControlStateNormal];
+	}
+	
+	selectedCategoryIndex = MIN(selectedCategoryIndex, [categories count] - 1);
+	
+	productsGridView.titles = [self productTitles];
+}
+
 
 #pragma mark -
 #pragma mark UITableViewDelegate

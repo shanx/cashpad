@@ -21,6 +21,10 @@
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
+	IBOutlet UIButton *category1;
+	IBOutlet UIButton *category2;
+	IBOutlet UIButton *category3;
+	IBOutlet UIButton *category4;
 	NSMutableArray *categories;
 	PaymentSession *paymentSession;
 	NSInteger selectedCategoryIndex;
@@ -31,5 +35,6 @@
 
 - (IBAction)sendPaymentRequest:(id)sender;
 - (IBAction)pay:(id)sender;
+- (IBAction)category:(id)sender;
 
 @end

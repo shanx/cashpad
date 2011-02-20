@@ -45,7 +45,7 @@
 					<object class="IBUIView" id="651129218">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 224}, {724, 480}}</string>
+						<string key="NSFrame">{{0, 190}, {724, 514}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -56,16 +56,16 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
-					<object class="IBUIScrollView" id="1014355433">
+					<object class="IBUIScrollView" id="753157112">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">268</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIButton" id="680157867">
-								<reference key="NSNextResponder" ref="1014355433"/>
+							<object class="IBUIButton" id="950742860">
+								<reference key="NSNextResponder" ref="753157112"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{20, 20}, {169, 135}}</string>
-								<reference key="NSSuperview" ref="1014355433"/>
+								<reference key="NSSuperview" ref="753157112"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -87,16 +87,20 @@
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41AA</bytes>
 								</object>
+								<object class="NSCustomResource" key="IBUIHighlightedImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">category-button-red-pressed.png</string>
+								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">category-button-red.png</string>
 								</object>
 							</object>
-							<object class="IBUIButton" id="535160199">
-								<reference key="NSNextResponder" ref="1014355433"/>
+							<object class="IBUIButton" id="43802205">
+								<reference key="NSNextResponder" ref="753157112"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{197, 20}, {169, 135}}</string>
-								<reference key="NSSuperview" ref="1014355433"/>
+								<reference key="NSSuperview" ref="753157112"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -108,16 +112,20 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="508186991"/>
+								<object class="NSCustomResource" key="IBUIHighlightedImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">category-button-green-pressed.png</string>
+								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">category-button-green.png</string>
 								</object>
 							</object>
-							<object class="IBUIButton" id="591742826">
-								<reference key="NSNextResponder" ref="1014355433"/>
+							<object class="IBUIButton" id="120996807">
+								<reference key="NSNextResponder" ref="753157112"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{374, 20}, {169, 135}}</string>
-								<reference key="NSSuperview" ref="1014355433"/>
+								<reference key="NSSuperview" ref="753157112"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -129,16 +137,20 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="508186991"/>
+								<object class="NSCustomResource" key="IBUIHighlightedImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">category-button-blue-pressed.png</string>
+								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">category-button-blue.png</string>
 								</object>
 							</object>
-							<object class="IBUIButton" id="1013684091">
-								<reference key="NSNextResponder" ref="1014355433"/>
+							<object class="IBUIButton" id="450106100">
+								<reference key="NSNextResponder" ref="753157112"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{541, 20}, {169, 135}}</string>
-								<reference key="NSSuperview" ref="1014355433"/>
+								<reference key="NSSuperview" ref="753157112"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
@@ -150,13 +162,17 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
 								<reference key="IBUINormalTitleShadowColor" ref="508186991"/>
+								<object class="NSCustomResource" key="IBUIHighlightedImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">category-button-lightblue-pressed.png</string>
+								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">category-button-lightblue.png</string>
 								</object>
 							</object>
 						</object>
-						<string key="NSFrameSize">{724, 216}</string>
+						<string key="NSFrameSize">{724, 155}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -206,6 +222,74 @@
 					</object>
 					<int key="connectionID">17</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">category1</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="950742860"/>
+					</object>
+					<int key="connectionID">26</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">category2</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="43802205"/>
+					</object>
+					<int key="connectionID">27</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">category3</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="120996807"/>
+					</object>
+					<int key="connectionID">28</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">category4</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="450106100"/>
+					</object>
+					<int key="connectionID">29</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">category:</string>
+						<reference key="source" ref="950742860"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">30</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">category:</string>
+						<reference key="source" ref="43802205"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">31</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">category:</string>
+						<reference key="source" ref="120996807"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">32</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">category:</string>
+						<reference key="source" ref="450106100"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">33</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -222,7 +306,7 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="651129218"/>
-							<reference ref="1014355433"/>
+							<reference ref="753157112"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -245,35 +329,35 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">21</int>
-						<reference key="object" ref="1014355433"/>
+						<reference key="object" ref="753157112"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="680157867"/>
-							<reference ref="535160199"/>
-							<reference ref="591742826"/>
-							<reference ref="1013684091"/>
+							<reference ref="950742860"/>
+							<reference ref="43802205"/>
+							<reference ref="120996807"/>
+							<reference ref="450106100"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">22</int>
-						<reference key="object" ref="680157867"/>
-						<reference key="parent" ref="1014355433"/>
+						<reference key="object" ref="950742860"/>
+						<reference key="parent" ref="753157112"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
-						<reference key="object" ref="535160199"/>
-						<reference key="parent" ref="1014355433"/>
+						<reference key="object" ref="43802205"/>
+						<reference key="parent" ref="753157112"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">24</int>
-						<reference key="object" ref="591742826"/>
-						<reference key="parent" ref="1014355433"/>
+						<reference key="object" ref="120996807"/>
+						<reference key="parent" ref="753157112"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">25</int>
-						<reference key="object" ref="1013684091"/>
-						<reference key="parent" ref="1014355433"/>
+						<reference key="object" ref="450106100"/>
+						<reference key="parent" ref="753157112"/>
 					</object>
 				</object>
 			</object>
@@ -344,7 +428,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">25</int>
+			<int key="maxID">33</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -375,11 +459,13 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>category:</string>
 							<string>pay:</string>
 							<string>sendPaymentRequest:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -388,11 +474,16 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>category:</string>
 							<string>pay:</string>
 							<string>sendPaymentRequest:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">category:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 							<object class="IBActionInfo">
 								<string key="name">pay:</string>
 								<string key="candidateClassName">id</string>
@@ -408,12 +499,20 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>categoriesGridView</string>
+							<string>category1</string>
+							<string>category2</string>
+							<string>category3</string>
+							<string>category4</string>
 							<string>productsGridView</string>
 							<string>receiptView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>ButtonGridView</string>
+							<string>UIButton</string>
+							<string>UIButton</string>
+							<string>UIButton</string>
+							<string>UIButton</string>
 							<string>ButtonGridView</string>
 							<string>ReceiptView</string>
 						</object>
@@ -423,6 +522,10 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>categoriesGridView</string>
+							<string>category1</string>
+							<string>category2</string>
+							<string>category3</string>
+							<string>category4</string>
 							<string>productsGridView</string>
 							<string>receiptView</string>
 						</object>
@@ -431,6 +534,22 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">categoriesGridView</string>
 								<string key="candidateClassName">ButtonGridView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">category1</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">category2</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">category3</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">category4</string>
+								<string key="candidateClassName">UIButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">productsGridView</string>
@@ -769,13 +888,21 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>category-button-blue-pressed.png</string>
 				<string>category-button-blue.png</string>
+				<string>category-button-green-pressed.png</string>
 				<string>category-button-green.png</string>
+				<string>category-button-lightblue-pressed.png</string>
 				<string>category-button-lightblue.png</string>
+				<string>category-button-red-pressed.png</string>
 				<string>category-button-red.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{169, 135}</string>
+				<string>{169, 135}</string>
+				<string>{169, 135}</string>
+				<string>{169, 135}</string>
 				<string>{169, 135}</string>
 				<string>{169, 135}</string>
 				<string>{169, 135}</string>
