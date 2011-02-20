@@ -352,7 +352,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
+									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -395,7 +395,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PaymentSession.m</string>
+								<string>MainViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -403,11 +403,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PaymentSession.m</string>
+										<string>MainViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0CE2B1310596E00D24B89</string>
+										<string>55C0D4D01311615C00D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CB2B130FD65900D24B89</string>
@@ -417,9 +417,9 @@
 											<string>55C0CDE313104FA600D24B89</string>
 											<string>55C0CDF51310525B00D24B89</string>
 											<string>55C0CDF61310525B00D24B89</string>
-											<string>55C0CDF71310525B00D24B89</string>
 											<string>55C0CE291310596E00D24B89</string>
-											<string>55C0CE2A1310596E00D24B89</string>
+											<string>55C0D4A613115E6100D24B89</string>
+											<string>55C0D4A813115E6100D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -477,9 +477,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>55C0CDA81310460700D24B89</string>
+				<string>55C0D4D11311615C00D24B89</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>55C0CDA91310460700D24B89</string>
+				<string>55C0D4D21311615C00D24B89</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -600,7 +600,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319838574.42562699</real>
+	<real>319906140.41773897</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -617,9 +617,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0CDE713104FA600D24B89</string>
-		<string>55C0CDE813104FA600D24B89</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>55C0CAF4130FD27900D24B89</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/rits/Desktop/cashpad/iphone/CashRegister/CashRegister.xcodeproj</string>
@@ -641,14 +638,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PaymentSession.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -704,7 +699,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55C0CAF4130FD27900D24B89</string>
-				<string>55C0CDAA1310460700D24B89</string>
+				<string>55C0D4D31311615C00D24B89</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -748,8 +743,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {343, 257}}</string>
-											<string>{{343, 0}, {411, 257}}</string>
+											<string>{{0, 0}, {342, 262}}</string>
+											<string>{{342, 0}, {412, 262}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -764,8 +759,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {754, 257}}</string>
-											<string>{{0, 257}, {754, 237}}</string>
+											<string>{{0, 0}, {754, 262}}</string>
+											<string>{{0, 262}, {754, 232}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -795,10 +790,10 @@
 										<string>Value</string>
 										<real>85</real>
 										<string>Summary</string>
-										<real>181</real>
+										<real>182</real>
 									</array>
 									<key>Frame</key>
-									<string>{{343, 0}, {411, 257}}</string>
+									<string>{{342, 0}, {412, 262}}</string>
 									<key>RubberWindowFrame</key>
 									<string>536 271 754 535 0 0 1440 878 </string>
 								</dict>
@@ -826,13 +821,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>55C0CDAB1310460700D24B89</string>
+				<string>55C0D4D41311615C00D24B89</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>55C0CDAC1310460700D24B89</string>
-				<string>55C0CDAD1310460700D24B89</string>
-				<string>55C0CDAE1310460700D24B89</string>
-				<string>55C0CDAF1310460700D24B89</string>
-				<string>55C0CDB01310460700D24B89</string>
+				<string>55C0D4D51311615C00D24B89</string>
+				<string>55C0D4D61311615C00D24B89</string>
+				<string>55C0D4D71311615C00D24B89</string>
+				<string>55C0D4D81311615C00D24B89</string>
+				<string>55C0D4D91311615C00D24B89</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

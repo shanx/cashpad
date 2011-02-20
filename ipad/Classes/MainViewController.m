@@ -57,6 +57,10 @@
 - (IBAction)pay:(id)sender
 {
 	CheckoutViewController *controller = [[CheckoutViewController alloc] init];
+	paymentSession.delegate = controller;
+	controller.delegate = self;
+	controller.paymentSession = paymentSession;
+	controller.order = order;
 	UINavigationController *tempNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 	tempNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
 	[self presentModalViewController:tempNavigationController animated:YES];
@@ -73,7 +77,6 @@
 	GKSession *session = [[[GKSession alloc] initWithSessionID:nil displayName:[UIDevice currentDevice].name sessionMode:GKSessionModePeer] autorelease];
 	
 	paymentSession = [[PaymentSession alloc] initWithGKSession:session];
-	paymentSession.delegate = self;
 	
 	[picker dismiss];
 	
@@ -131,7 +134,7 @@
 }
 */
 
--(void)connectPressed:(id)aSender
+-(void)connect:(id)aSender
 {
 	GKPeerPickerController *controller = [[GKPeerPickerController alloc] init];
 	controller.delegate = self;
@@ -228,6 +231,14 @@
 	customer.name = @"Rits";
 	customer.identifier = [[UIDevice currentDevice] uniqueIdentifier];
 	
+	[customer saveWithCompletionHandler:^(NSError *error) {
+		if (error) {
+			DLog(@"Failed saving customer: %@", [error localizedDescription]);
+		} else {
+			DLog(@"Successfully saved customer");
+		}
+	}];
+	
 	NSEntityDescription *orderEntity = [NSEntityDescription entityForName:@"Order" inManagedObjectContext:self.managedObjectContext];
 	Order *tempOrder = [[Order alloc] initWithEntity:orderEntity insertIntoManagedObjectContext:self.managedObjectContext];
 	self.order = tempOrder;
@@ -257,12 +268,12 @@
 //    categoriesGridView.layer.borderWidth = 1.0;
     
     
-	DLog(@"%@", self.managedObjectContext);
+	//DLog(@"%@", self.managedObjectContext);
 	
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
 	product.name = @"Bier";
-	DLog(@"%@", product);
+	//DLog(@"%@", product);
 	//[products addObject:product];
 	[product release];
 
@@ -306,18 +317,37 @@
 		[order addProductsObject:newProduct];
 		[newProduct release];
 		
-		DLog(@"%@", order.products);
+		//DLog(@"%@", order.products);
 		
 		self.productGroupDictionaries = [order itemList];
 
 		[receiptView.productTableView reloadData];
 		
-		receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %@", 0x20ac, [order totalPrice]];
+		receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %.2f", 0x20ac, [[order totalPrice] floatValue]];
 	} else {
 		selectedCategoryIndex = index;
 		productsGridView.titles = [self productTitles];
 	}
 
+}
+
+- (void)checkoutViewControllerDidCancel:(CheckoutViewController *)controller
+{
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)checkoutViewControllerDidFinish:(CheckoutViewController *)controller
+{
+	[self dismissModalViewControllerAnimated:YES];
+	
+	NSEntityDescription *orderEntity = [NSEntityDescription entityForName:@"Order" inManagedObjectContext:self.managedObjectContext];
+	Order *tempOrder = [[Order alloc] initWithEntity:orderEntity insertIntoManagedObjectContext:self.managedObjectContext];
+	self.order = tempOrder;
+	[tempOrder release];
+	
+	self.productGroupDictionaries = [order itemList];
+	[receiptView.productTableView reloadData];
+	receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %.2f", 0x20ac, [[order totalPrice] floatValue]];
 }
 
 - (IBAction)category:(id)sender
@@ -349,7 +379,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-	DLog(@"%d", productsGridView.currentPageIndex);
+	//DLog(@"%d", productsGridView.currentPageIndex);
 	productsPageControl.currentPage = productsGridView.currentPageIndex;
 }
 

@@ -7,9 +7,16 @@
 //
 
 #import "CheckoutViewController.h"
-
+#import "CheckoutViewControllerDelegate.h"
+#import "PaymentSession.h"
+#import "PaymentRequest.h"
+#import "Order.h"
 
 @implementation CheckoutViewController
+
+@synthesize delegate;
+@synthesize paymentSession;
+@synthesize order;
 
 - (id)init
 {
@@ -55,6 +62,16 @@
 	return cell;
 }
 
+- (IBAction)mobile:(id)sender
+{
+	DLog(@"paymentSession:%@", paymentSession);
+	PaymentRequest *paymentRequest = [[PaymentRequest alloc] init];
+	paymentRequest.amount = [[order totalPrice] floatValue];
+	paymentRequest.productDescription = [order orderDescription];
+	[paymentSession sendPaymentRequest:paymentRequest];
+	[paymentRequest release];
+}
+
 - (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	if (indexPath.section == 0) {
@@ -84,7 +101,9 @@
 	self.navigationItem.leftBarButtonItem = cancelBarButtonItem;
 	[cancelBarButtonItem release];
 	
-	self.title = @"Checkout";
+	self.title = @"Betalen";
+	
+	amountLabel.text = [NSString stringWithFormat:@"Totaal bedrag: %C %.2f", 0x20ac, [[order totalPrice] floatValue]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -97,7 +116,32 @@
 
 - (void)cancel
 {
-	[self.navigationController.parentViewController dismissModalViewControllerAnimated:YES];
+	[delegate checkoutViewControllerDidCancel:self];
+}
+
+- (void)paymentSession:(PaymentSession *)session didAcceptPaymentRequest:(PaymentRequest *)request
+{
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Betaling ontvangen!" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alertView show];
+	[alertView release];
+	
+	[order saveWithCompletionHandler:^(NSError *error) {
+		if (error) {
+			DLog(@"Could not save order: %@", [error localizedDescription]);
+		} else {
+			DLog(@"Order saved successfully");
+		}
+	}];
+}
+
+- (void)paymentSession:(PaymentSession *)session didDenyPaymentRequest:(PaymentRequest *)request
+{
+	
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	[delegate checkoutViewControllerDidFinish:self];
 }
 
 

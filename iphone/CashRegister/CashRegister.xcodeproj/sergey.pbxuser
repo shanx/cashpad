@@ -37,12 +37,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319811668;
-			PBXWorkspaceStateSaveDate = 319811668;
+			PBXPerProjectTemplateStateSaveDate = 319904653;
+			PBXWorkspaceStateSaveDate = 319904653;
 		};
 		perUserProjectItems = {
-			A5BB6857130FF10700C813B2 /* PBXTextBookmark */ = A5BB6857130FF10700C813B2 /* PBXTextBookmark */;
-			A5BB685E13100A9900C813B2 /* PBXTextBookmark */ = A5BB685E13100A9900C813B2 /* PBXTextBookmark */;
+			A5BB6857130FF10700C813B2 = A5BB6857130FF10700C813B2 /* PBXTextBookmark */;
+			A5BB685E13100A9900C813B2 = A5BB685E13100A9900C813B2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = A5BB6768130FF07300C813B2 /* Source Control */;
 		userBuildSettings = {
@@ -71,6 +71,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);

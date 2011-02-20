@@ -26,6 +26,7 @@ typedef void(^OrderCompletionHandler)(NSError *error);
 
 - (void)saveWithCompletionHandler:(OrderCompletionHandler)completionHandler;
 - (NSArray *)itemList;
+- (NSString *)orderDescription;
 
 @end
 

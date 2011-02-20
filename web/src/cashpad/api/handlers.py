@@ -39,17 +39,18 @@ class UserContainerTraverser(grok.Traverser):
     def traverse(self, device_id):
         if self.request.method == 'PUT':
             validate_proper_contenttype(self.request)
-            body = self.request.bodyStream.read()
-            user_data = parse_json(body)
+            # FIXME: This call somehow blocks
+            # body = self.request.bodyStream.read()
+            # user_data = parse_json(body)
 
             response = self.request.response
             user = self.context.get(device_id)
             if user is None:
-                user = User(name=user_data['name'], device_id=str(device_id))
+                user = User(name=str(device_id), device_id=str(device_id))
                 self.context.add(user)
                 response.setStatus('201')
             else:
-                user.name = user_data['name']
+                user.name = str(device_id)
                 response.setStatus('204')
 
             # FIXME: user should not be a hardcoded string like this
