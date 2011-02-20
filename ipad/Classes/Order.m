@@ -61,6 +61,20 @@
 	[request startAsynchronous];
 }
 
+- (NSString *)orderDescription
+{
+	NSMutableString *orderDescription = [[NSMutableString alloc] init];
+	
+	for (NSDictionary *dictionary in [self itemList]) {
+		NSString *desc = [NSString stringWithFormat:@"%d %@ voor %C %.2f\n", [[dictionary objectForKey:@"amount"] intValue], [dictionary objectForKey:@"product_name"], 0x20ac, [[dictionary objectForKey:@"unit_price"] floatValue]];
+		[orderDescription appendString:desc];
+	}
+	
+	[orderDescription appendFormat:@"______________\nTotaal bedrag: %C %.2f", 0x20ac, [[self totalPrice] floatValue]];
+	
+	return [orderDescription autorelease];
+}
+
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
 	DLog(@"request finished, response status code: %d", request.responseStatusCode);

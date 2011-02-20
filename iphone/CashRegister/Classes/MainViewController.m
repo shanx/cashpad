@@ -42,7 +42,7 @@
 	
 	[picker dismiss];
 	
-	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Connected!" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Verbonden!" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[alertView show];
 	[alertView release];
 	
@@ -54,7 +54,7 @@
 {
 	DLog(@"");
 	
-	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Payment requested" message:request.productDescription delegate:self cancelButtonTitle:@"Deny" otherButtonTitles:@"Accept", nil];
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Betalingsverzoek ontvangen" message:request.productDescription delegate:self cancelButtonTitle:@"Weigeren" otherButtonTitles:@"Accepteren", nil];
 	[alertView show];
 	[alertView release];
 }
