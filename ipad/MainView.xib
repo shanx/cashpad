@@ -288,11 +288,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>MainViewController</string>
 					<string>UIResponder</string>
-<<<<<<< HEAD
-					<string>{{-51, 89}, {1039, 767}}</string>
-=======
 					<string>{{349, -73}, {1039, 756}}</string>
->>>>>>> ef7e4edbf41cc5ba6f62754c55039852e4ebf6aa
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>ReceiptView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
