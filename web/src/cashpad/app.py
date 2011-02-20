@@ -1,3 +1,4 @@
+import copy
 import simplejson
 import datetime
 
@@ -5,6 +6,7 @@ import grok
 from zope.location.location import located
 from zope.formlib.form import applyData
 from zope.schema.fieldproperty import FieldProperty
+from zope.publisher.interfaces import BadRequest
 
 from cashpad.interfaces import IOrder, IItem
 
@@ -19,17 +21,13 @@ class App(grok.Application, grok.Container):
         super(App, self).__init__()
         self['user'] = Users()
 
-# FIXME: Traverser doesn't work
-# class AppTraverser(grok.Traverser):
-#     grok.context(App)
-#
-#     def traverse(self, name):
-#         if name == 'api':
-#             grok.util.applySkin(self.request, APILayer, grok.IRESTSkinType)
-#             return located(self.context, self.context.__parent__, 'boeetlkjalkaj')
-
 class Orders(grok.Container):
-    pass
+    def add(self, order):
+        # FIXME: this is not very elegant
+        key = len(self) and max([int(c) for c in self]) + 1 or 1
+
+        self[str(key)] = order
+
 
 class User(grok.Container, grok.Model):
     def __init__(self):
@@ -50,11 +48,9 @@ class UsersTraverser(grok.Traverser):
                 response.setStatus('201')
             else:
                 response.setStatus('204')
+
             # FIXME: user should not be a hardcoded string like this
-            try:
-                location = located(self.context, self.context.__parent__, self.context.__name__)
-            except:
-                import pdb; pdb.set_trace()
+            location = located(self.context, self.context.__parent__, self.context.__name__)
             return location
 
 
@@ -79,47 +75,64 @@ class Order(grok.Model):
     created_on = FieldProperty(IOrder['created_on'])
     total_price = FieldProperty(IOrder['total_price'])
     item_list = FieldProperty(IOrder['item_list'])
-
+    
 class OrdersREST(grok.REST):
     grok.context(Orders)
     grok.layer(APILayer)
 
-    def POST(self):
+    def validate_proper_contenttype(self):
         if  self.request.getHeader('Content-Type', '').lower() != 'application/json; charset=utf-8':
-            # import pdb; pdb.set_trace()
-            self.response.setStatus('400')
-            return 'Content is not of type: application/json; charset=utf-8'
-        
-        # Check if json can be parsed
+            raise BadRequest('Content is not of type: application/json; charset=utf-8')
+
+    def parse_json(self):
+        "Return parsed json, otherwise raise BadRequest"
         try:
-            order_data = simplejson.loads(self.body)
+            parsed_body = simplejson.loads(self.body)
         except ValueError:
-            self.response.setStatus('400')
-            return 'Content could not be parsed'
+            raise BadRequest('Content could not be parsed')
+        
+        return parsed_body
+
+    def coerce_order_data(self, original_order_data):
+        order_data = copy.deepcopy(original_order_data)
+        
         # Coerce the created_on timestamp to a datetime
         order_data['created_on'] = datetime.datetime.fromtimestamp(order_data['created_on'])
         # Coerce total_price to float
         order_data['total_price'] = float(order_data['total_price'])
 
+        return order_data
+
+    def coerce_item_data(self, original_item_data):
+        item_data = copy.deepcopy(original_item_data)
+        
+        # Coerce unit_price to float
+        item_data['unit_price'] = float(item_data['unit_price'])
+        
+        return item_data
+
+    def POST(self):
+        self.validate_proper_contenttype()
+
+        order_data = self.parse_json()
+        order_data = self.coerce_order_data(order_data)
+
         item_list = []
         for item_data in order_data['item_list']:
-            # Coerce unit_price to float
-            item_data['unit_price'] = float(item_data['unit_price'])
+            item_data = self.coerce_item_data(item_data)
+            
             item = Item()
             applyData(item, grok.Fields(IItem), item_data)
             item_list.append(item)
 
         order_data['item_list'] = item_list
-        # FIXME: this is not very elegant
-        key = len(self.context) and max([int(c) for c in self.context]) + 1 or 1
+        
         order = Order()
         applyData(order, grok.Fields(IOrder), order_data)
+        
+        self.context.add(order)
 
-        frop = str(key)
-        self.context[frop] = order
-        henk = self.context[frop]
-
-        self.response.setHeader('Location', self.url(henk))
+        self.response.setHeader('Location', self.url(order))
         self.response.setStatus('201')
         return ''
 
