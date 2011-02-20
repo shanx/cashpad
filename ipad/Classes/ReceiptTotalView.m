@@ -61,7 +61,7 @@
         //paymentTotalLabel.backgroundColor = [UIColor redColor];
         paymentTotalLabel.font = [UIFont italicSystemFontOfSize:30];
         
-        paymentTotalLabel.text = [NSString stringWithFormat:@"%C %@", 0x20ac, @"44,00"];
+        // paymentTotalLabel.text = [NSString stringWithFormat:@"%C %@", 0x20ac, @"44,00"];
         paymentTotalLabel.textAlignment = UITextAlignmentCenter;
         paymentTotalLabel.textColor = [UIColor grayColor];
         
