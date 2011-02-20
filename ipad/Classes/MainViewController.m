@@ -179,8 +179,6 @@
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
-	
-	self.title = @"Jelle Prins - iPad Kassasysteem";
     
     // Load receipt view.
     [[NSBundle mainBundle] loadNibNamed:@"ReceiptView" owner:self options:nil];
@@ -384,7 +382,8 @@
                                             reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
-	cell.priceLabel.text = [[dictionary objectForKey:@"product_price"] stringValue];
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	cell.priceLabel.text = [NSString stringWithFormat:@"%C %.2f", 0x20ac, [[dictionary objectForKey:@"unit_price"] floatValue] * [[dictionary objectForKey:@"amount"] floatValue]];
 	cell.nameLabel.text = [dictionary objectForKey:@"product_name"];
 	cell.amountLabel.text = [[dictionary objectForKey:@"amount"] stringValue];
 	//cell.product = product;
