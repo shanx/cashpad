@@ -55,11 +55,9 @@ class UsersTraverser(grok.Traverser):
                 response.setStatus('201')
             else:
                 response.setStatus('204')
+
             # FIXME: user should not be a hardcoded string like this
-            try:
-                location = located(self.context, self.context.__parent__, self.context.__name__)
-            except:
-                import pdb; pdb.set_trace()
+            location = located(self.context, self.context.__parent__, self.context.__name__)
             return location
 
 
