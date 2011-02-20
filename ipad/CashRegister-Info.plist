@@ -30,6 +30,8 @@
 	<string>UIInterfaceOrientationLandscapeLeft</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>

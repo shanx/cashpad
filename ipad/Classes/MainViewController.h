@@ -18,6 +18,7 @@
 
 @interface MainViewController : UIViewController <GKPeerPickerControllerDelegate, UITableViewDelegate, UITableViewDataSource, PaymentSessionDelegate, ButtonGridViewDelegate>
 {
+	IBOutlet UIPageControl *productsPageControl;
 	IBOutlet ButtonGridView *categoriesGridView;
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
@@ -36,5 +37,6 @@
 - (IBAction)sendPaymentRequest:(id)sender;
 - (IBAction)pay:(id)sender;
 - (IBAction)category:(id)sender;
+- (IBAction)pageControlValueChanged:(id)sender;
 
 @end

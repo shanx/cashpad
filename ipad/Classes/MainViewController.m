@@ -188,7 +188,8 @@
     CGRect ownBounds = self.view.bounds;
     CGRect receiptViewFrame = receiptView.frame;
     receiptViewFrame.origin.x = ownBounds.size.width - receiptViewFrame.size.width;
-    receiptViewFrame.size.height = ownBounds.size.height;
+	receiptViewFrame.origin.y = 44.0;
+    receiptViewFrame.size.height = ownBounds.size.height - 44.0;
     receiptView.frame = receiptViewFrame;
     
 	[self.view addSubview:receiptView];
@@ -243,9 +244,9 @@
 	productsGridView.buttonImage = [UIImage imageNamed:@"button-big"];
 	productsGridView.highlightedButtonImage = [UIImage imageNamed:@"button-big-pressed"];
 	
-    productsGridView.layer.masksToBounds = YES;
-    productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    productsGridView.layer.borderWidth = 1.0;
+//    productsGridView.layer.masksToBounds = YES;
+//    productsGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    productsGridView.layer.borderWidth = 1.0;
 	
 	categoriesGridView.rowCount = 1;
 	categoriesGridView.columnCount = 4;
@@ -253,9 +254,9 @@
 	categoriesGridView.buttonSize = CGSizeMake(150.0, 100.0);
 	
 	
-    categoriesGridView.layer.masksToBounds = YES;
-    categoriesGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    categoriesGridView.layer.borderWidth = 1.0;
+//    categoriesGridView.layer.masksToBounds = YES;
+//    categoriesGridView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    categoriesGridView.layer.borderWidth = 1.0;
     
     
 	DLog(@"%@", self.managedObjectContext);
@@ -292,7 +293,11 @@
 - (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
 {
 	if (aButtonGridView == productsGridView) {
-		Product *product = [[self productsInSelectedCategory] objectAtIndex:index];
+		NSArray *productsInSelectedCategory = [self productsInSelectedCategory];
+		if (index >= [productsInSelectedCategory count]) {
+			return;
+		}
+		Product *product = [productsInSelectedCategory objectAtIndex:index];
 		
 		NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
 		Product *newProduct = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
@@ -340,6 +345,19 @@
 	selectedCategoryIndex = MIN(selectedCategoryIndex, [categories count] - 1);
 	
 	productsGridView.titles = [self productTitles];
+	
+	productsPageControl.numberOfPages = productsGridView.numberOfPages;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	DLog(@"%d", productsGridView.currentPageIndex);
+	productsPageControl.currentPage = productsGridView.currentPageIndex;
+}
+
+- (void)pageControlValueChanged:(id)sender
+{
+	
 }
 
 

@@ -12,7 +12,7 @@
 @interface CashRegisterAppDelegate : NSObject <UIApplicationDelegate> 
 {
     UIWindow *window;
-	UINavigationController *viewController;
+	UIViewController *viewController;
 	NSManagedObjectContext *managedObjectContext;
 	NSManagedObjectModel *managedObjectModel;
 	NSPersistentStoreCoordinator *persistentStoreCoordinator;

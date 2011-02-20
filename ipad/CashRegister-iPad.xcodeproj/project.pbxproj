@@ -52,6 +52,7 @@
 		55C0D2A013112E6600D24B89 /* pay-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C0D28913112E6600D24B89 /* pay-button.png */; };
 		55C0D2A113112E6600D24B89 /* receipt-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C0D28A13112E6600D24B89 /* receipt-filled.png */; };
 		55C0D2A213112E6600D24B89 /* receipt.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C0D28B13112E6600D24B89 /* receipt.png */; };
+		55C0D36C1311431F00D24B89 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C0D36B1311431F00D24B89 /* background.png */; };
 		A55772E9131016030009D6EB /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A55772D8131016030009D6EB /* ASIHTTPRequest.m */; };
 		A55772EA131016030009D6EB /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A55772DA131016030009D6EB /* ASIFormDataRequest.m */; };
 		A55772EB131016030009D6EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A55772DC131016030009D6EB /* Reachability.m */; };
@@ -139,6 +140,7 @@
 		55C0D28913112E6600D24B89 /* pay-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pay-button.png"; sourceTree = "<group>"; };
 		55C0D28A13112E6600D24B89 /* receipt-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "receipt-filled.png"; sourceTree = "<group>"; };
 		55C0D28B13112E6600D24B89 /* receipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receipt.png; sourceTree = "<group>"; };
+		55C0D36B1311431F00D24B89 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CashRegister-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CashRegister-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
 		A55772D8131016030009D6EB /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 		55C0D2A513112E7400D24B89 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				55C0D36B1311431F00D24B89 /* background.png */,
 				A58F5CC213113C6600808AB0 /* dashed-line.png */,
 				55C0D27513112E6600D24B89 /* back.png */,
 				55C0D27613112E6600D24B89 /* button-big-pressed.png */,
@@ -517,6 +520,7 @@
 				55C0D2A113112E6600D24B89 /* receipt-filled.png in Resources */,
 				55C0D2A213112E6600D24B89 /* receipt.png in Resources */,
 				A58F5CC313113C6600808AB0 /* dashed-line.png in Resources */,
+				55C0D36C1311431F00D24B89 /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

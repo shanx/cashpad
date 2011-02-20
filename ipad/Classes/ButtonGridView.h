@@ -25,5 +25,7 @@
 @property (nonatomic, retain) UIImage *buttonImage;
 @property (nonatomic, retain) UIImage *highlightedButtonImage;
 @property (nonatomic, assign) CGSize buttonSize;
+@property (nonatomic, assign) NSInteger numberOfPages;
+@property (nonatomic, readonly) NSInteger currentPageIndex;
 
 @end
