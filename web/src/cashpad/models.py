@@ -1,15 +1,17 @@
 import grok
 from zope.schema.fieldproperty import FieldProperty
 
-from cashpad.interfaces import IOrder, IItem
+from cashpad.interfaces import IOrder, IItem, IUser
 
 class UserContainer(grok.Container):
     pass
+
 
 class App(grok.Application, grok.Container):
     def __init__(self):
         super(App, self).__init__()
         self['user'] = UserContainer()
+
 
 class OrderContainer(grok.Container):
     def add(self, order):
@@ -20,9 +22,14 @@ class OrderContainer(grok.Container):
 
 
 class User(grok.Container, grok.Model):
-    def __init__(self):
+    grok.implements(IUser)
+    name = FieldProperty(IUser['name'])
+
+    def __init__(self, name):
         super(User, self).__init__()
         self['order'] = OrderContainer()
+        self.name = name
+
 
 class Item(grok.Model):
     grok.implements(IItem)
