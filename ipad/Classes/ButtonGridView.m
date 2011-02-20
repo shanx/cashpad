@@ -25,6 +25,7 @@
 @synthesize rowCount;
 @synthesize columnCount;
 @synthesize buttonImage;
+@synthesize highlightedButtonImage;
 @synthesize buttonSize;
 
 - (id)initWithFrame:(CGRect)frame
@@ -60,6 +61,7 @@
 	self.showsVerticalScrollIndicator = NO;
 	self.showsHorizontalScrollIndicator = NO;
 	self.alwaysBounceHorizontal = YES;
+	self.backgroundColor = [UIColor redColor];
 	scrollingViews = [[NSMutableArray alloc] init];
 }
 
@@ -106,7 +108,7 @@
 
 - (void)scrollingView:(ScrollingView *)aScrollingView drawRect:(CGRect)rect
 {
-	[[UIColor whiteColor] set];
+	[[UIColor redColor] set];
 	UIRectFill(rect);
 	
 	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
@@ -125,12 +127,6 @@
 			break;
 		}
 		
-		if (index == highlightedIndex) {
-			
-			[[UIColor redColor] set];
-			UIRectFill([self rectForButtonAtIndex:i]);
-		}
-		
 		NSString *title = [titles objectAtIndex:index];
 		
 		CGSize titleSize = [title sizeWithFont:titleFont];
@@ -138,11 +134,21 @@
 		NSInteger row = floor(i / columnCount);
 		NSInteger column = i % columnCount;
 		
-		CGFloat x = (column + 1) * horizontalMargin + (column + 0.5) * buttonSize.width - titleSize.width / 2.0;
-		CGFloat y = (row + 1) * verticalMargin + (row + 0.5) * buttonSize.height - titleSize.height / 2.0;
+		CGFloat x = (column + 1) * horizontalMargin + column * buttonSize.width;
+		CGFloat y = (row + 1) * verticalMargin + row * buttonSize.height;
+		
+		CGFloat titleX = x + 0.5 * buttonSize.width - titleSize.width / 2.0;
+		CGFloat titleY = y + 0.5 * buttonSize.height - titleSize.height / 2.0;
+		
+		
+		if (index == highlightedIndex) {
+			[highlightedButtonImage drawAtPoint:CGPointMake(x, y)];
+		} else {
+			[buttonImage drawAtPoint:CGPointMake(x, y)];
+		}
 		
 		[[UIColor blackColor] set];
-		[title drawAtPoint:CGPointMake(x, y) withFont:titleFont];		
+		[title drawAtPoint:CGPointMake(titleX, titleY) withFont:titleFont];		
 	}
 }
 

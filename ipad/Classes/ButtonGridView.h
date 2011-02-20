@@ -23,6 +23,7 @@
 @property (nonatomic, assign) NSInteger rowCount;
 @property (nonatomic, assign) NSInteger columnCount;
 @property (nonatomic, retain) UIImage *buttonImage;
+@property (nonatomic, retain) UIImage *highlightedButtonImage;
 @property (nonatomic, assign) CGSize buttonSize;
 
 @end
