@@ -30,5 +30,6 @@
 @property (nonatomic, retain) ReceiptView* receiptView;
 
 - (IBAction)sendPaymentRequest:(id)sender;
+- (IBAction)pay:(id)sender;
 
 @end

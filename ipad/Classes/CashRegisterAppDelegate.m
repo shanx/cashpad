@@ -37,7 +37,9 @@
 {    
 	MainViewController* mainViewController = [[MainViewController alloc] init];
 	mainViewController.managedObjectContext = self.managedObjectContext;
-	viewController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+	navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
+	viewController = navigationController;
 	[mainViewController release];
 	
 	[self.window addSubview:viewController.view];

@@ -309,6 +309,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -359,13 +361,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>65</integer>
-									<integer>63</integer>
+									<integer>69</integer>
+									<integer>67</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 670}, {265, 673}}</string>
+							<string>{{0, 738}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -400,23 +402,16 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CashRegister-Info.plist</string>
+								<string>&lt;No Editor&gt;</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
-										<key>PBXProjectModuleLabel</key>
-										<string>CashRegister-Info.plist</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>55C0D1191310949200D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
-											<string>55C0CD61131030E600D24B89</string>
 											<string>55C0CD62131030E600D24B89</string>
 											<string>55C0CD63131030E600D24B89</string>
 											<string>55C0CD7E131044CF00D24B89</string>
@@ -428,7 +423,6 @@
 											<string>55C0CFB0131078A600D24B89</string>
 											<string>55C0CFC5131079E100D24B89</string>
 											<string>55C0CFFC13107F1800D24B89</string>
-											<string>55C0D00813107FDE00D24B89</string>
 											<string>55C0D080131087D800D24B89</string>
 											<string>55C0D0A913108DA600D24B89</string>
 											<string>55C0D0AA13108DA600D24B89</string>
@@ -438,9 +432,11 @@
 											<string>55C0D0FF131093A900D24B89</string>
 											<string>55C0D100131093A900D24B89</string>
 											<string>55C0D101131093A900D24B89</string>
-											<string>55C0D102131093A900D24B89</string>
-											<string>55C0D1171310949200D24B89</string>
-											<string>55C0D1181310949200D24B89</string>
+											<string>55C0D1591310988D00D24B89</string>
+											<string>55C0D15A1310988D00D24B89</string>
+											<string>55C0D15B1310988D00D24B89</string>
+											<string>55C0D15C1310988D00D24B89</string>
+											<string>55C0D15D1310988D00D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -498,9 +494,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>55C0D084131087D800D24B89</string>
+				<string>55C0D13A1310959800D24B89</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>55C0D085131087D800D24B89</string>
+				<string>55C0D13B1310959800D24B89</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -621,7 +617,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319853714.191926</real>
+	<real>319854733.81040198</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -638,13 +634,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0D11A1310949200D24B89</string>
-		<string>55C0D0B213108DA600D24B89</string>
-		<string>55C0D08F131087D800D24B89</string>
+		<string>55C0D13C1310959800D24B89</string>
+		<string>55C0D13D1310959800D24B89</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>55C0CAF4130FD27900D24B89</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -668,7 +663,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ButtonGridView.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -685,8 +680,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -726,7 +719,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>55C0CAF4130FD27900D24B89</string>
-				<string>55C0D086131087D800D24B89</string>
+				<string>55C0D1321310959700D24B89</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -848,13 +841,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>55C0D087131087D800D24B89</string>
+				<string>55C0D1331310959700D24B89</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>55C0D088131087D800D24B89</string>
-				<string>55C0D089131087D800D24B89</string>
-				<string>55C0D08A131087D800D24B89</string>
-				<string>55C0D08B131087D800D24B89</string>
-				<string>55C0D08C131087D800D24B89</string>
+				<string>55C0D1341310959700D24B89</string>
+				<string>55C0D1351310959700D24B89</string>
+				<string>55C0D1361310959700D24B89</string>
+				<string>55C0D1371310959700D24B89</string>
+				<string>55C0D1381310959700D24B89</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1010,7 +1003,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>55C0D08D131087D800D24B89</string>
+				<string>55C0D1391310959700D24B89</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -1020,7 +1013,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
