@@ -24,8 +24,11 @@ setup(name='cashpad',
                         'fanstatic',
                         'zope.fanstatic',
                         'grokcore.startup',
-                        # Add extra requirements here
+                        'js.jquery',
+                        'js.jquery_tablesorter',
+                        'python-dateutil',
                         ],
+      extras_require={'test': ['gocept.selenium[grok] >= 0.9']},
       entry_points={
           'fanstatic.libraries': [
               'cashpad = cashpad.browser.resource:library',
