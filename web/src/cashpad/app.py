@@ -29,7 +29,12 @@ class App(grok.Application, grok.Container):
 #             return located(self.context, self.context.__parent__, 'boeetlkjalkaj')
 
 class Orders(grok.Container):
-    pass
+    def add(self, order):
+        # FIXME: this is not very elegant
+        key = len(self) and max([int(c) for c in self]) + 1 or 1
+
+        self[str(key)] = order
+
 
 class User(grok.Container, grok.Model):
     def __init__(self):
@@ -79,7 +84,7 @@ class Order(grok.Model):
     created_on = FieldProperty(IOrder['created_on'])
     total_price = FieldProperty(IOrder['total_price'])
     item_list = FieldProperty(IOrder['item_list'])
-
+    
 class OrdersREST(grok.REST):
     grok.context(Orders)
     grok.layer(APILayer)
@@ -110,16 +115,13 @@ class OrdersREST(grok.REST):
             item_list.append(item)
 
         order_data['item_list'] = item_list
-        # FIXME: this is not very elegant
-        key = len(self.context) and max([int(c) for c in self.context]) + 1 or 1
+        
         order = Order()
         applyData(order, grok.Fields(IOrder), order_data)
+        
+        self.context.add(order)
 
-        frop = str(key)
-        self.context[frop] = order
-        henk = self.context[frop]
-
-        self.response.setHeader('Location', self.url(henk))
+        self.response.setHeader('Location', self.url(order))
         self.response.setStatus('201')
         return ''
 
