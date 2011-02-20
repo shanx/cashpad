@@ -29,6 +29,8 @@
 
 - (NSArray *)categoryTitles;
 - (NSArray *)productTitles;
+- (ProductCategory *)selectedCategory;
+- (NSArray *)productsInSelectedCategory;
 
 @end
 
@@ -45,8 +47,8 @@
 	self = [super initWithNibName:@"MainView" bundle:nil];
 	
 	if (self) {
+		selectedCategoryIndex = 0;
 		categories = [[NSMutableArray alloc] init];
-		products = [[NSMutableArray alloc] init];
 	}
 	
 	return self;
@@ -153,11 +155,26 @@
 {
 	NSMutableArray *productTitles = [NSMutableArray array];
 	
-	for (Product *product in products) {
+	for (Product *product in [self productsInSelectedCategory]) {
 		[productTitles addObject:product.name];
 	}
 	
 	return productTitles;
+}
+
+- (NSArray *)productsInSelectedCategory
+{
+	NSMutableArray *products = [NSMutableArray array];
+	
+	for (Product *product in [self selectedCategory].products) {
+		[products addObject:product];
+	}
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+	[products sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
+	
+	return products;
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -195,7 +212,7 @@
 			product.id = [NSNumber numberWithInt:productID];
 			productID++;
 			
-			[products addObject:product];
+			//[products addObject:product];
 			
 			[product release];
 		}
@@ -245,7 +262,7 @@
 	Product *product = [[Product alloc] initWithEntity:entity insertIntoManagedObjectContext:self.managedObjectContext];
 	product.name = @"Bier";
 	DLog(@"%@", product);
-	[products addObject:product];
+	//[products addObject:product];
 	[product release];
 
 	UIBarButtonItem* connectItem = [[UIBarButtonItem alloc] initWithTitle:@"Connect" 
@@ -260,29 +277,40 @@
     receiptView.productTableView.dataSource = self;
 }
 
+- (ProductCategory *)selectedCategory
+{
+	return [categories objectAtIndex:selectedCategoryIndex];
+}
+
 #pragma mark -
 #pragma mark ButtonGridViewDelegate
 
 - (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
 {
-	
-	Product *product = [products objectAtIndex:index];
-	
-	NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
-	Product *newProduct = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
-	newProduct.id = product.id;
-	newProduct.name = product.name;
-	newProduct.price = product.price;
-	
-	[order addProductsObject:newProduct];
-	[newProduct release];
-	
-	DLog(@"%@", order.products);
-	
-	self.productGroupDictionaries = [order itemList];
-	
-	
-	[receiptView.productTableView reloadData];
+	if (aButtonGridView == productsGridView) {
+		Product *product = [[self productsInSelectedCategory] objectAtIndex:index];
+		
+		NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+		Product *newProduct = [[Product alloc] initWithEntity:productEntity insertIntoManagedObjectContext:self.managedObjectContext];
+		newProduct.id = product.id;
+		newProduct.name = product.name;
+		newProduct.price = product.price;
+		
+		[order addProductsObject:newProduct];
+		[newProduct release];
+		
+		DLog(@"%@", order.products);
+		
+		self.productGroupDictionaries = [order itemList];
+
+		[receiptView.productTableView reloadData];
+		
+		receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %@", 0x20ac, [order totalPrice]];
+	} else {
+		selectedCategoryIndex = index;
+		productsGridView.titles = [self productTitles];
+	}
+
 }
 
 
@@ -349,7 +377,6 @@
 - (void)dealloc 
 {
     [receiptView release];
-    [products release];
     [super dealloc];
 }
 

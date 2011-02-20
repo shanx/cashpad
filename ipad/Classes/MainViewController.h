@@ -22,8 +22,8 @@
 	IBOutlet ButtonGridView *productsGridView;
 	IBOutlet ReceiptView* receiptView;
 	NSMutableArray *categories;
-	NSMutableArray *products;
 	PaymentSession *paymentSession;
+	NSInteger selectedCategoryIndex;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

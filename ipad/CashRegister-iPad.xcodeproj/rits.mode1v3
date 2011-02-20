@@ -359,14 +359,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
-									<integer>7</integer>
-									<integer>1</integer>
+									<integer>48</integer>
+									<integer>47</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {265, 673}}</string>
+							<string>{{0, 466}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -401,7 +400,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Order.m</string>
+								<string>back.png</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -409,11 +408,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Order.m</string>
+										<string>back.png</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0D20A1311263100D24B89</string>
+										<string>55C0D2B113112E8E00D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -439,14 +438,18 @@
 											<string>55C0D1AF13111FEA00D24B89</string>
 											<string>55C0D1C31311212100D24B89</string>
 											<string>55C0D1CB131121E800D24B89</string>
-											<string>55C0D1D81311233400D24B89</string>
-											<string>55C0D1DA1311233400D24B89</string>
-											<string>55C0D1DB1311233400D24B89</string>
-											<string>55C0D1F01311248200D24B89</string>
 											<string>55C0D1FC131125C900D24B89</string>
 											<string>55C0D1FD131125C900D24B89</string>
-											<string>55C0D2041311260500D24B89</string>
-											<string>55C0D2051311260500D24B89</string>
+											<string>55C0D20D131126CF00D24B89</string>
+											<string>55C0D2131311276100D24B89</string>
+											<string>55C0D2141311276100D24B89</string>
+											<string>55C0D23613112A5000D24B89</string>
+											<string>55C0D24613112B9700D24B89</string>
+											<string>55C0D24713112B9700D24B89</string>
+											<string>55C0D24D13112C4900D24B89</string>
+											<string>55C0D2AE13112E8E00D24B89</string>
+											<string>55C0D2AF13112E8E00D24B89</string>
+											<string>55C0D2B013112E8E00D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -627,7 +630,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319890993.70236999</real>
+	<real>319893134.14634198</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -644,13 +647,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>55C0D20B1311263100D24B89</string>
 		<string>55C0D185131117E100D24B89</string>
 		<string>55C0D186131117E100D24B89</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
-		<string>55C0CAF4130FD27900D24B89</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>55C0CAF4130FD27900D24B89</string>
+		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -674,7 +676,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string>CheckoutViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -1026,7 +1028,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -45,7 +45,7 @@
 					<object class="IBUITableView" id="61853241">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{1024, 704}</string>
+						<string key="NSFrameSize">{540, 532}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -63,18 +63,11 @@
 						<float key="IBUISectionFooterHeight">10</float>
 					</object>
 				</object>
-				<string key="NSFrameSize">{1024, 704}</string>
+				<string key="NSFrameSize">{540, 532}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-				</object>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
-				<object class="IBUISimulatedNavigationBarMetrics" key="IBUISimulatedTopBarMetrics">
-					<int key="IBUIBarStyle">1</int>
-					<bool key="IBUIPrompted">NO</bool>
+					<int key="NSColorSpace">2</int>
+					<bytes key="NSRGB">MC44NTQ5MDIwMjkgMC44NjY2NjY3MzQyIDAuODg2Mjc0NTc2MgA</bytes>
 				</object>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="interfaceOrientation">3</int>
@@ -168,7 +161,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>CheckoutViewController</string>
 					<string>UIResponder</string>
-					<string>{{325, 89}, {1039, 767}}</string>
+					<string>{{524, 227}, {540, 532}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
