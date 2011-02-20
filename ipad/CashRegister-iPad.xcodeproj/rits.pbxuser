@@ -23,7 +23,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 55C0CAE5130FD26C00D24B89 /* CashRegister */;
-		activeSDKPreference = iphonesimulator4.2;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* CashRegister */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* CashRegister */,
@@ -677,6 +677,7 @@
 			55C0D42813114F8C00D24B89 /* PBXTextBookmark */ = 55C0D42813114F8C00D24B89 /* PBXTextBookmark */;
 			55C0D42A13114FA100D24B89 /* PBXTextBookmark */ = 55C0D42A13114FA100D24B89 /* PBXTextBookmark */;
 			55C0D42B13114FAA00D24B89 /* PBXTextBookmark */ = 55C0D42B13114FAA00D24B89 /* PBXTextBookmark */;
+			55C0D42E1311511100D24B89 /* PBXTextBookmark */ = 55C0D42E1311511100D24B89 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 55C0CAFD130FD27900D24B89 /* Source Control */;
 		userBuildSettings = {
@@ -751,9 +752,9 @@
 	};
 	55C0CB0D130FD2C700D24B89 /* MainViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1265, 5603}}";
-			sepNavSelRange = "{13050, 0}";
-			sepNavVisRange = "{12318, 1716}";
+			sepNavIntBoundsRect = "{{0, 0}, {1265, 5577}}";
+			sepNavSelRange = "{12990, 0}";
+			sepNavVisRange = "{12755, 603}";
 		};
 	};
 	55C0CBB313100D4C00D24B89 /* ReceiptView.h */ = {
@@ -999,7 +1000,7 @@
 		ignoreCount = 0;
 		lineNumber = 173;
 		location = CashRegister;
-		modificationTime = 319901581.415167;
+		modificationTime = 319901731.254035;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1017,7 +1018,7 @@
 		ignoreCount = 0;
 		lineNumber = 175;
 		location = CashRegister;
-		modificationTime = 319901581.415237;
+		modificationTime = 319901731.254115;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1045,7 +1046,7 @@
 		ignoreCount = 0;
 		lineNumber = 157;
 		location = CashRegister;
-		modificationTime = 319901581.41526;
+		modificationTime = 319901731.254136;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1063,7 +1064,7 @@
 		ignoreCount = 0;
 		lineNumber = 190;
 		location = CashRegister;
-		modificationTime = 319901581.415308;
+		modificationTime = 319901731.254209;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1081,7 +1082,7 @@
 		ignoreCount = 0;
 		lineNumber = 194;
 		location = CashRegister;
-		modificationTime = 319901581.415329;
+		modificationTime = 319901731.254229;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1275,7 +1276,7 @@
 		ignoreCount = 0;
 		lineNumber = 107;
 		location = CashRegister;
-		modificationTime = 319901581.41535;
+		modificationTime = 319901731.855836;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -6760,6 +6761,16 @@
 		rType = 0;
 		vrLen = 1716;
 		vrLoc = 12318;
+	};
+	55C0D42E1311511100D24B89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 55C0CB0D130FD2C700D24B89 /* MainViewController.m */;
+		name = "MainViewController.m: 385";
+		rLen = 0;
+		rLoc = 12990;
+		rType = 0;
+		vrLen = 603;
+		vrLoc = 12755;
 	};
 	A55772D7131016030009D6EB /* ASIHTTPRequest.h */ = {
 		uiCtxt = {
