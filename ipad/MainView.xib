@@ -71,7 +71,7 @@
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
 					</object>
-					<object class="IBUIView" id="116866640">
+					<object class="IBUIView" id="201680862">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{745, 216}</string>
@@ -79,7 +79,7 @@
 						<reference key="IBUIBackgroundColor" ref="17646590"/>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
-					<object class="IBUIView" id="184035272">
+					<object class="IBUIView" id="651129218">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{0, 224}, {745, 524}}</string>
@@ -146,7 +146,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">categoriesGridView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="116866640"/>
+						<reference key="destination" ref="201680862"/>
 					</object>
 					<int key="connectionID">15</int>
 				</object>
@@ -154,9 +154,25 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">productsGridView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="184035272"/>
+						<reference key="destination" ref="651129218"/>
 					</object>
 					<int key="connectionID">16</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="651129218"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">17</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="201680862"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">18</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -173,9 +189,9 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="116866640"/>
+							<reference ref="201680862"/>
 							<reference ref="465140006"/>
-							<reference ref="184035272"/>
+							<reference ref="651129218"/>
 							<reference ref="483779680"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -203,13 +219,13 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">13</int>
-						<reference key="object" ref="116866640"/>
+						<reference key="object" ref="201680862"/>
 						<reference key="parent" ref="191373211"/>
 						<string key="objectName">Categories Grid View</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">14</int>
-						<reference key="object" ref="184035272"/>
+						<reference key="object" ref="651129218"/>
 						<reference key="parent" ref="191373211"/>
 						<string key="objectName">Products Grid View</string>
 					</object>
@@ -270,7 +286,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">16</int>
+			<int key="maxID">18</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

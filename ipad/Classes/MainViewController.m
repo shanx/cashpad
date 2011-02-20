@@ -125,9 +125,23 @@
 							  @"Whisky",
 							  @"Likeur",
 							  @"Pepsi", nil];
+	
 	productsGridView.rowCount = 3;
 	productsGridView.columnCount = 3;
 	productsGridView.titles = productTitles;
+	productsGridView.buttonSize = CGSizeMake(200.0, 100.0);
+	
+	NSArray *categoryTitles = [NSArray arrayWithObjects:
+							   @"Koffie en thee",
+							   @"Alcoholische dranken",
+							   @"Frisdranken",
+							   @"Etenswaren", nil];
+	
+	categoriesGridView.rowCount = 1;
+	categoriesGridView.columnCount = 4;
+	categoriesGridView.titles = categoryTitles;
+	categoriesGridView.buttonSize = CGSizeMake(150.0, 100.0);
+	
 	
 	DLog(@"%@", self.managedObjectContext);
 	
@@ -156,6 +170,8 @@
 - (void)buttonGridView:(ButtonGridView *)aButtonGridView buttonTappedAtIndex:(NSInteger)index
 {
 	DLog(@"index: %d", index);
+	
+	
 }
 
 
