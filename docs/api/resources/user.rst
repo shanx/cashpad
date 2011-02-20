@@ -58,13 +58,13 @@ Sending anything with a Content-Type other than application/json should have gro
     ...
     BadRequest: Content is not of type: application/json; charset=utf-8
 
-Pushing no json should return 400 Bad request::
-
-    >>> response = http_call('PUT', 'http://localhost/++rest++api/app/user/123/', data='',
-    ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
-    Traceback (most recent call last):
-    ...
-    BadRequest: Content could not be parsed
+.. Pushing no json should return 400 Bad request::
+.. 
+..     >>> response = http_call('PUT', 'http://localhost/++rest++api/app/user/123/', data='',
+..     ...                         headers={'Content-Type': 'application/json; charset=utf-8'})
+..     Traceback (most recent call last):
+..     ...
+..     BadRequest: Content could not be parsed
 
 Create a user::
 
@@ -78,7 +78,7 @@ Create a user::
     201
 
     >>> print app['user']['123'].name
-    mobile user
+    123
 
 User already exists, but name should be updated::
 
@@ -92,4 +92,4 @@ User already exists, but name should be updated::
     204
 
     >>> print app['user']['123'].name
-    new mobile user
+    123
