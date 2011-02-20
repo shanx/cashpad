@@ -717,7 +717,7 @@
 		ignoreCount = 0;
 		lineNumber = 176;
 		location = CashRegister;
-		modificationTime = 319854699.001368;
+		modificationTime = 319854863.749391;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -735,7 +735,7 @@
 		ignoreCount = 0;
 		lineNumber = 178;
 		location = CashRegister;
-		modificationTime = 319854699.001474;
+		modificationTime = 319854863.749466;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -763,7 +763,7 @@
 		ignoreCount = 0;
 		lineNumber = 160;
 		location = CashRegister;
-		modificationTime = 319854699.001543;
+		modificationTime = 319854863.749539;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -781,7 +781,7 @@
 		ignoreCount = 0;
 		lineNumber = 193;
 		location = CashRegister;
-		modificationTime = 319854699.001561;
+		modificationTime = 319854863.749563;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -799,7 +799,7 @@
 		ignoreCount = 0;
 		lineNumber = 197;
 		location = CashRegister;
-		modificationTime = 319854699.001581;
+		modificationTime = 319854863.749581;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -993,7 +993,7 @@
 		ignoreCount = 0;
 		lineNumber = 107;
 		location = CashRegister;
-		modificationTime = 319854699.001635;
+		modificationTime = 319854864.154248;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
