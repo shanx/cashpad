@@ -16,14 +16,14 @@
           <li>
             <a tal:attributes="href view/application_url">Users</a>
             <ul>
-              <li tal:repeat="usert context/user/values">
-                <a tal:attributes="href python:view.url(usert)"
-                   tal:content="usert" />
+              <li tal:repeat="user context/user/values">
+                <a tal:attributes="href python:view.url(user)"
+                   tal:content="user/name" />
               </li>
             </ul>
           </li>
         </ul>
-        <p class="user">Hello, <a href="#">John</a> | <a tal:attributes="href python:view.url('logout')">Logout</a></p>
+        <p class="user"><a tal:attributes="href python:view.url('logout')">Logout</a></p>
       </div>    <!-- #header ends -->
 
       <div class="block">
@@ -38,7 +38,7 @@
           <ul>
             <li tal:repeat="usert context/user/values">
               <a tal:attributes="href python:view.url(usert)"
-                 tal:content="usert" />
+                 tal:content="usert/__name__" />
             </li>
           </ul>
         </div>    <!-- .block_content ends -->
