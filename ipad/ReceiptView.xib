@@ -73,7 +73,7 @@
 					</object>
 					<object class="IBUITableView" id="42082583">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">306</int>
+						<int key="NSvFlags">290</int>
 						<string key="NSFrame">{{18, 130}, {290, 345}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="496671650"/>
@@ -406,14 +406,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>categoriesGridView</string>
 							<string>productsGridView</string>
-							<string>receiptTableView</string>
 							<string>receiptView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>ButtonGridView</string>
 							<string>ButtonGridView</string>
-							<string>UITableView</string>
 							<string>ReceiptView</string>
 						</object>
 					</object>
@@ -423,7 +421,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>categoriesGridView</string>
 							<string>productsGridView</string>
-							<string>receiptTableView</string>
 							<string>receiptView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -435,10 +432,6 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">productsGridView</string>
 								<string key="candidateClassName">ButtonGridView</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">receiptTableView</string>
-								<string key="candidateClassName">UITableView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">receiptView</string>
