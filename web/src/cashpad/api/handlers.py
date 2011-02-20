@@ -45,7 +45,8 @@ class UserContainerTraverser(grok.Traverser):
             response = self.request.response
             user = self.context.get(device_id)
             if user is None:
-                user = self.context[device_id] = User(name=user_data['name'])
+                user = User(name=user_data['name'], device_id=str(device_id))
+                self.context.add(user)
                 response.setStatus('201')
             else:
                 user.name = user_data['name']
@@ -68,7 +69,7 @@ class OrderContainerHandler(grok.REST):
 
     def coerce_order_data(self, original_order_data):
         order_data = copy.deepcopy(original_order_data)
-        
+
         # Coerce the created_on timestamp to a datetime
         order_data['created_on'] = datetime.datetime.fromtimestamp(order_data['created_on'])
         # Coerce total_price to float
@@ -78,10 +79,10 @@ class OrderContainerHandler(grok.REST):
 
     def coerce_item_data(self, original_item_data):
         item_data = copy.deepcopy(original_item_data)
-        
+
         # Coerce unit_price to float
         item_data['unit_price'] = float(item_data['unit_price'])
-        
+
         return item_data
 
     def POST(self):
@@ -92,16 +93,16 @@ class OrderContainerHandler(grok.REST):
         item_list = []
         for item_data in order_data['item_list']:
             item_data = self.coerce_item_data(item_data)
-            
+
             item = Item()
             applyData(item, grok.Fields(IItem), item_data)
             item_list.append(item)
 
         order_data['item_list'] = item_list
-        
+
         order = Order()
         applyData(order, grok.Fields(IOrder), order_data)
-        
+
         self.context.add(order)
 
         self.response.setHeader('Location', self.url(order))
