@@ -80,6 +80,108 @@
 <dt><tt class="docutils literal"><span class="pre">400</span> <span class="pre">Bad</span> <span class="pre">Request</span></tt></dt>
 <dd>If the request data could not be parsed.</dd>
 </dl>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Sending anything with a Content-Type other than application/json should have grok smash your head to pieces:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">http_call</span><span class="p">(</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="s">&#39;http://localhost/++rest++api/app/user/123/order/&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">BadRequest: Content is not of type</span>: <span class="n">application/json; charset=utf-8</span>
+</pre></div>
+</div>
+<p>Pushing no json should return 400 Bad request:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">http_call</span><span class="p">(</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="s">&#39;http://localhost/++rest++api/app/user/123/order/&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">... </span>                        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s">&#39;application/json; charset=utf-8&#39;</span><span class="p">})</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">BadRequest</span>: <span class="n">Content could not be parsed</span>
+</pre></div>
+</div>
+<p>Create a new order:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">order</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s">&#39;created_on&#39;</span><span class="p">:</span> <span class="mi">1298133944</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s">&#39;total_price&#39;</span><span class="p">:</span> <span class="mf">19.75</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s">&#39;item_list&#39;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="p">{</span>
+<span class="gp">... </span>            <span class="s">&#39;product_id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;product_name&#39;</span><span class="p">:</span> <span class="s">&#39;cola&#39;</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;amount&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;unit_price&#39;</span><span class="p">:</span> <span class="mf">2.10</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="p">},</span>
+<span class="gp">... </span>        <span class="p">{</span>
+<span class="gp">... </span>            <span class="s">&#39;product_id&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;product_name&#39;</span><span class="p">:</span> <span class="s">&#39;pizza calzone&#39;</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;amount&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;unit_price&#39;</span><span class="p">:</span> <span class="mf">15.55</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="p">}</span>
+<span class="gp">... </span>    <span class="p">]</span>
+<span class="gp">... </span><span class="p">}</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">http_call</span><span class="p">(</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="s">&#39;http://localhost/++rest++api/app/user/123/order/&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">simplejson</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">order</span><span class="p">),</span>
+<span class="gp">... </span>                        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s">&#39;application/json; charset=utf-8&#39;</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">getStatus</span><span class="p">()</span>
+<span class="go">201</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">first_order</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">getHeader</span><span class="p">(</span><span class="s">&#39;Location&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">first_order</span>
+<span class="go">http://localhost/++rest++api/app/user/123/order/1</span>
+</pre></div>
+</div>
+<p>Test if the content actually was inserted in the ZODB:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">app</span><span class="p">[</span><span class="s">&#39;user&#39;</span><span class="p">][</span><span class="s">&#39;123&#39;</span><span class="p">][</span><span class="s">&#39;order&#39;</span><span class="p">][</span><span class="s">&#39;1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">created_on</span>
+<span class="go">datetime.datetime(2011, 2, 19, 17, 45, 44)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">product_name</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">app</span><span class="p">[</span><span class="s">&#39;user&#39;</span><span class="p">][</span><span class="s">&#39;123&#39;</span><span class="p">][</span><span class="s">&#39;order&#39;</span><span class="p">][</span><span class="s">&#39;1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">item_list</span><span class="p">]</span>
+<span class="go">[&#39;cola&#39;, &#39;pizza calzone&#39;]</span>
+</pre></div>
+</div>
+<p>Test repeated insert:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">order</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s">&#39;created_on&#39;</span><span class="p">:</span> <span class="mi">1298133944</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s">&#39;total_price&#39;</span><span class="p">:</span> <span class="mf">4.20</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s">&#39;item_list&#39;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="p">{</span>
+<span class="gp">... </span>            <span class="s">&#39;product_id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;product_name&#39;</span><span class="p">:</span> <span class="s">&#39;cola&#39;</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;amount&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;unit_price&#39;</span><span class="p">:</span> <span class="mf">2.10</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="p">}</span>
+<span class="gp">... </span>    <span class="p">]</span>
+<span class="gp">... </span><span class="p">}</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">http_call</span><span class="p">(</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="s">&#39;http://localhost/++rest++api/app/user/123/order/&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">simplejson</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">order</span><span class="p">),</span>
+<span class="gp">... </span>                        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s">&#39;application/json; charset=utf-8&#39;</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">getStatus</span><span class="p">()</span>
+<span class="go">201</span>
+</pre></div>
+</div>
+<p>Test int values for fields that would normally expect float and test proper coercion</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">order</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s">&#39;created_on&#39;</span><span class="p">:</span> <span class="mi">1298133944</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s">&#39;total_price&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s">&#39;item_list&#39;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="p">{</span>
+<span class="gp">... </span>            <span class="s">&#39;product_id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;product_name&#39;</span><span class="p">:</span> <span class="s">&#39;cola&#39;</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;amount&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="gp">... </span>            <span class="s">&#39;unit_price&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="p">}</span>
+<span class="gp">... </span>    <span class="p">]</span>
+<span class="gp">... </span><span class="p">}</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">http_call</span><span class="p">(</span><span class="s">&#39;POST&#39;</span><span class="p">,</span> <span class="s">&#39;http://localhost/++rest++api/app/user/123/order/&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">simplejson</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">order</span><span class="p">),</span>
+<span class="gp">... </span>                        <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s">&#39;application/json; charset=utf-8&#39;</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span><span class="o">.</span><span class="n">getStatus</span><span class="p">()</span>
+<span class="go">201</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">app</span><span class="p">[</span><span class="s">&#39;user&#39;</span><span class="p">][</span><span class="s">&#39;123&#39;</span><span class="p">][</span><span class="s">&#39;order&#39;</span><span class="p">][</span><span class="s">&#39;3&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">total_price</span>
+<span class="go">4.0</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">unit_price</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">app</span><span class="p">[</span><span class="s">&#39;user&#39;</span><span class="p">][</span><span class="s">&#39;123&#39;</span><span class="p">][</span><span class="s">&#39;order&#39;</span><span class="p">][</span><span class="s">&#39;3&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">item_list</span><span class="p">]</span>
+<span class="go">[2.0]</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -88,6 +190,14 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Order</a><ul>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="user.html"
                         title="previous chapter">User</a></p>
