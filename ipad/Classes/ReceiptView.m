@@ -25,7 +25,15 @@
     self.layer.masksToBounds = YES;
     self.layer.borderColor = [UIColor grayColor].CGColor;
     self.layer.borderWidth = 1.0;
-    // self.backgroundColor = [UIColor redColor];
+    
+    [payButton setImage:[UIImage imageNamed:@"pay-button-pressed.png"] 
+               forState:UIControlStateHighlighted];
+    
+    [onNameButton setImage:[UIImage imageNamed:@"move-button-pressed.png"] 
+                  forState:UIControlStateHighlighted];
+    
+    [getReceiptButton setImage:[UIImage imageNamed:@"get-receipt-button-pressed.png"] 
+                      forState:UIControlStateHighlighted];
     
 }
 
