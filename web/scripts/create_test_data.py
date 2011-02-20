@@ -93,8 +93,11 @@ for (user_key, user_data) in USER_SET:
                 item_list.append(new_item)
             
             new_order = Order()
-            new_order.creation_date = day
+            # FIXME: Last minute stress :)
+            new_order.created_on = datetime.datetime(day.year, day.month, day.day, 1, 1, 1)
             new_order.total_price = sum([i.unit_price * i.amount for i in item_list])
             new_order.item_list = item_list
             
             app['user'][user_key]['order'].add(new_order)
+
+transaction.commit()
