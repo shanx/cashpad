@@ -57,7 +57,8 @@
                                                     style:UITableViewStylePlain];
     
     productTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
-    productTableView.rowHeight = 41;
+    productTableView.rowHeight = 50;
+    productTableView.separatorColor = [UIColor clearColor];
     
     //productTableView.layer.masksToBounds = YES;
     //productTableView.layer.borderColor = [UIColor lightGrayColor].CGColor;

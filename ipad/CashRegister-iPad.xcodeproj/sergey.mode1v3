@@ -280,13 +280,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>50</integer>
-									<integer>47</integer>
+									<integer>20</integer>
+									<integer>14</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 339}, {232, 664}}</string>
+							<string>{{0, 274}, {232, 664}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -305,7 +306,7 @@
 							<real>232</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>64 55 1112 723 0 0 1280 778 </string>
+						<string>66 53 1112 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -335,7 +336,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A58F5BBB13110F3A00808AB0</string>
+										<string>A58F5C1513111AC400808AB0</string>
 										<key>history</key>
 										<array>
 											<string>A51F1CD7130FE74100588C1F</string>
@@ -354,11 +355,11 @@
 											<string>A557761F13108F290009D6EB</string>
 											<string>A557762013108F290009D6EB</string>
 											<string>A557762213108F290009D6EB</string>
-											<string>A557763A131091EB0009D6EB</string>
-											<string>A58F5BA913110D1E00808AB0</string>
-											<string>A58F5BAA13110D1E00808AB0</string>
-											<string>A58F5BAB13110D1E00808AB0</string>
-											<string>A58F5BAC13110D1E00808AB0</string>
+											<string>A58F5BDB1311157E00808AB0</string>
+											<string>A58F5BDC1311157E00808AB0</string>
+											<string>A58F5C0E13111A6A00808AB0</string>
+											<string>A58F5C1313111AC400808AB0</string>
+											<string>A58F5C1413111AC400808AB0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -372,7 +373,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {858, 572}}</string>
 								<key>RubberWindowFrame</key>
-								<string>64 55 1112 723 0 0 1280 778 </string>
+								<string>66 53 1112 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -392,7 +393,7 @@
 								<key>Frame</key>
 								<string>{{0, 577}, {858, 105}}</string>
 								<key>RubberWindowFrame</key>
-								<string>64 55 1112 723 0 0 1280 778 </string>
+								<string>66 53 1112 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -556,15 +557,16 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>A58F5C1113111A6A00808AB0</string>
 		<string>A58F5BAE13110D1E00808AB0</string>
 		<string>A58F5B311311028600808AB0</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A51F1CDE130FE74100588C1F</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/sergey/Projects/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>64 55 1112 723 0 0 1280 778 </string>
+	<string>66 53 1112 723 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -890,6 +892,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -935,7 +939,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
