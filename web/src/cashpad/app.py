@@ -19,15 +19,6 @@ class App(grok.Application, grok.Container):
         super(App, self).__init__()
         self['user'] = Users()
 
-# FIXME: Traverser doesn't work
-# class AppTraverser(grok.Traverser):
-#     grok.context(App)
-#
-#     def traverse(self, name):
-#         if name == 'api':
-#             grok.util.applySkin(self.request, APILayer, grok.IRESTSkinType)
-#             return located(self.context, self.context.__parent__, 'boeetlkjalkaj')
-
 class Orders(grok.Container):
     def add(self, order):
         # FIXME: this is not very elegant
