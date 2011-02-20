@@ -13,19 +13,42 @@ from cashpad.models import OrderContainer, Order, UserContainer, User, Item
 class APILayer(grok.IRESTLayer):
     grok.restskin('api')
 
+# class BaseContainerHandler(grok.REST):
+#     grok.baseclass()
+#     grok.layer(APILayer)
+
+# FIXME: These should be part of the BaseContainerHandler
+def validate_proper_contenttype(request):
+    if  request.getHeader('Content-Type', '').lower() != 'application/json; charset=utf-8':
+        raise BadRequest('Content is not of type: application/json; charset=utf-8')
+
+def parse_json(body):
+    "Return parsed json, otherwise raise BadRequest"
+    try:
+        parsed_body = simplejson.loads(body)
+    except ValueError:
+        raise BadRequest('Content could not be parsed')
+
+    return parsed_body
+
 # XXX PUT requests in grok don't work like you would expect them to?
 class UserContainerTraverser(grok.Traverser):
     grok.context(UserContainer)
     grok.layer(APILayer)
 
-    def traverse(self, name):
+    def traverse(self, device_id):
         if self.request.method == 'PUT':
+            validate_proper_contenttype(self.request)
+            body = self.request.bodyStream.read()
+            user_data = parse_json(body)
+
             response = self.request.response
-            user = self.context.get(name)
+            user = self.context.get(device_id)
             if user is None:
-                user = self.context[name] = User()
+                user = self.context[device_id] = User(name=user_data['name'])
                 response.setStatus('201')
             else:
+                user.name = user_data['name']
                 response.setStatus('204')
 
             # FIXME: user should not be a hardcoded string like this
@@ -34,28 +57,14 @@ class UserContainerTraverser(grok.Traverser):
 
 class UserContainerHandler(grok.REST):
     grok.context(UserContainer)
-    grok.layer(APILayer)
 
     def PUT(self):
         # XXX We/grok should set the location here.
         return ''
 
+
 class OrderContainerHandler(grok.REST):
     grok.context(OrderContainer)
-    grok.layer(APILayer)
-
-    def validate_proper_contenttype(self):
-        if  self.request.getHeader('Content-Type', '').lower() != 'application/json; charset=utf-8':
-            raise BadRequest('Content is not of type: application/json; charset=utf-8')
-
-    def parse_json(self):
-        "Return parsed json, otherwise raise BadRequest"
-        try:
-            parsed_body = simplejson.loads(self.body)
-        except ValueError:
-            raise BadRequest('Content could not be parsed')
-        
-        return parsed_body
 
     def coerce_order_data(self, original_order_data):
         order_data = copy.deepcopy(original_order_data)
@@ -76,9 +85,8 @@ class OrderContainerHandler(grok.REST):
         return item_data
 
     def POST(self):
-        self.validate_proper_contenttype()
-
-        order_data = self.parse_json()
+        validate_proper_contenttype(self.request)
+        order_data = parse_json(self.body)
         order_data = self.coerce_order_data(order_data)
 
         item_list = []

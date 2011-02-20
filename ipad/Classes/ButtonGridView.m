@@ -61,7 +61,7 @@
 	self.showsVerticalScrollIndicator = NO;
 	self.showsHorizontalScrollIndicator = NO;
 	self.alwaysBounceHorizontal = YES;
-	self.backgroundColor = [UIColor redColor];
+	self.backgroundColor = [UIColor clearColor];
 	scrollingViews = [[NSMutableArray alloc] init];
 }
 
@@ -108,9 +108,6 @@
 
 - (void)scrollingView:(ScrollingView *)aScrollingView drawRect:(CGRect)rect
 {
-	[[UIColor redColor] set];
-	UIRectFill(rect);
-	
 	NSInteger pageIndex = [scrollingViews indexOfObject:aScrollingView];
 
 	

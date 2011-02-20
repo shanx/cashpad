@@ -358,14 +358,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
+									<integer>27</integer>
 									<integer>16</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 713}, {265, 673}}</string>
+							<string>{{0, 110}, {265, 673}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -402,7 +402,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainViewController.m</string>
+								<string>ButtonGridView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -410,11 +410,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainViewController.m</string>
+										<string>ButtonGridView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>55C0D30B13113A7100D24B89</string>
+										<string>55C0D33013113F8E00D24B89</string>
 										<key>history</key>
 										<array>
 											<string>55C0CC9913101F9D00D24B89</string>
@@ -441,7 +441,6 @@
 											<string>55C0D1FD131125C900D24B89</string>
 											<string>55C0D20D131126CF00D24B89</string>
 											<string>55C0D2141311276100D24B89</string>
-											<string>55C0D23613112A5000D24B89</string>
 											<string>55C0D24613112B9700D24B89</string>
 											<string>55C0D24713112B9700D24B89</string>
 											<string>55C0D2AE13112E8E00D24B89</string>
@@ -451,10 +450,21 @@
 											<string>55C0D2E11311312500D24B89</string>
 											<string>55C0D2E21311312500D24B89</string>
 											<string>55C0D2F4131136F700D24B89</string>
-											<string>55C0D30713113A7100D24B89</string>
-											<string>55C0D30813113A7100D24B89</string>
 											<string>55C0D30913113A7100D24B89</string>
-											<string>55C0D30A13113A7100D24B89</string>
+											<string>55C0D31513113E8800D24B89</string>
+											<string>55C0D31613113E8800D24B89</string>
+											<string>55C0D31713113E8800D24B89</string>
+											<string>55C0D31813113E8800D24B89</string>
+											<string>55C0D31913113E8800D24B89</string>
+											<string>55C0D31A13113E8800D24B89</string>
+											<string>55C0D31B13113E8800D24B89</string>
+											<string>55C0D31C13113E8800D24B89</string>
+											<string>55C0D31D13113E8800D24B89</string>
+											<string>55C0D31E13113E8800D24B89</string>
+											<string>55C0D31F13113E8800D24B89</string>
+											<string>55C0D32E13113F8E00D24B89</string>
+											<string>55C0D32F13113F8E00D24B89</string>
+											<string>55C0D30813113A7100D24B89</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -635,7 +645,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319896177.28514099</real>
+	<real>319897486.05505401</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -652,12 +662,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>55C0D33113113F8E00D24B89</string>
 		<string>55C0D2E81311312500D24B89</string>
 		<string>55C0D2CC13112ED500D24B89</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>55C0CAF4130FD27900D24B89</string>
 		<string>/Users/rits/Desktop/cashpad/ipad/CashRegister-iPad.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1440 732 0 0 1440 878 </string>
@@ -1033,7 +1044,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
