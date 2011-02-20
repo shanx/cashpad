@@ -12,6 +12,7 @@ class Index(grok.View):
     grok.context(App)
 
     def update(self):
+        resource.favicon.need()
         resource.style.need()
         resource.custom_js.need()
 
@@ -19,6 +20,7 @@ class Login(grok.View):
     grok.context(App)
 
     def update(self):
+        resource.favicon.need()
         resource.style.need()
         resource.custom_js.need()
 
@@ -27,6 +29,7 @@ class UserIndex(grok.View):
     grok.name('index')
 
     def update(self):
+        resource.favicon.need()
         resource.style.need()
         resource.custom_js.need()
 
@@ -36,14 +39,21 @@ class UserIndex(grok.View):
 
         week = [day.date() for day in dateutil.rrule.rrule(
             dateutil.rrule.DAILY, count=7, dtstart=previous_monday)]
-        days = dict([(k, dict(revenue=0)) for k in week])
+        days = dict([(k, dict(revenue=0, products={})) for k in week])
         # XXX not efficient, move to model code, use catalog.
+        self.today = []
         for order in self.context['order'].values():
             day = order.created_on.date()
             # We are only interested in this week's data:
             # We assume that no orders with future datetimes have been made.
             if day not in week:
                 continue
-            days[day]['revenue'] += order.total_price
+            if day == today:
+                self.today.append(order)
+            details = days[day]
+            details['revenue'] += order.total_price
 
         self.days = [dict(day=day, data=data) for day, data in sorted(days.items())]
+
+
+
