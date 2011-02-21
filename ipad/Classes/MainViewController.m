@@ -345,6 +345,8 @@
 	self.order = tempOrder;
 	[tempOrder release];
 	
+	order.customer = customer;
+	
 	self.productGroupDictionaries = [order itemList];
 	[receiptView.productTableView reloadData];
 	receiptView.receiptTotalView.paymentTotalLabel.text = [NSString stringWithFormat:@"%C %.2f", 0x20ac, [[order totalPrice] floatValue]];
