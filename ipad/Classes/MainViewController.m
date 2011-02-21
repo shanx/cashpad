@@ -21,6 +21,18 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+/*
+ 
+ 
+ 
+ 
+ Brace yourself for a shitload of ugly, unmaintainable, hardcoded spaghetti code!
+ 
+ 
+ 
+ 
+ */
+
 @interface MainViewController ()
 
 @property (nonatomic, retain) Customer *customer;
