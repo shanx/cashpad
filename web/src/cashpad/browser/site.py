@@ -16,14 +16,6 @@ class Index(grok.View):
         resource.style.need()
         resource.custom_js.need()
 
-class Login(grok.View):
-    grok.context(App)
-
-    def update(self):
-        resource.favicon.need()
-        resource.style.need()
-        resource.custom_js.need()
-
 class UserIndex(grok.View):
     grok.context(User)
     grok.name('index')
@@ -54,6 +46,3 @@ class UserIndex(grok.View):
             details['revenue'] += order.total_price
 
         self.days = [dict(day=day, data=data) for day, data in sorted(days.items())]
-
-
-

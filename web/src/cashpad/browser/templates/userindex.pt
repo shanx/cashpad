@@ -13,8 +13,13 @@
         <div class="hdrr"></div>
         <h1><a href="#">iPad kassa</a></h1>
         <ul id="nav">
+          <li>
+            <a tal:attributes="href context/++resource++cashpad/docs/html/index.html">API</a>
+          </li>
+          <li>
+            <a href="mailto:info@ipadkassasysteem.nl">CONTACT</a>
+          </li>
         </ul>
-        <p class="user"><a tal:attributes="href python:view.url('logout')">Logout</a></p>
       </div>    <!-- #header ends -->
 
       <div class="block">
@@ -47,6 +52,8 @@
            </tr>
           </table>
         </div>    <!-- .block_content ends -->
+        <div class="bendl"></div>
+        <div class="bendr"></div>
       </div>    <!-- .block ends -->
 
       <div class="block">
@@ -64,7 +71,6 @@
                 <th scope="col" tal:repeat="day view/days" tal:content="day/day"/>
               </tr>
             </thead>
-
             <tbody>
               <tr>
                 <th>Revenue</th>
@@ -73,11 +79,9 @@
             </tbody>
           </table>
         </div>    <!-- .block_content ends -->
+        <div class="bendl"></div>
+        <div class="bendr"></div>
       </div>    <!-- .block ends -->
-      <div id="footer">
-        <p class="left"><a tal:attributes="href view/application_url">www.ipadkassasysteem.nl</a></p>
-        <p class="right">powered by <a href="http://themeforest.net/item/adminus-beautiful-admin-panel-interface/94668?ref=enstyled">Adminus</a> v1.4</p>
-      </div>
     </div>
   </div>
 </body>
