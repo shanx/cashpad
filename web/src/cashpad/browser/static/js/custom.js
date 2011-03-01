@@ -86,110 +86,11 @@ $(function () {
 
 
 
-	// Tabs
-	$(".tab_content").hide();
-	$("ul.tabs li:first-child").addClass("active").show();
-	$(".block").find(".tab_content:first").show();
-
-	$("ul.tabs li").click(function() {
-		$(this).parent().find('li').removeClass("active");
-		$(this).addClass("active");
-		$(this).parents('.block').find(".tab_content").hide();
-
-		var activeTab = $(this).find("a").attr("href");
-		$(activeTab).show();
-
-		// refresh visualize for IE
-		$(activeTab).find('.visualize').trigger('visualizeRefresh');
-
-		return false;
-	});
-
-
-
-	// Sidebar Tabs
-	$(".sidebar_content").hide();
-
-	if(window.location.hash && window.location.hash.match('sb')) {
-
-		$("ul.sidemenu li a[href="+window.location.hash+"]").parent().addClass("active").show();
-		$(".block .sidebar_content#"+window.location.hash).show();
-	} else {
-
-		$("ul.sidemenu li:first-child").addClass("active").show();
-		$(".block .sidebar_content:first").show();
-	}
-
-	$("ul.sidemenu li").click(function() {
-
-		var activeTab = $(this).find("a").attr("href");
-		window.location.hash = activeTab;
-
-		$(this).parent().find('li').removeClass("active");
-		$(this).addClass("active");
-		$(this).parents('.block').find(".sidebar_content").hide();
-		$(activeTab).show();
-		return false;
-	});
-
-
-
 	// Block search
 	$('.block .block_head form .text').bind('click', function() { $(this).attr('value', ''); });
 
 
 
-	// Image actions menu
-	$('ul.imglist li').hover(
-		function() { $(this).find('ul').css('display', 'none').fadeIn('fast').css('display', 'block'); },
-		function() { $(this).find('ul').fadeOut(100); }
-	);
-
-
-
-	// Image delete confirmation
-	$('ul.imglist .delete a').click(function() {
-		if (confirm("Are you sure you want to delete this image?")) {
-			return true;
-		} else {
-			return false;
-		}
-	});
-
-
-
-	// Style file input
-	$("input[type=file]").filestyle({
-	    image: "images/upload.gif",
-	    imageheight : 30,
-	    imagewidth : 80,
-	    width : 250
-	});
-
-
-
-	// File upload
-	if ($('#fileupload').length) {
-		new AjaxUpload('fileupload', {
-			action: 'upload-handler.php',
-			autoSubmit: true,
-			name: 'userfile',
-			responseType: 'text/html',
-			onSubmit : function(file , ext) {
-					$('.fileupload #uploadmsg').addClass('loading').text('Uploading...');
-					this.disable();
-				},
-			onComplete : function(file, response) {
-					$('.fileupload #uploadmsg').removeClass('loading').text(response);
-					this.enable();
-				}
-		});
-	}
-
-
-
-	// Date picker
-	$('input.date_picker').date_input();
 
 
 
