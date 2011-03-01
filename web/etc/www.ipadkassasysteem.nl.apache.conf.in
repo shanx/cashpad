@@ -9,3 +9,15 @@
   RewriteEngine On
   RewriteRule (.*) ${apacheconf:backend}/${apacheconf:site_id}/++vh++http:${apacheconf:domain}:80/++$1 [P,L]
 </VirtualHost>
+
+<VirtualHost *:80>
+  ServerName ${apacheconf:domain2}
+  ServerAlias ipad2cashregister.com
+  DocumentRoot ${buildout:directory}/www
+
+  CustomLog ${buildout:directory}/log/access.log combined
+  ErrorLog ${buildout:directory}/log/error.log
+
+  RewriteEngine On
+  RewriteRule (.*) ${apacheconf:backend}/${apacheconf:site_id}/++vh++http:${apacheconf:domain2}:80/++$1 [P,L]
+</VirtualHost>
